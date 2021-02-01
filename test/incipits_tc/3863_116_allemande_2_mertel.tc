@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/116_allemande_2_mertel.}
+|
+M(C/)
+[[d2
+]]a1
+:||:
+[[c1d2d3Xa
+]]d1
+Qf1
+Qd1d2f3d6
+Qc1d2d3Xa
+|
+Q.a1c2d3a5
+Ed2
+[[c2
+]]a2
+Qd3a4c6
+|
+[[a2b3a4d6
+c2
+d2
+]]a3
+[[c4
+]]a4
+Qc2c4a5
+|
+Qd2a3a4
+QXa
+Qd2a3
+[[a4
+]]c4
+|
+Qa3Xa
+[[b3
+]]d3
+Qb3d6
+Qa3a4Xa
+|
+Q.c4a5
+Ed6
+[[c6
+a6
+d2a3Xa
+]]c2
+|
+{^}
+|
+[[a2d6
+d3
+b3
+]]a3

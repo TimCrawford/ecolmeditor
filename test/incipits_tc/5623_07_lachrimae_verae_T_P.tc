@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ e5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/rdowland_lachrimae/07_lachrimae_verae/07_lachrimae_verae_T_P.}
+|
+a4Xa
+e5Xa/
+||
+M(C/)
+Qf1e4
+Ec2
+[[[e1c4
+]]]c1a4
+Eb1e5
+[[[a2
+]]]d3
+[[c3
+]]c1d3
+|
+Qe1c2d4e5
+[[c2a3b5
+]]c1
+[[a2a3a4c5
+]]a1
+Ec1
+[[[e1a5
+]]]e6
+|
+{^}
+|
+Ef1c2e4c6
+[[[e1e6
+]]]c1
+Ea1c2a5
+[[[c1a2e6
+]]]d3c6
+[[[e1a2a6
+c2
+f1f3
+]]]d3
+[[[f3
+]]]f1
+Ee1
+|
+Qf1c2d3c4a5
+[[a1c2d3
+]]a5
+Qd1a2a4d6
+[[a2c4a6
+]]d1
+|
+[[[c1c5
+c4

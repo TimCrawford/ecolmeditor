@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Jacobus/suite_for_lute_in_EbM/06_bouree.}
+b1
+M(C/)
+Ef1
+|
+[[f2Xa//
+f1
+f2
+]]f1
+[[d2Xa///
+f1
+d2
+]]f1
+|
+[[f2Xa//
+f1
+f2
+]]f1
+Qg3
+[[Xa
+]]b3
+|
+[[[d3a6
+]]]f3
+[[d3
+a2Xa
+]]b2
+[[[a1
+]]]c1
+[[a1
+c1
+]]d1
+|
+{^}
+|
+Qa2a5
+[[a1
+]]a2
+Qb3,
+[[Xa///
+]]a1
+|
+[[[a1Xa
+]]]c1
+[[a1
+b3
+]]b2
+[[[b2Xa/
+]]]d2

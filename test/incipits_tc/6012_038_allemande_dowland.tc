@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ d5Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-4 1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ c5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-4 -1 0 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/spencer_private_library/margaret_board_lute_book/038_allemande_dowland.}
+|
+d5Xa
+c5Xa/
+||
+M(C/)
+Qa1b2d3c4a5
+|
+Qf1
+[[d1a2a4
+]]b1
+Qa1b2d5
+Qd2f3f4
+|
+Qa1b2d5
+QXa
+Qd5
+E.b2
+Sd2
+|
+Qa1d5
+E.d2d6
+Sa1
+E.b2a5
+Sd2
+Qa2c3a6
+|
+Qd3a5
+E.c4
+Sa2
+[[b2
+]]d2
+Qa1d5
+|
+Qd2d3d4b6
+[[b2
+]]c4
+[[g3f5d6
+]]d5
+Qf3f5
+|
+{^}
+|
+Qb2b3d5
+E.d1
+Sb1
+Qa1
+[[f1Xa
+]]d1
+|
+E.b1a4
+Sa1
+[[d2

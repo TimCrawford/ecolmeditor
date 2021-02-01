@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ d5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -3 0 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/Danzig_lute_book_1621/024_courante_ballard.}
+|
+d5Xa/
+a5Xa//
+||
+[[d3
+]]a2
+Q.c3a6
+[[[a3
+]]]c3
+|
+Qd3
+QXa//
+[[d3
+]]a2
+|
+Qc2a5
+QXa//
+[[a2
+]]c2
+|
+Qd2a4
+QXa
+[[c2
+]]d2
+|
+Qa1a5
+QXa//
+[[d2
+]]a1
+|
+Qc1a4
+[[Xa
+]]a1
+[[d2
+]]c2
+|
+Qa2d6
+Q.c2a5
+[[[a2
+]]]c2
+|
+{^}
+|
+Qd2a4
+QXa
+[[d3
+]]a2
+|
+[[Xa//
+]]c2
+[[d3
+]]a3

@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_A_minor/01_allemande.}
+|
+M(C)
+E.e4x
+Sc3
+[[d3
+]]e4
+[[[d4
+c3
+c2
+]]]d2
+E.c2
+Sf3
+|
+E.d3e4
+Sc3
+[[e4
+]]e1
+E.c2
+Sd2
+[[[c5
+c1
+d3
+]]]e1
+|
+[[[a5
+]]]d3
+Ea1
+[[[c3
+e1
+c1c3
+]]]d2
+[[[d6
+]]]c2
+Ed3
+Ee1
+[[[c2
+]]]c1
+|
+{^}
+|
+[[[a5
+a1
+h2
+]]]g1
+Eh1
+[[[h4
+]]]h1

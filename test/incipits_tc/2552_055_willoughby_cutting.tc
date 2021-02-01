@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/055_willoughby_cutting.}
+|
+M(C/)
+Qc1a2a3c5
+Qh1
+E.f1c2c6
+Sd1
+Ec1
+[[[d1
+]]]f1
+|
+[[h1d6
+a2
+d2
+]]a1
+[[c1c2e3c6
+]]e4
+Qc6
+|
+[[a2a3c5
+c1
+h1
+]]g1a3
+[[h1a2
+g1a3
+h1a2
+]]c1
+|
+[[d2a3c5
+]]a2
+[[[d6
+c2
+d2
+]]]a1
+[[c1c2e3c6
+]]e4
+Qc6
+|
+{^}
+|
+E.c2d3c4a5
+Sd2
+Ea1
+[[[d2
+]]]a1
+[[c1d3a4
+a1d3e5
+c1d3a4
+]]a1d3e5

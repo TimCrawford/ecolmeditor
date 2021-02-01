@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Qd5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Qa5Xa// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -3 0 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Dowland/solos/94_pavana_johan_douland_orig.}
+|
+Qa4Xa
+Qd5Xa/
+Qa5Xa//
+||
+M(C/)
+Qa1b2d3c4a5
+[[c1
+]]d1
+Qf1
+Qd2
+|
+Qf1f2a5
+Q.g3
+[[[i3
+]]]f2
+E.g2
+Sf1
+|
+E.d1g2f4d5
+Sg2
+E.f2
+Sd2
+[[f2
+d1
+f1
+]]d1
+|
+[[d2d3a4
+d1
+b1
+]]a1
+Qb1d2d3
+QXa
+|
+Qa1d2d3c4a5
+[[b2
+]]a2
+Qb2d3
+QXa//
+|
+{^}
+|
+Qb2b3c4a6
+[[a2
+]]d3
+Ha2a4d6
+|
+Qd5Xa/
+Qd3
+E.c5Xa

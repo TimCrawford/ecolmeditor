@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/087_galliard_jjohnson.}
+|
+[[d3
+]]d2
+Qa1
+Qa1a2c3
+|
+E.c1c2a3
+Sd3
+[[c3
+]]a3
+Qc2c3d4e5
+|
+E.c1c2e4c6
+Sf1
+[[e1
+]]c1
+Qb1c3
+|
+Q.c1e4
+Ec2
+Qc1a4
+|
+Q.a1d3e5
+Ea5
+[[d2a3c5
+]]c3
+|
+{^}
+|
+Q.c2d3a5
+[[[a2
+]]]c2
+[[a2a4
+]]d3
+|
+[[d3
+]]e5
+[[[a2a4
+d3
+c3
+]]]a3
+[[a2d3c4
+]]c3
+|
+Qd3c4a5
+Hc4
+:||:
+Qa2c3
+Qc2d3
+Qe2f3

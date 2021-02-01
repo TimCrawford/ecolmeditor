@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/096_galliard_anon.}
+|
+Q.c1d2c5
+Ec1c2b5
+[[d2a3c5
+]]a1
+|
+Q.c1c2e3c6
+Ef1c2e4
+[[e1c2e5
+]]c1a4
+|
+Q.a1c2d3a5
+Ec1c2d3c6
+[[d2c5
+]]a1
+|
+Qc1c2e3c6
+Hc1c2e3
+|
+Q.c1c2d3c6
+Ec2
+[[c1d2c5
+]]e1
+|
+Q.f1c2c6
+Eh1
+[[k1a5
+]]h2
+|
+[[h1a4
+]]c4
+[[[e4
+h1
+g1
+]]]e1
+[[[g1
+h1
+f2
+]]]g1
+|
+Qh1d2e4Xa
+Hh1d2e4Xa
+:|
+|
+:||:
+Qc1c2d3e4
+[[c1c2d3
+]]e4
+[[c1a4

@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/suite_Cm/4_sarabande.}
+|
+[[b2d3c4Xa///
+]]a2c3
+[[b2d3
+]]d2f3
+[[a1g3a5
+]]d6
+|
+Qd3c4b6
+[[a4,
+]]a2
+Qc3,a6
+|
+Q.c3d4c5Xa
+Ec3
+[[d3Xa/
+]]Xa
+|
+Qd3,a6
+[[
+]]c3
+Qd3c4d5Xa///
+|
+{^}
+|
+[[a1c2d3a5
+]]b1d2
+[[d1f2
+]]a1c2
+Qb1d2d3Xa
+|
+Qd2,f3d6
+[[d4
+]]d2
+Qa1a2Xa/
+|
+[[d2c3a4b6
+]]a6
+[[d2a3a4Xa
+]]Xa/
+[[c3a4Xa//
+]]a1
+|
+Q.b2,c4Xa///
+Ea2
+Qa2c3c4
+:|
+|
+:||:
+[[a2b3a6
+]]b2

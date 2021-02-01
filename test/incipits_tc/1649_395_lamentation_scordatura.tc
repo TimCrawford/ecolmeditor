@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules><tuning>(-5 -4 -5 -7 -5)</tuning></rules>}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_10/395_lamentation_scordatura.}
+|
+Ea1f2
+a2e3
+a3f4
+a4h5
+a5f6
+f5Xa
+||
+M(C/)
+Qd1d3a5
+[[c3
+]]a3
+|
+Hc1d2c3a4a6
+|
+Qd1d2d3f4
+Qf1g2f3d4
+|
+[[g1d2d3d4d5
+f5
+g1a4
+]]c4
+Qf1g2f3d4
+[[d1d2d3f4
+]]d4
+Qd1d3b4
+Qb2
+|
+Hc1d2c3a4
+|
+Hc3e4a6
+Qd3f4a5
+Qb2c3d4d6
+Qd2d3d4d5
+Qa3b4b6
+|
+{^}
+|
+[[e2f5
+]]d5
+Eb2c3d4d6
+[[[a2
+]]]b2
+[[d2a6
+]]b2
+Ed2d3d4d5
+[[[f3
+]]]d2
+|
+[[e2b4
+b1
+d1b6

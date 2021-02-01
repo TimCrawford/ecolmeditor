@@ -1,0 +1,67 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_GM/04_minuet.}
+k1b2
+Qa2c3c4Xa
+Qa2
+Qa2c3
+|
+Qa2a3a5Xa/
+[[a2
+]]c2
+[[e2
+]]a2,
+|
+Qc1c2c3Xa//
+Qc3
+Qc3
+|
+Q.c3b4Xa///
+Ea3
+[[c3
+]]d3
+|
+Qa2d3c6
+Qc4
+Qc4
+|
+{^}
+|
+Qc2ud6
+Qc4
+Qc4
+|
+Qd3c4c5X4
+[[d3,c4Xa//
+]]c3
+[[a3X4
+]]c4
+|
+Q.b4,a5Xa///
+[[[c5
+]]]b4
+Qa5,
+|
+Qa2c3c4Xa
+Qa2
+Qa2c3
+|
+Qa2a3a5Xa/
+[[a2
+]]c2
+[[e2
+]]a2
+|
+{^}
+|
+Qc1c2c3Xa//

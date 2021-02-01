@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/suite_Cm/1_prelude.}
+|
+M(C/)
+[[d3c4d5Xa///
+]]a1
+E.b2,
+Sd3
+Ea1
+Ea6
+E.a1a2f3e6
+Sa6
+|
+[[d3c4d5Xa///
+]]b2
+E.a2,d6
+Sb2a6
+Ed3b6
+Ea2
+E.a2,d4Xa
+Sd3
+|
+{^}
+|
+[[c3,c4a6
+c4
+a4
+]]c4
+[[d3d5
+]]a1
+E.d2c3c5
+Sa1
+|
+E.b2d3a5
+Sb1a2d3
+E.a1,c2b3
+Sb1
+[[d2d4
+]]a1
+E.c2,b3c4
+Sd2a4
+|
+[[a1d3e5
+f1
+d1
+]]f1
+E.b1,d2a4
+Sa1
+E.d2
+Sb2

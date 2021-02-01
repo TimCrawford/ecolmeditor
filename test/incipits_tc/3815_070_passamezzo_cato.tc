@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/070_passamezzo_cato.}
+|
+M(C/)
+Ed3
+[[[c4
+]]]d3
+[[[a2
+b2
+d2
+]]]a2
+[[b2d3
+a1
+a1b2
+]]d2f3
+|
+[[[b2d3
+]]]d2
+Ea1
+[[[a3
+]]]a1
+Ee2
+[[a1b2c4
+a2a4
+d3d5
+]]b3c5
+|
+Ed3d5
+[[[b3
+]]]c5
+[[[a5
+]]]b3
+Ed3e4
+[[a2b3a4d6
+a4
+a2b3
+]]d3e4
+|
+{^}
+|
+[[a2b3
+]]d1
+[[[d3
+]]]d1
+Ec1
+[[d1b3
+c1
+a1b3
+]]d2a3

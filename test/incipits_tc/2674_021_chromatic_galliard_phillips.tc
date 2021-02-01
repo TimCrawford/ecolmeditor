@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.9.33_c/021_chromatic_galliard_phillips.}
+|
+Qd3c4e5f6
+Qa2a4
+Qa2c4e6
+|
+Ec2d3c4a5
+[[[c4
+]]]c1
+[[[a1
+d2
+c2
+]]]a2
+Qd3
+|
+[[a1c2d3a5
+]]e6
+Qc1d3c4c6
+Qa3b4
+|
+Qe1a2c4a6
+[[c4
+]]f1
+[[e1a2
+]]c1a4
+|
+Qa1c2d3e5
+Qc1a2a4
+Qa1c3c4
+|
+Qd2d3e4
+[[c2
+]]c3c4
+[[c1d3a4
+]]a2c3
+|
+{^}
+|
+[[a1c2d3a5
+]]c1d2
+Ea1a2d3c4
+[[[c3
+]]]a3
+[[[a1c3a6
+d3
+d2a3
+]]]c3
+|
+E.c2d3c4a5
+[[[[a3
+]]]]c3

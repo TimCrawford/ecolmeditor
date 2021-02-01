@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Huwet/fantasy_1.}
+|
+Ha2
+Qa2
+Qa2
+|
+Qd3
+Qc2
+Qa2
+Qd2
+|
+Qc2
+Qb2
+Q.c1a2
+[[[d3
+]]]c3
+|
+[[c1a3
+c3
+c1d3
+]]a2
+Qa1c2
+Qe1a2
+|
+Qc1d2
+Qf1c2
+Qe1a2
+[[d1
+]]c2
+|
+[[c1d2
+a1
+c1d2
+]]d1
+[[f1
+d2
+f1c2
+]]a2
+|
+{^}
+|
+[[c1c2a3
+a2
+c2
+]]d2
+Qf1c2a3
+Qd2a3
+|
+Qe1f2c4
+Qa1a2c3
+Qc1d2a3

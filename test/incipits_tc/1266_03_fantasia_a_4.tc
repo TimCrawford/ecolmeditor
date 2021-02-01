@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Bakfark/harmoniarum_musicarum_1565/03_fantasia_a_4.}
+|
+M(C/)
+Hf1
+Qd1
+Qb1
+|
+Ef1d3
+[[[[
+d1
+f1
+]]]]g1
+Qf1
+[[d2f4
+f2
+b1d4
+]]d1
+|
+Qa1d3
+[[f2
+]]a1
+[[b1d2a4
+]]d1
+Qf1b2d4
+|
+Ef2c4
+[[[e1
+]]]c1
+[[[f1
+]]]e1
+[[[[f1
+e1
+c1
+]]]]e1
+[[f1d3d4f5
+]]f4
+Qb2d3d5
+|
+{^}
+|
+Ea2c4
+[[[c3
+]]]a3
+[[[d3
+]]]c3
+[[[[d3
+c3
+a3
+]]]]c3

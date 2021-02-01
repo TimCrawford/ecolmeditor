@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ d5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ c5Xa// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ d6Xa/// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -4 1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/british_library/Pickering/40_anon_allemande.}
+|
+d5Xa/
+c5Xa//
+d6Xa///
+||
+M(C/)
+:||:
+Qa2b3a4c5d6
+[[d2
+]]b2
+Qa2d6
+Qa1d5
+|
+[[d2c5
+a1
+b2a5
+]]d2
+Qd6
+Qd1a2b3
+|
+[[c1a4
+d1
+f1
+]]d1
+Qc1#Xa
+[[d1
+]]c1
+|
+[[a1a5
+d2
+c2d3
+]]b3
+Qd2a3
+[[a4#
+]]d5
+|
+{^}
+|
+[[d2c5
+b3
+d1
+]]b1
+E.d1d5
+Sd2
+[[b2a5
+]]a2d6
+|
+[[d3c6
+a4
+d2

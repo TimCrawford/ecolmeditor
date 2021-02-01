@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Spinacino/allez_regretz.}
+|
+[[[i1
+h1
+f1
+]]]h1
+|
+Hi1g3h4
+Qi1g3
+[[g1d2
+]]f1
+|
+Qd1f2g3
+[[b1
+]]d1
+[[f1g2a4
+c4
+d4
+]]c4
+|
+[[g1i2f4
+f1
+g1
+]]f1
+[[d1
+a1
+b1d3
+]]a1b3
+|
+Qf1d2d4
+Qf2
+Qi1g2i5
+[[f2
+]]g2
+|
+[[g1d2f4
+f1
+g1
+]]f1
+[[d1e3
+d3
+e3
+]]b2
+|
+{^}
+|
+[[d2
+a1
+b1e3
+]]a1

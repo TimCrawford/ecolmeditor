@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Baron/suite_FM/04_sarabande.}
+Ee1d2d3Xa/
+Se1
+Q.a1d2d3Xa/
+[[[f2
+h2d3
+]]]f1
+|
+[[h1a6
+]]h3
+Q.i3
+Ek1i5
+|
+Ek1i5
+Sh1h5
+E.h1h5
+Sf1f5
+E.f1f5
+Sh1h6
+|
+Q.e1,d3Xa/
+Ef2
+Qd2
+|
+{^}
+|
+[[[e1/
+c1
+a1
+]]]c2
+Q.a2,
+Ee1
+|
+[[[c1//
+a1
+c2
+]]]a2
+Q.d3,
+Ec1
+|
+[[[d2///
+c2
+a2
+]]]d3
+[[c3Xa
+]]e1
+[[c1c6
+]]a1
+|
+Qc2c4X4

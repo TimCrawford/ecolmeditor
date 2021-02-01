@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Wa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wd5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wb5Xa// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -2 -1 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wa5Xa/// line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -2 -1 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Ballard/04_entree04.}
+|
+Wa4Xa
+Wd5Xa/
+Wb5Xa//
+Wa5Xa///
+||
+M(C/)
+Qd2d3a4Xa
+Qa4
+Qd2d3
+Qa1
+|
+Qb1d2d3a4
+Qd1
+Qf1
+Qd5
+|
+Qa4b5
+[[d1
+]]b1
+Qd1
+Qc4
+|
+{^}
+|
+Qf1d4a5
+[[c4
+]]a4
+Qd3e5
+[[d1a2a4
+]]b1
+|
+Qa1b2a5
+Qb1d3
+Qd2d3b5
+[[b3
+]]a4
+|
+Qd2d4a5
+Qb2c4
+[[Xa
+d3
+d4
+]]f3
+|
+Qf2g3Xa/
+[[d1
+]]b5
+[[a5
+b2d3
+b1

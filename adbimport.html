@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chroma extract test</title>
+	<script src='dsp.js'></script>
+	<script src='jquery-1.4.4.js'></script>
+	<script src='adbimport.js'></script>
+</head>
+<body>
+
+<form action="">
+ <input type= "file" id="inputElementID" name="inputElementName" accept="audio/*" onchange="changeHandler(this)" multiple>
+</form>
+
+<div id="log1" style="color:blue"></div>
+<div id="log2"></div>
+
+<table id="results">
+</table>
+
+<script>

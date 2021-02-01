@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Waissel/1573/04_phantasia_2.}
+|
+M(C/)
+Hd2
+Ec1
+[[[a1
+]]]c1
+[[[d1
+a1
+c1
+]]]d1
+|
+Qf1
+Qd3
+Ef1c2
+[[[a2
+]]]c2
+[[[d2
+c2
+a2
+]]]c2
+|
+Qd1f2
+Qc1d2
+[[[a1c2
+d2
+a1
+]]]c1
+[[d1a2
+]]d3
+|
+{^}
+|
+[[[a2
+d3
+a2
+]]]c2
+Qc1d2
+Ea1d2
+[[[c2
+]]]a2
+[[[d2
+]]]c2
+[[[[d2
+c2
+a2
+]]]]c2
+|
+Qd2a4

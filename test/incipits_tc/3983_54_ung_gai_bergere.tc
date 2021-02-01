@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/gardano_balletti_moderni_facilii_1611/54_ung_gai_bergere.}
+|
+M(C/)
+Qa1
+[[a1
+]]a1
+[[c1a2
+a1
+c1a2
+]]e1a2
+|
+[[f1c2
+a2
+f1c2
+]]e2
+Qe1f2c4
+[[f2c4
+]]c4
+|
+[[c1d2e4c5
+c4
+a3c5
+]]c3c5
+[[c2d3e5
+c5
+d3e5
+]]a4
+|
+Qa1a2c3c4
+[[a1c2c4
+]]a1
+[[c1e4f5
+a1
+c1a2
+]]e1
+|
+Qf1c2e5
+Qe1f2c4e5
+Qe5
+Qc1d2e4f5
+|
+{^}
+|
+Qa2c3c4
+Qa1c2d3a5
+Ef3e4c5
+[[[e2
+]]]c2
+[[[f2
+]]]e2

@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qg3Xa line 7 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-4 1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Jacobus/suite_for_lute_in_EbM/05_gigue.}
+b1
+Qg3#
+EXa//
+Qf3,a5
+Ea6
+|
+Qg3Xa
+Ea1a5
+[[f2Xa//
+f1
+]]g3
+|
+[[f3Xa/
+f4
+]]a6
+[[g3Xa
+f1
+]]a6
+|
+[[f3Xa/
+f4
+]]a6
+[[g3Xa
+f1
+]]a6
+|
+[[f3,a5
+f4
+]]a6
+[[f1Xa
+g3
+]]h1a6
+|
+[[f1Xa
+g3
+]]h1a6
+Ef1g3Xa
+[[[h1
+f1
+g2
+]]]f2
+|
+{^}
+|
+[[a1a5
+a2
+]]f2g3
+[[g2i3

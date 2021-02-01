@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Abondante/Libro_secundo/14_prenes_la_galan.}
+|
+M(C/)
+Q.d5
+Ed5
+Qb3d5
+[[d5
+]]b3
+|
+Qb2b3d5
+[[b3
+]]b2
+Qd1b3
+[[b2d5
+]]d1
+|
+[[d1b2
+]]d5
+Qd1b3d5
+[[d1d5
+]]b3
+Qb3d6
+|
+[[d2f3f4
+d3
+a4
+]]d2
+[[c1a4
+a4
+a1b2c4a5
+]]a3a5
+|
+[[d2b3c5
+b3d5
+d2d3a4
+]]d2a4
+[[a1d5
+c1a4
+d1b3d5
+]]d1b3c5
+|
+{^}
+|
+[[c1d3a5
+d2f3
+c1b2
+]]a1b2
+[[d2f3
+f4
+]]f3f5

@@ -1,0 +1,68 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Q.d2Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/de_Bellis_MS_1615/37_ballo_detta_del_distolese.}
+|
+Q.d2Xa
+Ea1
+Qc1
+|
+Q.c1ua4
+Ea1
+Qc1
+|
+Hd1c4
+Qc1a4
+|
+Ha1ua5
+Qd2
+|
+Q.d2Xa
+Ea1
+Qc1
+|
+Q.c1ua4
+Ea1
+Qc1
+|
+Qd1c4
+Hc1ua4
+|
+Ha1ua5
+Qd2
+||
+HXa
+Qf1
+|
+Hc1ua4
+Qf1
+|
+Q.f1a4
+Ed1
+Qc1
+|
+Ha1ua5
+Qd2
+|
+{^}
+|
+HXa
+Qf1
+|
+Hc1ua4
+Qf1
+|
+Q.f1a4
+Ed1
+Qc1
+|
+Ha1ua5
+Qd2
+|
+QXa
+Qf1

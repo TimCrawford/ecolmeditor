@@ -1,0 +1,67 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_F_major/04_minuet.}
+|
+M(3)
+Qd3a4Xa/
+[[a3
+]]b3
+[[d3
+]]a2
+|
+Qd3Xa/
+Qa4
+Qc5
+|
+Qa1a2a5
+Qc1c5
+Qe1d5
+|
+Hc1c2X4
+Qc1
+|
+Qh1h5
+[[h1f4
+]]f1
+[[h2
+]]f1
+|
+{^}
+|
+Qf2h4/
+Qf4
+Qd2e4/
+|
+Qf2f4/
+Q.c2c4X4
+[[[a1
+]]]c2
+|
+Qa1d2
+QXa/
+Qa1d2a3
+|
+Qe1d3Xa/
+[[e1
+]]c1
+Qe1
+|
+[[c1Xa//
+]]a1
+[[c2
+]]a2
+Qd3
+|
+Qa1a2Xa///
+Qa3
+Qc1c3

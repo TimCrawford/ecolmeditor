@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qc1Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-10 7 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Qc1Xa line 6 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-10 7 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/109_volte_anon.}
+|
+Qc1Xa
+Qa1a5
+Qd2a4
+|
+Qc1Xa
+Qa5
+Qa4
+|
+Qc1Xa
+Qa1a5
+Qd2a4
+|
+Qf1Xa
+Qa5
+Qa4
+|
+[[d1Xa
+]]c1
+[[a1a5
+]]c1
+[[d1a4
+]]c1
+|
+[[a1Xa
+]]d2
+[[a1a5
+]]c1
+[[d1a4
+]]c1
+|
+[[a1Xa
+]]d2
+Qa1a5
+Qc2a4
+|
+Qd2Xa
+Qa5
+Qa4
+||
+{^}
+|
+Qd2Xa
+Qc1a5
+Qd1a4
+|
+Qf1Xa
+Qa5
+Qa4
+|
+Qc1Xa
+Qd1a5
+Qf1a4

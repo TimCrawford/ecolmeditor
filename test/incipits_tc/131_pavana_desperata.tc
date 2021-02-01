@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Anon/dances/pavanes/pavana_desperata.}
+|
+M(C/)
+Hh1d2f4d6
+Qh1d2f4d6
+Qh1d2f4d6
+|
+Q.f1d2a3a4
+Ed1a2b3c4
+Qc1a2a3c5
+Qd1a2b3c4
+|
+Qf1d2a3a4
+Qh1a2f4
+Ed1a2b3c4
+[[[a1
+]]]c1
+[[[d1
+a1
+c1
+]]]d1
+|
+[[c5
+c1a2
+a3
+]]c5
+[[[c1a2a3c5
+a5
+c5
+]]]d5
+[[[c5
+a5
+d6
+]]]c6
+|
+Qh1d2f4d6
+[[h1d2f4d6
+]]f1
+[[d1d2f4
+]]f1
+Qh1d2f4d6
+|
+{^}
+|
+[[[f1a3a4
+h1
+i1
+]]]h1
+[[[f1
+d1

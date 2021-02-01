@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/suite_Cm/7_gavotte2.}
+|
+M(C/)
+Qd3a5
+Qa1e6
+|
+Qb2,a5
+E.a2a4
+Sd3
+Qc3,c4
+[[c4
+]]d3
+|
+Qa2c3
+Qc4
+Qb2d3
+[[a5
+]]d2c5
+|
+{^}
+|
+Qa1d5
+[[d5
+]]a1
+[[b1ua4
+a1
+d2u
+]]b2
+|
+Qa2,c3c4
+Qa6
+:|
+|
+Qa2,c3c4
+[[c4
+]]a4
+:||:
+Qa1d3d5
+[[b1
+]]a1
+|
+[[a1c5
+d2
+b2c3
+]]a2
+Qb2b3a5
+[[a3
+]]d2
+|
+{^}
+|
+[[a2d6
+a4
+b3

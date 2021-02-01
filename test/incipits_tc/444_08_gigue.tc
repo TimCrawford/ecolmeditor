@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Daube/sonata_AM/08_gigue.}
+b1
+[a6
+c2
+]a2
+[e3
+c3
+]a3
+|
+H.c3Xa
+[Xa//
+c2
+]d4
+|
+H.e4Xa/
+[X4
+c2
+]e2Xa///
+|
+[Xa//
+d4
+]a3,
+H.c3
+|
+[a6
+e3
+]e2
+[e3a6
+c3Xa
+]a3Xa/
+|
+[Xa
+c3
+]c2
+[c3Xa
+a3Xa/
+]d4Xa//
+|
+{^}
+|
+[Xa/
+a3
+]b2
+[c3
+c2
+]a6
+|
+[c6
+c3
+]b2

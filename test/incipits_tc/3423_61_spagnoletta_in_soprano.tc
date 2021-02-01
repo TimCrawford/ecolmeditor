@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/de_Bellis_MS_1615/61_spagnoletta_in_soprano.}
+|
+M(C/)
+[[d2
+]]a1
+:||:
+Qb1d2d3a4
+[[a1
+]]b1
+Qd1b2d5
+[[b1
+]]d1
+|
+Qf1d4
+Qd4
+Qf1
+[[d1
+]]b1
+|
+Qa1b2d5
+Qb1d3
+Qb3
+Qa1
+|
+Qb1b2d3d4
+Qd4
+Qb1b2d3
+[[d2
+]]a1
+:|
+|
+Qb1b2d3d4
+Qd4
+Qb1b2d3
+[[b1
+]]d1
+:||:
+Q.f1d4
+Ef1d4
+Qf1d4
+[[d1
+]]b1
+|
+{^}
+|
+Qd1b2d5
+QXa/
+Qd1b2
+[[f1
+]]d1

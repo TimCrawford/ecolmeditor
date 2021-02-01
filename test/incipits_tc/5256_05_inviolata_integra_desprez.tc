@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Ochsenkuhn_1558/05_inviolata_integra_desprez.}
+|
+M(C/)
+a4a6
+||
+Hd2
+E.d2
+Sc2
+[[[d2
+c2
+d2
+]]]a1
+|
+Qd2
+Ed2
+[[[c2
+]]]d2
+[[[a1
+d2
+c2
+]]]a2
+[[[d3
+a2
+c2
+]]]d2
+|
+E.a1
+Sc3
+[[[d3
+a2
+c2
+]]]d2
+Ea1
+[[[d2
+]]]c2
+[[[a2
+c2
+d2
+]]]a1
+|
+Hc1a4
+Qa4
+Qf1
+|
+{^}
+|
+[[f1a4
+d1
+c1
+]]a1

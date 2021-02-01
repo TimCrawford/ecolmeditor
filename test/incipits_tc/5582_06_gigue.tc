@@ -1,0 +1,72 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_A_minor/06_gigue.}
+|
+M(3)
+He1x
+Qc2
+|
+Q.c2d3e4
+Ea2
+Qd3
+|
+Q.a2c3e4
+Ec2
+Qc3d4
+|
+Hd3e4
+Qa6
+|
+Hd3c5
+Qa5
+|
+Q.a3d6
+Ec6
+Qa6
+|
+Q.c3Xb
+Ed3
+Qa2
+|
+Hd3e4
+Qf5
+|
+{^}
+|
+Q.e5
+Ea2
+Qa3
+|
+Hc3c4
+Qd5
+|
+Qc5
+Qd3
+Qa2
+|
+Qc2x
+Qd6
+Qa2a4
+|
+Q.a2c4
+Ed3
+Qc3
+|
+Hd3d6
+QX4
+|
+Hh1
+Qf2
+|
+Q.h2Xa/
+Eg1

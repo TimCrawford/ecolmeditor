@@ -1,0 +1,58 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qb3Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-9 6 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Qa3Xa line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-10 7 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Anon/dances/branles/Branles.}
+|
+Qb3Xa
+Qc4
+Qd3
+Qa3Xa
+Qa4
+Qb3
+|
+Qc4a5
+Qe5
+Qe4
+Qa4Xa
+[[a5
+c5
+e5
+]]a4
+|
+[[a5
+a4
+c4
+]]e4
+[[f4
+]]c4
+Qb3
+[[a3
+]]c4
+Qa3
+|
+Qb3Xa
+[[a3
+]]b3
+Qc4
+Qd3Xa
+[[b3
+]]d3
+Qa3
+|
+{^}
+|
+Qa2Xa
+[[d3
+]]a2
+Qc3
+Qd3a5
+[[d2
+a1
+c1

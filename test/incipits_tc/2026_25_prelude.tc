@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/cambridge_university_library/Cosens_lute_book/orig_7-course/25_prelude.}
+|
+a4Xa
+||
+M(C/)
+Wc4
+|
+Ha3
+Hc3
+|
+Hd3
+Ha5
+|
+[c3c5
+]a2
+Hd3e5
+|
+Ha3a4
+Hc3c4
+|
+[d3e4
+]a2
+[c2
+]e2
+|
+Ha1a2c3
+[c4
+]a1
+|
+[c1d3a4
+]a2
+He1a2c4
+|
+[f1c2e4
+]e1
+[c1
+]c4
+|
+Qc1d2a4
+[[e1
+]]f1
+[e1
+]c1
+|
+{^}
+|
+[e1a2c4
+]c1
+[a1
+]c1
+|
+[e1
+]a1
+[h1
+]f1
+|
+[e1a2c4
+]e4

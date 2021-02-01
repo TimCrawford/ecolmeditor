@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a4Xa line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/RJohnson/almain_02.}
+|
+a5Xa/
+a4Xa
+||
+M(C)
+Q.a1c2#d3c4a5
+Ed2
+Qc2#
+Qc1xd2d3a4
+|
+Qa1#d3e5
+[[c1c5
+]]e1
+[[f1#a5
+h1
+k1
+]]h6
+|
+[[k6
+a5
+h1k2h5
+]]k1
+Ql1xh2k4h6
+[[k1k6
+]]h1
+|
+{^}
+|
+E.f1#a5
+Sh1
+Qk1
+Hh1xf2g4a6
+|
+Q.h1xf2g4a6
+Ef1
+Q.e1#a2a6
+Ec1
+|
+[[a1a5
+]]d2
+[[c2#
+]]d6
+Q.f1xc2c6
+Ea6
+|
+[[Xa
+]]d1
+[[c1#
+]]a1
+[[d2
+]]f2

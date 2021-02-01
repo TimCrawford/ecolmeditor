@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Q.d4Xa line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-11 8 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/herbert_of_cherbury/056_courante_anon.}
+|
+:||:
+Q.d4Xa
+[[[c4
+]]]d4
+Qa4
+|
+Qf1
+Q.b1a4
+[[[a1
+]]]b1
+|
+Qd2f4
+[[d6
+]]a5
+[[b5
+]]d5
+|
+[[a4
+]]c4
+Qd4
+Qd2a4
+|
+Q.c2c4a5
+[[[a2
+]]]c2
+Qd3
+|
+Qi1h4
+Q.h1f4
+[[[i1
+]]]h1
+|
+[[f1f5
+]]i2
+[[g2
+]]f2
+Qi3
+|
+{^}
+|
+Qf1
+Q.f1f2h3
+[[[f3
+]]]h3
+|
+Qi3
+Qd1f4
+Qd1d2f3
+|
+[[d3
+]]f3

@@ -1,0 +1,68 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Anon/vienna_18761/suite_in_D_minor/01_Air.}
+|
+M(3)
+[[d5
+]]c5
+|
+[[a5,
+]]a2
+[[k1
+]]k1
+Qi1,a6
+[[h2
+]]Xa
+|
+[[h2Xa/
+]]k1
+Ei1,Xa//
+[[[k2
+]]]i1
+Qk1uXa///
+[[d5
+]]c5
+|
+[[a5
+]]a1
+[[c2
+]]a2
+Qf1a2uXa
+Qe1a6
+|
+[[Xd
+]]a2
+Ec1,
+[[[d2
+]]]c1
+Qe1c2a6
+:||:
+[[c2
+]]a2
+|
+{^}
+|
+[[a6
+]]c2e3
+[[a6
+]]c6
+[[e6
+]]c2
+[[e1
+]]c1

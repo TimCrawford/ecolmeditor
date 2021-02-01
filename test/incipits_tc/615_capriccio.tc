@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Gleitsmann/capriccio.}
+|
+Qd3c4b5X4
+Qc4
+Qb2ud6
+|
+[[a2Xd
+]]d3
+[[b3
+]]d4
+Qc4
+|
+Qd3c4Xb
+Qa4
+[[a2d3Xb
+]]d3
+|
+Q.c3,Xa
+Ea3
+Qc4Xa/
+|
+Qc1d3Xa//
+[[b2,
+]]a2
+[[d3
+]]c1
+|
+Q.d1ud3Xa/
+Ec3
+Qd3c4Xa//
+|
+[[Xa/
+]]a2
+Q.a2,c3Xa
+Ed3
+|
+[[d3X4
+]]c4
+[[b5
+]]c4
+[[d3
+]]b2
+|
+{^}
+|
+[[a2Xd
+]]d3
+[[b3
+]]d4
+[[c4
+]]a2
+|
+[[d3Xb

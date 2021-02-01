@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Judenkoenig/1523/23_nur_nerrisch_sein.}
+|
+M(C/)
+Hd3
+[[d3
+]]a2
+[[[b2
+a2
+b2
+]]]d2
+|
+Qa1a5
+Qa1
+[[a1a5
+]]c5
+[[[d5
+c5
+d5
+]]]a4
+|
+Qc4a5
+Qb2c4
+[[b2c4a5
+d2c5
+a1d5
+]]c1a4
+|
+Qd1c4
+Qa1c4a5
+[[a1a5
+d2c5
+a1d5
+]]d3
+|
+Qd2a3a4
+Qa2b3c4
+[[[b2
+a2
+d3
+]]]b3
+[[[a1d3
+b3
+a3
+]]]c4
+|
+{^}
+|
+Ea3c5
+Qa1
+Ee2

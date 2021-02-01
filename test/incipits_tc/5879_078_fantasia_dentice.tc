@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/siena_ms_1590/078_fantasia_dentice.}
+|
+M(C/)
+Hb3
+Qb3
+Qb3
+|
+Q.d3
+Ea2
+Hb2
+|
+Qd1b2
+[[a2
+]]d3
+Ed1a2
+[[[d3
+]]]a2
+Qd1b2
+|
+Qf1
+[[d2
+]]h1
+Qi1f2
+Qh2
+|
+Qi2f4
+[[h1
+]]f1
+[[[h1i2f4
+i2
+f1
+]]]h1
+[[[i1
+]]]h1
+[[[[i1
+h1
+f1
+]]]]h1
+|
+{^}
+|
+Qi1f2h4
+Eg2
+[[[h1
+]]]f1
+[[d1f2g3d5
+g2
+f2
+]]d2
+|
+Qd1f2g3d5

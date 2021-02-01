@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/tombeau_sur_logy.}
+|
+M(C)
+[[d2e3f4X5
+]]d2e3f4X5
+[[d2e3f4X5
+]]d2e3f4X5
+[[e2g3f4X5
+]]e2g3f4X5
+Ee2g3f4X5
+[[[d2,
+]]]b2
+|
+[[e1d2g3X5
+]]e1d2g3X5
+Ee1d2g3X5
+[[[e3,
+]]]d3
+[[f1d2e3X5
+]]f4
+[[[
+d2
+f2
+]]]e1
+|
+{^}
+|
+[[[f1
+h1
+i1
+]]]i3
+[[[h1
+g3
+f1
+]]]i4
+[[[e1
+h4
+f1
+]]]i5
+[[[h1
+g3
+a6
+]]]
+|
+E.b1b2d3b4b5a6
+Sd2
+[[[b2
+b1

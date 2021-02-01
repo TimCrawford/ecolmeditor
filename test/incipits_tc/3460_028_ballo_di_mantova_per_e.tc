@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/doni_MS_1640/028_ballo_di_mantova_per_e.}
+|
+c1c5
+e5
+a4
+c4
+c1d2d3a4
+Xa
+|
+a3
+c4
+a4
+e5
+c4
+c1d2d3a4
+Xa
+a3
+c4
+a4
+e5
+|
+c4
+a4
+e5
+c5
+|
+d2c3
+c2
+a2
+e3
+c2
+c1d2a3c5
+Xa//
+||
+{^}
+|
+c1d2a3c5
+a4
+e5
+c5
+a5
+e6
+c6
+a5
+e6
+c6
+c3d4e5
+Xa/

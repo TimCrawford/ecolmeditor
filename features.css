@@ -1,0 +1,66 @@
+rect.red {
+  fill: red;
+}
+line.red {
+  stroke: red;
+}
+rect.blue {
+  fill: blue;
+}
+line.blue {
+  stroke: blue;
+}
+rect.gray {
+  fill: gray;
+}
+line.gray {
+  stroke: gray;
+}
+rect.yellow {
+  fill: yellow;
+}
+line.yellow {
+  stroke: yellow;
+}
+.simpleGraphLine{
+  stroke-width: 3px;
+}
+
+.label.red {
+  fill: red;
+}
+.label.blue {
+  fill: blue;
+}
+.label.green {
+  fill: green;
+}
+.label.yellow {
+  fill: yellow;
+}
+.barlabel {
+  stroke: red;
+  font-size: small;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+.label {
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+.linelabel {
+  font-size: small;
+  font-style: italic;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+.barNumber, .systemBarNumber {
+	fill: red;
+	font-size: 75%;
+	font-style: italic;
+	font-weight: bold;
+	baseline-shift:-10px;
+	text-align: center;
+	position: relative;
+}

@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/siena_ms_1590/018_fantasia_perino.}
+|
+M(C/)
+Q.a1
+Ec1
+[[d1
+]]f1
+Qh1
+|
+Qa1d3
+[[f1
+]]a2
+[[c2c4
+e2
+d1f2
+]]e4
+|
+[[f4
+]]d3
+Qd1d2f3
+Qd1b2c4
+[[a1d3
+]]c1
+|
+[[d1a2
+]]f1
+Qh1g4
+Qa1b2d3a5
+[[f1c4
+]]c5
+|
+[[e5
+a3b4
+d1b3c4a6
+]]d3c6
+[[a2d6
+a5
+c1c5
+]]d3
+|
+{^}
+|
+[[a1b3c5a6
+a3
+c4d5f6
+]]a3
+[[b3c5
+d3
+a2d6
+]]e5

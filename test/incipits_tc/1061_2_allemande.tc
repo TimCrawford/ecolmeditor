@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/suite_Cm/2_allemande.}
+|
+M(C/)
+:||:
+Qd3c4d5Xa///
+HXa///
+E.d3x
+Sa2
+|
+Qb2ud3Xa///
+[[c3,
+]]a2
+[[d3
+b2
+a2
+]]d2
+|
+Qa1b2d3a5
+E.d3
+Sa1
+Qa1b3
+Qf1d4
+|
+Qe1,c4
+E.c4
+Sc5
+Q.f1d5
+Ea4
+|
+Qc4d5
+E.a1
+Sd3
+Qa2c4e6
+E.a6
+Sd2
+|
+{^}
+|
+Qb2,a5
+E.d2c5
+Sb2
+Qa2,a4d6
+E.b2c4a6
+Sc3
+|
+[[d3b6u
+a6
+b6
+]]d6
+[[a5
+d3

@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa1Xa/ line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -10 7 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/doni_MS_1640/043_corrente.}
+|
+:||:
+Q.b2b3d5
+Ed2
+Qa1Xa/
+|
+Qd2b3d6
+Qa1
+Qb2a5
+|
+Qa2c3a6
+[[b2
+]]d2
+[[a1
+]]d2
+|
+Qb2d3a5
+[[d2
+]]a1
+[[b1
+]]a1
+|
+Qd2d3Xa
+[[a1
+]]b1
+[[d1
+]]b1
+|
+Qa1Xa/
+Qb2
+Qf1d4
+|
+Q.d1c4
+Eb1
+Qa1d5
+|
+Q.b1a4
+Ea1
+Qd2c5
+|
+{^}
+|
+Qa1d5
+[[b2
+]]b1
+Qd1
+|
+Qd6
+Q.d2b3
+Ea1
+|
+Qb2b3
+Qd5

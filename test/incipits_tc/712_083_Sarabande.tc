@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Mercure/083_Sarabande.}
+|
+Qe1a2a3a4a5
+[[e1a2a3a4
+]]e1
+[[a5
+]]e1
+|
+[[e6
+]]e1
+[[c2
+]]c1
+[[a5
+]]a1
+|
+Qa1a2a3
+[[a1a2a3
+]]a1
+[[a6
+]]d3
+|
+{^}
+|
+[[c5
+]]d3
+[[d5
+]]a2
+[[b6
+]]b3
+|
+Qb3a4a5
+[[b3a4a5
+]]b3
+[[Xa/
+]]a3
+|
+Qa3a4d5
+[[a3a4d5
+]]a3
+[[d5
+]]d3
+|
+[[X4
+]]c4
+[[d6
+]]a3
+[[c5
+]]a4
+|
+QXa/
+Q.d5

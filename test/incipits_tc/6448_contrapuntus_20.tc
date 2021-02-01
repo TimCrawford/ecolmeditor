@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/vgalilei/canto_de_contrapunti_a_2_1584/contrapuntus_20.}
+|
+M(C/)
+Qa1
+[[c1
+]]d1
+[[f1
+]]c1
+Ed1c4
+[[[c1
+]]]a1
+|
+[[d2a3
+a2b3
+c2d3
+]]d2a3
+[[b3
+a1
+c2
+]]d2a3
+|
+[[[d1c4
+c1
+a1
+]]]d2
+[[[c2a3
+]]]d2
+Sa1
+[[[[d2
+]]]]c2
+[[[a2b3
+c2
+d2
+]]]a1
+[[[c1d3
+a1
+c2
+]]]a1
+|
+{^}
+|
+[[[d2a3
+]]]c2
+Ec1
+[[[a1b3
+d2
+c2
+]]]a2

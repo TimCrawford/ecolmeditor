@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ f5Xa line 7 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_10/397_country_dance_scordatura.}
+|
+a1f2
+a2e3
+a3f4
+a4h5
+a5f6
+f5Xa
+||
+M(C/)
+[[d2a5
+a1
+d2a5
+]]d1
+[[d1c3a4
+]]c1
+:||:
+[[d1
+]]a3
+[[[d2a5
+c2
+d2
+]]]a1
+[[[d2a5
+a1
+c1
+]]]d1
+[[[c1d2c3a4
+d1
+a1
+]]]c1
+|
+Qd1a2a3a4a5
+[[d2a5
+]]a1
+[[d2a5
+d1
+d1c3a4
+]]c1
+:|
+|
+{^}
+|
+Qd1a2a3a4a5
+[[d2a3a4a5
+]]d1
+[[c1a5
+a1

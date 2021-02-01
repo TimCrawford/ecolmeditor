@@ -1,0 +1,67 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_4_bouree.}
+|
+M(C/)
+Qe1
+|
+Qd2Xa///
+Qc2
+Qa2
+Qe3Xa//
+|
+Qa2Xa/
+Qa3
+Qa2
+Qa1
+|
+Qe1Xa/
+Qa2
+Qf1Xa
+Qa2
+|
+Qe3a6
+Qc2
+Qa3
+Qc2
+|
+Qc2e6
+Qa3
+Qe1
+Qc1
+|
+Qa1Xa///
+Qc2
+Qa2
+Qa1
+|
+Qc1Xa//
+Qc4
+Qd3
+Qb3
+|
+{^}
+|
+Qa3Xa/
+Qc4
+Qa4
+Qd3
+|
+Qa1a6
+Qd3
+Qa2Xd
+Qb3
+|
+Qd3a6
+Qc5
+Qa4

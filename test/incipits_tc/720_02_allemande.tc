@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_GM/02_allemande.}
+b1
+M(C)
+Ea2
+|
+Qa2c3c4Xa
+[[[
+a2
+c2uXa/
+]]]e2
+Qc1c2c3Xa//
+[[[c6
+a2
+c1
+]]]a1
+|
+[[[d6
+c4
+d3
+]]]c2
+E.b4a5
+Sa2
+Ec3,a5Xa
+[[[a3
+]]]c4
+Ec3
+[[[d3ua5Xa
+]]]a2
+|
+[[a3,Xa/
+]]a5
+Ea3
+[[[c3uXa///
+]]]b4
+Ec4uXa//
+[[[a3
+]]]c3
+E.c4,c5d6
+Sa3
+|
+{^}
+|
+Eb4,a5Xa///
+[[[c5
+]]]a5
+E.c4a5c6
+[[[[c3
+]]]]a3

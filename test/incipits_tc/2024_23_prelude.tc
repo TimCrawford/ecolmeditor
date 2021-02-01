@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Cosens_lute_book/orig_7-course/23_prelude.}
+|
+M(C/)
+Hd3
+[c3c4
+]c4
+|
+[a3a4
+]c3c5
+Qd3e5
+[[a2a4
+]]d3
+|
+Qc3c4
+[[a1
+]]d2
+Ec2d3
+[[[a2
+]]]c2
+[[d2a3
+]]c2
+|
+Ea2c3
+[[[a1
+]]]d2
+Ea2d3c4
+[[[c3
+]]]a3
+Ea2c3
+[[[c2
+]]]d2
+[[c2d3
+]]c3
+|
+Hf1c2e4
+[e1a2c4
+]a1d3e5
+|
+{^}
+|
+[[c1d3a4
+]]a2
+Qe1a2c4
+[[f1c2e4
+f3
+c2
+]]e2
+|
+[[e1a2c4
+d3
+a2c3

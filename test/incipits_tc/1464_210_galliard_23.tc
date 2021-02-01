@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_06/210_galliard_23.}
+|
+[[e3
+]]g3
+|
+Qd1d2e3d6
+[[f4
+]]f1
+Qd1
+|
+Qc1d2d3a4
+[[d1b3b4
+]]d2
+[[b2
+]]b4
+|
+Qc1d2d3a4
+[[Xa
+]]d1
+Qc1d2d3a4
+|
+[[d2e3b5
+]]d5
+[[a4
+]]c4
+[[b2d3d4
+]]b6
+|
+[[d2e3d4b5
+]]b2
+[[d2
+]]f2
+[[b1
+]]d2
+|
+[[d1d2e3
+]]f1
+[[d1
+]]g2d3
+[[f2f4
+]]d2d4
+|
+{^}
+|
+Qb2b3d5
+[[a5
+]]d2b5
+[[a1b2d5
+b1a4
+d1b3b4
+]]b2

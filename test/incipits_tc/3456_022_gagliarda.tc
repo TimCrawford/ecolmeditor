@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/doni_MS_1640/022_gagliarda.}
+|
+Qa1a2b3c4c5a6
+Qa1a2a3b4c5c6
+Qb2b3c4a6
+|
+Qc1b2d3Xa
+Qd1d2f3
+Qf1h2i3a4
+|
+Qh1i2i3a4
+Qf1i2i3Xa
+[[[h2
+i2
+f1
+]]]h1
+|
+Eh1i2i3X4
+[[[f2
+]]]h2
+[[[i2
+i3
+f3
+]]]i3
+Qf4
+|
+[[[d2X4
+b2
+a2
+]]]d3
+[[[b3
+a3
+c4
+]]]a4
+[[[d5
+c5
+a5
+]]]d6
+|
+{^}
+|
+[[[a1Xa///
+d2
+b2
+]]]a2
+[[[d3
+b3
+a3
+]]]c4

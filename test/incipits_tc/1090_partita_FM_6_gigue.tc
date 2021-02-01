@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/warsaw_2003_3/partita_FM/partita_FM_6_gigue.}
+|
+Ea1
+|
+[[h2Xa/
+f2
+]]a1
+Qh1#Xa//
+Eh4
+|
+[[a1Xa///
+h3
+]]a1
+Qa4a6
+Ea1
+|
+[[a1Xd
+c2
+]]a2
+[[d3d6
+a2
+]]b3
+|
+[[a3Xa/
+b3
+]]c4
+Qa4,
+Ee1
+|
+[[e1Xa/
+c1
+]]a1
+[[Xa
+f1
+]]e1Xa/
+|
+[[c1Xa//
+a1
+]]c2
+[[Xa/
+e1
+]]c1Xa//
+|
+{^}
+|
+[[d2Xa///
+c2
+]]a2
+[[Xa//
+c1
+]]d2Xa///

@@ -1,0 +1,71 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Anon/vienna_18761/suite_in_D_minor/03_Minuette.}
+|
+M(3)
+Qa2f3uXa///
+[[f3
+]]e3
+[[f3
+]]e3
+|
+Qa2f3ua5
+Qa1
+Qa3
+|
+Qb3a4Xa///
+[[b3
+]]a3
+[[b3
+]]a3
+|
+Qb3Xa
+Qa2
+Qc4Xa//
+|
+Qa3Xa/
+[[a4
+]]c4
+Qa3
+|
+Qc4uXa//
+Qc5
+Qc4
+|
+Qa4Xa///
+[[c4
+]]a4
+[[c5
+]]a5
+|
+H.a3e4c5a6
+:|
+|
+:||:
+Qc2a3a6
+[[a1
+]]c2
+[[a1a6
+]]c2
+|
+Qa2b5
+Qd3d5
+Qb3,a5
+|
+Qa3d5

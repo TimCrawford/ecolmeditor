@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Hirsch_lute_book_1595/35_prelude_anon.}
+|
+M(C/)
+Hd2d3d4f5
+Qd2e3f4
+Qd2e3f4
+|
+Qd2d3d4f5
+[[d3
+]]f3
+Qa1b2b3d5
+Qb1b2d3b6
+|
+Eb1d2b5
+[[[b3
+]]]d4
+Qd2e3f4
+Qb1b2d3a5
+[[a1d3
+]]d2
+|
+Ea1a2d3a6
+[[[c3
+]]]a3
+[[[d3
+]]]c3
+[[[[d3
+c3
+a3
+]]]]c3
+[[a1b2d3a5
+d2c5
+a1d5
+]]c1a4
+|
+{^}
+|
+Qe1f2f3c4
+[[d4
+]]f1d2d3
+Ef2f3c4
+[[[e1
+]]]c1
+[[[f1
+]]]e1
+[[[[f1
+e1
+c1
+]]]]e1

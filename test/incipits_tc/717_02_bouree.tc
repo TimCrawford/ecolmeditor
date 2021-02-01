@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_AM/02_bouree.}
+|
+Sa3
+[[[d4
+]]]a3
+|
+[[[e3a6
+a3
+d4
+]]]a3
+[[[c2Xa
+a3
+d4
+]]]a3
+|
+[[[e1Xa/
+a3
+d4
+]]]a3
+[[[c2X4
+a3
+d4
+]]]a3
+|
+[[[e2Xa///
+e1
+d1
+]]]e2
+[[[Xa//
+d4
+c2
+]]]a2
+|
+[[[e3a6
+a2
+e3
+]]]c3
+[[[a3
+e3
+c3d4Xa//
+]]]a2
+|
+{^}
+|
+[[[e3a6
+a3
+d4
+]]]a3
+[[[a2c6

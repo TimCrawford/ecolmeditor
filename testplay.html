@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Untitled</title>
+	<meta name="generator" content="BBEdit 9.6" />
+	<script>
+function MP3play(name) {
+	if (window.HTMLAudioElement) {
+		var snd = new Audio('');
+		if(snd.canPlayType('audio/ogg')) {
+			snd = new Audio('midis/' + name + '.ogg');
+		}
+		else if(snd.canPlayType('audio/mp3')) {
+			snd = new Audio('midis/' + name + '.mp3');
+		}
+		snd.play();
+	}
+	else {
+		alert('HTML5 Audio is not supported by your browser!');
+	}
+}
+</script>
+</head>
+<body>
+<a id="playbut" href="javascript:MP3play('trial')">Play</a>
+</body>
+</html>

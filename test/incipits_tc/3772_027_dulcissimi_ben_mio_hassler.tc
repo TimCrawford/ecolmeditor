@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/027_dulcissimi_ben_mio_hassler.}
+|
+M(C/)
+Qc1d2f3c5
+Q.f1c2d3e4
+Ef1d2d3e4f5
+[[d1f2f3c4
+]]a1a2f3f4
+|
+Qc1c2e3e4
+Ec1c2e3e4
+E.c1e2f3e4c5
+Sc1e2f3e4c5
+Ec1e2f3e4c5
+[[e1f2f3c4
+]]f1h2i3a4
+|
+Qf1f2h3h4
+[[h2i3h4f5
+]]f1h2i3f5
+[[d1f2f3c4
+]]c1d2f3c5
+Qc1c2e3e4
+|
+Hc1e2f3c5
+Qa6
+Qd1f2f3c4
+|
+Q.c1e2f3c5
+Ee1f2f3a6
+Ef1f2g3a5
+[[[a1d3c4d5
+]]]a1
+Qc1e2f3c5
+|
+Ec1a2b4c5
+E.a1a2c3a6
+Sa1a2c3a6
+Ea1a2c3a6
+[[a1c2d3a5
+]]d1d2f3d6
+Qc1d2d3Xa
+|
+{^}
+|
+[[d1d2f3d6
+d1d2f3d6
+c1d2d3Xa
+]]a1a2b3a6
+Qe2f3e4c5
+[[a1a2c3a6

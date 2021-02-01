@@ -1,0 +1,76 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa3Xa/// line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -5 2 -2 -2 -2)</bass_tuning></rules>}
+{ Qb3Xa line 6 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-9 6 -2 -5 2 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Anon/vienna_18761/suite_in_D_minor/04_Minuette.}
+|
+Qa3Xa///
+Qe1
+Qa3
+|
+Qb3Xa
+[[a2
+]]d3
+[[b3,Xa/
+]]a3
+|
+Qc4Xa//
+Qd3
+Qd3
+|
+Qa3,Xa/
+[[c4
+]]a3
+[[a4
+]]Xa//
+|
+Qa1d2Xa///
+Qc1
+Qc2a3e6
+|
+Qa1a2a5
+[[a3
+]]a1
+[[a3
+]]a1
+|
+Qc2ud6
+Qa3
+Qa2a4b6
+|
+H.e3,e4a6
+:||:
+Qd2Xa/
+Qe1
+Qa4
+|
+{^}
+|
+Qa4a6
+[[d3
+]]b3
+Qd3
+|
+Qc1a2b6
+Qf1a2Xa
+Qc4Xa//
+|
+Qc4X4

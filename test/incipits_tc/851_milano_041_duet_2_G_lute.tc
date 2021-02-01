@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Milano/milano_041_ricercar_seconda_duet/milano_041_duet_2_G_lute.}
+|
+M(C/)
+[[d2d3a4
+a1
+c1
+]]d1
+Qf1d2d3a4
+Qc1
+|
+Qf1
+[[a4
+]]d1
+[[c1a4
+a1
+d2a4
+]]c2
+|
+[[a2c4
+]]b3
+Qc4d5
+[[b3
+]]d1
+Qa1d5
+|
+Qd1
+[[d5
+]]c1
+[[a1
+d2
+b2
+]]a2
+|
+Qc1d2d3e4f5
+[[d2
+]]a1
+[[c1
+]]d1
+Qf1d2d3a4
+|
+{^}
+|
+Qa3
+[[a4
+]]c4
+[[a3
+]]b3
+Qc1d2d3a4
+|
+[[c4
+]]e1a2

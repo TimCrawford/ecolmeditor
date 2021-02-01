@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Rosseter/galliard_01.}
+|
+E.a1a2f4a6
+Sh1
+E.f1a5
+Sd1
+[[[c1c5
+]]]a1
+Ec1
+|
+Qa1a2c3c4a6
+E.h1a2a4d6
+Sl1
+|
+E.f1a3a4
+Sh1
+[[d1f2d5
+]]f1a5
+Qc1e2f3c5
+|
+{^}
+|
+E.d1a2a4d6
+Sc1
+[[[a1d5
+d1
+c1a5
+]]]a1
+[[[e2c5
+a1
+c1a4
+]]]d1
+|
+[[[f1
+d5
+c5
+]]]a5
+E.h1d6
+Sa2
+[[f1a5
+]]c1e2c5
+|
+[[d1f2a6
+]]a1c2a5
+[[e2a3c5
+]]a1
+Qc1b4
+|
+E.a1a2c4a6
+Sh1

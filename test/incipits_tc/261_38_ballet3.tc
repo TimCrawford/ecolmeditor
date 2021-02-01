@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Wa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wa5Xa/// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Ballard/38_ballet3.}
+|
+Wa4Xa
+Wa5Xa///
+||
+M(C/)
+Hb1d2d3a4
+Ha1b2d3a5
+|
+Hd2e3d4b5
+Hb2d3d4b6
+|
+Qe3f4f5d6
+[[d3
+]]f4
+[[d3a4Xa
+]]d5
+Qd2b5
+|
+Qc2d3c4a5
+[[d3c4
+]]d6
+Qd2d3b6
+[[a1a2b3a6
+]]c2
+|
+Qb1d2d3Xa
+[[a1a4
+]]d2
+[[c2a5
+]]d3
+Qd2
+|
+Qd2d3a4Xa
+Qa5
+Ha4
+|
+{^}
+|
+Qb1d2d3a4
+[[a1
+]]d2
+Qa1b2d3
+Qa5
+|
+[[d2d4b5
+d5
+a4
+]]c4
+Qb2d3d4
+Qb6
+|
+[[d6
+e3f4

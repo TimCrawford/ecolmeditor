@@ -1,0 +1,58 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Baron/suite_FM/08_gigue.}
+Ed3
+|
+[[Xa/
+d2
+]]a1
+[[Xa
+d2
+]]a1
+Ea1a6
+[[[h1
+]]]f1
+[[[h2
+]]]f2
+[[a1
+h3
+]]a1
+|
+[[Xa/
+d2
+]]a1
+[[Xa
+d2
+]]a1
+[[a1a6
+h1
+]]f1
+[[h2
+f2
+]]a1
+[[h3
+]]a1
+|
+{^}
+|
+Ek1X5
+[[[i3
+]]]h3
+Ei3
+[[k1
+h1
+]]i2
+Eh1
+[[[i3
+]]]h3
+Ei3

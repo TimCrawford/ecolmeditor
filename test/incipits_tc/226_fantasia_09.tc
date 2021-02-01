@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bakfark/fantasia_09.}
+|
+M(C/)
+Qc1
+[[c1
+]]d1
+Qf1
+Qd2
+|
+Qa1
+Qc1
+[[a2f3
+c2
+d2f3
+]]a1c2
+|
+Qc1d2
+Qa1b3
+Qd3
+Qe2f3
+|
+[[d1a2c4
+a3
+a2b3
+]]c2d3
+[[c1d2f3
+]]e3
+Qa1f3f4
+|
+Qc1f2d3
+Qc1e2f3
+Qh1i2h5
+Qk1h4
+|
+{^}
+|
+Qf1h2i3e4
+[[e4
+]]f4
+Qf1f2h3h4
+[[d1d2f3a4
+]]c1
+|
+Ed1a2c4
+[[[c2
+]]]a2
+[[c1c2e4
+]]e3
+[[d2f3e4c5
+a5
+]]d2a4c5

@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ c5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -3 0 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -3 -2 0 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/Danzig_lute_book_1621/018_galliard_anon.}
+|
+c5Xa/
+a5Xa//
+||
+Q.c4
+Ea3
+Hb3a6
+Hd3c6
+|
+Ha2b3d6
+Qa4
+Qc2
+Qd2a3c5
+QXa/
+|
+Ha1a2b3a6
+Qa1a2b3
+Qe2a3c5
+QXa/
+Qc1
+|
+Ha1a2b3a6
+Qc4
+Qc1
+Qd1a2
+Qc2
+|
+Q.d2a3c5
+Ea1
+Qc1
+Qa3
+Qa1b3
+Qd2
+|
+Q.c2d3a5
+Ed2
+Qa1c6
+Qc1
+Qa1d6
+Qd2
+|
+{^}
+|
+Qc2a6
+Qa2
+Qe3c6
+Qe4
+Hf3
+|
+Ha2a3b4c5
+QXa/

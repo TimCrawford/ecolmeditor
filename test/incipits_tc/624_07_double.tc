@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Gumprecht/suite_Dm/07_double.}
+|
+[[a2f3
+]]a2
+[[e3
+]]a2
+[[a5
+]]c5
+|
+[[d5
+]]c4
+[[a3
+]]a2
+[[c4
+]]c2
+|
+[[c2e4
+]]d2
+[[c2,
+]]a2
+[[e3a6
+]]c4
+|
+{^}
+|
+[[a2a5
+]]c5
+[[d5
+]]a5
+[[c5
+]]d3
+|
+[[d3a4
+]]a1
+[[c1
+]]e1
+[[c4
+]]c1
+|
+[[c1e4
+]]c2
+[[e1
+]]c1
+[[a1f3
+]]d3
+|
+Ea1b3
+[[[b3
+]]]a3
+[[c4

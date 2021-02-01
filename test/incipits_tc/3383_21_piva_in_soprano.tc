@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/de_Bellis_MS_1615/21_piva_in_soprano.}
+|
+[[d3
+d2
+]]a1
+|
+[[c1Xa
+a5
+]]a4
+[[f1Xa
+a5
+]]a4
+|
+[[a1a5
+c4
+]]d3
+[[a1a5
+c4
+]]d3
+|
+[[c1Xa
+a5
+]]a4
+[[a1a5
+c4
+]]d3
+|
+[[d2Xa
+a5
+]]a4
+[[Xa
+a4
+]]c4
+|
+[[a3a4Xa
+a5
+]]a4
+[[d3a4Xa
+a5
+]]a4
+|
+{^}
+|
+[[c4a5
+Xa///
+]]c4
+[[d3
+d3a4
+]]b3
+|
+Ea3Xa

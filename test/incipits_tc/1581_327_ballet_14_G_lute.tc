@@ -1,0 +1,58 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_08/327_ballet_14_G_lute.}
+|
+a4Xa
+a5Xa/
+||
+M(C/)
+E.b1d2d3a4
+Sa1
+Ed2
+Sc2d3c4a5
+[[[[a2
+]]]]c2
+:||:
+Ed2
+[[[a4
+]]]c2
+[[[d2
+a1
+b1
+]]]d1
+[[[f1a4
+g2
+g1
+]]]f1
+[[[d1d5
+]]]g2
+Sf2f4
+[[[[d2
+]]]]f2
+|
+[[g2
+]]d4
+QXd
+Ed4Xa
+[[[f4
+]]]d4
+[[[c4
+]]]a4
+Sc4e5
+[[[[d4
+]]]]c4
+|
+{^}
+|
+Ea4
+[[[Xa
+]]]a4
+[[[c4

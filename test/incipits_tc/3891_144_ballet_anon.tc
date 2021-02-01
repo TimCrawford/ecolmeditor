@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/144_ballet_anon.}
+|
+M(C/)
+[[c1
+]]d1
+:||:
+Qf1d2a3a4
+[[Xa
+]]d1
+[[c1a4
+d1
+a1a5
+]]c1
+|
+Qd2a3c5
+[[c2
+]]a2
+[[c2c6
+d2
+a1
+]]c2
+|
+Qd2a3c5
+Qa1e5
+Qc1a4
+[[a1c4
+]]d2
+|
+Hc2d3c4a5
+QXa//
+[[a1
+]]d2
+|
+[[c2d3a5
+d2
+a2d6
+]]c2
+[[d3c6
+a2
+b3a6
+]]d3
+|
+{^}
+|
+Qa3a4Xa
+Qc1a4
+[[a1e5
+c1
+d2c5
+]]a1

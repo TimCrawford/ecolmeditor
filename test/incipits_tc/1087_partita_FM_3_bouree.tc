@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/warsaw_2003_3/partita_FM/partita_FM_3_bouree.}
+|
+M(C)
+Qh1
+|
+[[h1Xa/
+f1
+h2
+]]h1
+Qa1
+Qh3Xa
+|
+Qa1a6
+[[h3
+]]a1
+Qh4
+Qa1a6
+|
+Qf1a2Xa
+Qf1a2Xa/
+Qf1d3Xa//
+[[X4
+]]f1
+|
+Qe1,Xa/
+[[f2
+]]e1
+Qd2,
+Qe1a3Xa/
+|
+Qc1,Xa//
+[[c3
+]]c1
+[[d3
+c1
+e1
+]]c1
+|
+{^}
+|
+Qa1,Xa///
+[[a3
+]]a1
+[[c3
+a1
+c1
+]]a1
+|
+Qc2,X4
+[[c4
+]]c2
+[[a3

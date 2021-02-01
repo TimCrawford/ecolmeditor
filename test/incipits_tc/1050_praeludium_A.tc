@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/van_den_Hove/schele_lute_book_1619/praeludium_A.}
+|
+M(C/)
+Hc1c2d3c6
+Qe4
+Qe1
+|
+[[f1c2e4
+e1
+c1
+]]f1
+[[e1c2d4
+e4
+c3
+]]d4
+|
+[[c1c2d3e4
+c3
+d3
+]]f3
+[[c1c2d3e4
+c4
+a4
+]]e5
+|
+Qc1c2a3a4
+[[a2
+]]d3
+[[c1a2a4
+d3
+a3
+]]c3
+|
+Qc1d3e5
+[[c3
+]]a3
+[[c3e5
+e4
+c3
+]]d4
+|
+{^}
+|
+Qd3e4c6
+Qc2
+Qc2d3e4
+Qd3e4
+|
+Qa3a4
+Qc1
+Qc1d2a3c5

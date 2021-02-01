@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/doni_MS_1640/007_barriera.}
+|
+M(C/)
+[[f1d2a3a4
+f1
+f1
+]]f1
+Qf1d2a3a4
+Qh1a2f4
+|
+[[f1d2a3a4
+f1
+f1
+]]f1
+Qf1d2a3a4
+Qd1a2c4
+|
+[[c1d2d3a4
+d1
+c1
+]]d2c5
+[[a1d5
+d2
+a1a4
+]]c1
+|
+Qd1a2b3
+Qa4
+Qc5
+Qd6
+|
+[[l1a2X4
+l1
+l1
+]]l1
+Ql1X4
+Qi1Xa///
+|
+{^}
+|
+[[h1Xa//
+f1
+i2
+]]h2
+Ef1Xa/
+[[[f1
+]]]h1
+[[i1
+]]h1
+|
+[[f1Xa

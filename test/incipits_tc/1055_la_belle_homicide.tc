@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/VGaultier/la_belle_homicide.}
+|
+Qd3
+|
+Qd3a6
+Qe4
+Qc2
+|
+Qc2Xa
+[[Xa/
+]]a3
+[[c2
+]]a2
+|
+[[Xa//
+]]c2
+Ea2,
+[[[d3
+]]]a2
+[[c2
+]]a3
+|
+[[d4
+]]a3
+[[c3
+]]a2
+[[e4
+]]d3
+|
+{^}
+|
+Qc3,
+Q.Xa//
+Ea5,
+|
+[[d6
+]]c2
+[[e2
+]]c6
+Qd1
+|
+Qe1ua5
+Qc2
+Qe2
+|
+Qc1c6
+Qd6
+Ee2,a5
+[[[c1
+]]]e2
+|
+Qc1Xa
+Qa2

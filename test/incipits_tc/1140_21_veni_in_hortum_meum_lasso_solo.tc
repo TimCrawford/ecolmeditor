@@ -1,0 +1,53 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Adriaenssen/pratum_musicum_1584/21_veni_in_hortum_meum_lasso/21_veni_in_hortum_meum_lasso_solo.}
+|
+M(C/)
+Hc4
+[[[a2c4
+b4
+c4
+]]]a3
+[[[c4
+]]]a3
+[[[[b3
+a3
+b3
+]]]]d3
+|
+Qa2c4
+Qb3
+S.a2c4
+Tc2
+S.d2
+Tc2
+S.a2
+Td3
+S.b3
+Ta3
+|
+{^}
+|
+Ta2c4
+S.a3
+Tb3
+S.a3
+Tc4
+S.a4
+Td5
+S.c5
+Sb2d3c4a5
+[[[[a2
+]]]]b2
+[[[[d2
+b2
+a2
+]]]]b2
+[[[[d2
+b2
+a2
+]]]]b2

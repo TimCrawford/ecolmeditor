@@ -1,0 +1,68 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/minuet_in_D.}
+|
+Qc2d3c4a5
+[[d2
+]]c2
+[[a2
+]]c2
+|
+Qd3
+Ha1a2e6
+|
+Hc2d3c4a5
+[[c2a3a4
+]]d2
+|
+Ha2c3c4
+Qa2a6
+|
+{^}
+|
+Qc2d3c4a5
+[[d2
+]]c2
+[[a2
+]]c2
+|
+Qd3
+Ha1a2e6
+|
+Q.c2d3c4a5
+Ec2
+[[c2a3a4
+]]d2
+|
+H.a2c3c4a6
+:||:
+Qa2c3a6
+[[a2c3
+]]c2d3
+Qd2f3e6
+|
+{^}
+|
+Qc2d3c4a5
+[[e5
+]]a4
+Qc4
+|
+[[a2a3a4
+]]c2
+[[d2
+]]c2
+[[a2b4
+]]d3
+|
+Qc3c4

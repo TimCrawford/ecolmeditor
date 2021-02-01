@@ -1,0 +1,67 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa2Xd line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-8 5 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Qa2Xd line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-8 5 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Baron/sonnetto_primero_grado/03_minuet.}
+[[a1
+]]b2
+|
+Qa2Xd
+Qa2Xd
+[[a2Xa/
+]]d3
+|
+Qb3Xa
+[[b3
+]]Xa/
+[[c1Xa//
+]]d2Xa///
+|
+Qb2X4
+[[b2d6
+]]a2
+[[d3Xa//
+]]b3
+|
+Qa3Xa/
+[[a4Xa/
+]]Xa
+[[d2a6
+]]b2
+|
+Qa2Xd
+Qa2Xd
+[[a2Xa/
+]]d3
+|
+{^}
+|
+Qb3Xa
+Qb3Xa
+[[b3Xa///
+]]a3
+|
+[[c4Xa//
+]]c1
+[[b2
+]]d3
+[[a4Xa/
+]]a3
+|
+Qb3a4
+QX5
+:||:
+[[a1
+]]b2

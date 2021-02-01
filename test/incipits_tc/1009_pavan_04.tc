@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Ea4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ d5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ c5Xa// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa/// line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/RJohnson/pavan_04.}
+|
+Ea4Xa
+d5Xa/
+c5Xa//
+a5Xa///
+||
+M(C)
+Q.b2d3c4a5
+Ea2
+Qd3c4d5
+[[c3a4c5
+]]c4
+|
+Qd3d4a5
+[[Xa///
+]]b3c4
+[[d4f6Xa///
+]]f5
+Ed4f5
+[[[e5
+]]]c5
+|
+[[c4d5Xa///
+]]a5
+[[d3
+]]c5
+Qc3d5a6
+[[d3c5
+]]a5
+|
+{^}
+|
+Ea2d3c5a6
+[[[c3
+]]]a3
+[[a2b3
+]]Xa
+|
+Qb2b3c4Xa/
+[[d1
+]]b1
+[[a1b2d5
+]]c5
+[[a1b2d3a5
+]]d6
+|
+Qb1d3b6
+[[b1
+]]d1b3a6
+[[f1d4Xa

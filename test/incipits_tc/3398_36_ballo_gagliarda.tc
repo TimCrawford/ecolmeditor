@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/de_Bellis_MS_1615/36_ballo_gagliarda.}
+|
+[[c2
+d2
+]]a1
+|
+Qc1d2d3a4
+[[Xa
+]]d1
+Qc1d2d3a4
+Qd2c5
+Qa1d5
+Qc1ua4
+|
+Qd1
+Qd6
+Qd1a2
+Qd3c6
+Qa2d6
+Qc2ua5
+|
+Qd2a4
+[[Xa
+]]a1
+Qc1ua4
+Qa1e5
+Qd2c5
+Qa1d6
+|
+Qc2ua5
+[[Xa///
+]]d2
+[[c2
+]]a2
+Qc2ua5
+[[Xa///
+d3
+a2
+]]c2
+|
+{^}
+|
+Qd2a4
+[[Xa
+]]c2
+[[d2
+a1
+c1a4
+]]d1

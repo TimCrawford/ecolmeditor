@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/siena_ms_1590/093_fantasia_anon.}
+|
+M(C/)
+Ha1
+Qf1
+[[d3
+]]e1
+|
+[[c1d2
+e1
+f1
+]]c2
+[[a2
+]]d3
+Qe1a2
+|
+[[c1
+d3
+a1c3
+]]a3
+[[c3
+]]d2
+Qc2d3
+|
+[[a2c4
+d3
+c3
+]]c2
+Qd2d3e4
+[[c2
+]]c3
+|
+[[c2a3
+c4
+d2a3
+]]c2
+[[c2d3e4
+a2
+c2d3
+]]e2
+|
+{^}
+|
+[[a1a2a6
+d3
+c3
+]]d2
+Qc2a3a5
+[[c4
+]]e6

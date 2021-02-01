@@ -1,0 +1,69 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Gumprecht/suite_Dm/01_courante.}
+|
+Qa2
+|
+H.a2a3a4Xa///
+|
+Qc2d6
+Qa1b6/
+[[a2
+]]c1
+|
+Qe1a6
+Qe3
+[[c1
+]]a1
+|
+Q.c2e3e4
+Ec4
+Qa2a3a4
+|
+{^}
+|
+Qd3c4c5
+[[c4
+]]a3
+Qb3a5
+|
+Qa3d6
+Q.c4,Xd
+[[[a3
+]]]c3
+|
+[[a3
+]]d6
+[[a4
+]]d3
+E.b3,Xd
+Sa3
+|
+Qc4c5d6
+Q.X4
+Ea3
+|
+Q.a3d5Xa/
+Ea3
+[[c3Xa//
+]]e3
+|
+{^}
+|
+Qa2Xa///
+Q.a2,Xd
+[[[e3
+]]]a2
+|
+Qc2
+Qa6

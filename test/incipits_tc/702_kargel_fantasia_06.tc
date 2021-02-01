@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Kargel/kargel_fantasia_06.}
+|
+M(C/)
+Hh1
+Qi1
+Qf1
+|
+Hh1
+Qf3
+Qh1
+|
+Qd1g3
+Qf1d3
+Ec1a2
+[[[a1
+]]]c1
+Qd1
+|
+[[c5
+]]a1
+Qc1a2
+[[b3d5
+]]a2
+Qa1d3a5
+|
+Ef3e4c5
+[[[e2
+]]]c2
+[[[e2
+c2
+e2
+]]]f2
+Qe2
+Qf3c5
+|
+Qb3d5
+Qd3a5
+Ea3c5
+[[[c4
+]]]a3
+Qb3
+|
+{^}
+|
+[[d6
+]]a3
+Qc4a5
+[[[a3c6
+b4
+c4
+]]]b4

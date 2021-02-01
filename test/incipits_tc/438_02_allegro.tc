@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Daube/sonata_AM/02_allegro.}
+b1
+[[a6
+]]c3
+Qe3
+Qe3
+|
+[[e3a6
+]]a2,
+Qc2
+Qc2e3
+|
+[[[a5
+e2
+c2
+]]]a2
+[[e6
+]]c2
+[[a3
+]]a2c6
+|
+[[e3a6
+]]c3Xa
+Qe3a6
+Qc3,Xa//
+|
+[[a6
+]]e3
+[[e2
+]]e1
+[[e2
+]]e3
+|
+{^}
+|
+[[a6
+]]b1
+[[b2
+]]b1
+[[c3
+]]b2
+|
+EXa
+[[[c2
+]]]b2
+[[c2
+]]a6
+[[c6
+]]b2a3

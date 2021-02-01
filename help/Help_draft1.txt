@@ -1,0 +1,103 @@
+Electronic Corpus of Lute Music (ECOLM) [logo]
+Funded by the Arts & Humanities Research Council [AHRC logo] under the project: "ECOLM III: Opening historical music resources to the world's online researchers", a partnership between Goldsmiths College [logo], the British Library [logo] and the UK Lute Society [logo or link]
+
+Instructions for using the ECOLM online correction interface (ECOLM-OCI?)
+
+First some general points.
+
+In this Error-Correction phase of the ECOLM project, we aim to produce encoded tablature systems that represent as exactly as possible the appearance of the original tablature, <b>including all printing errors, musical errors and other unusual features</b>. That is, the task here is to correct errors in the optical tablature-recognition system (largely due to poor printing quality or photography, or damage to the original books) to achieve 'diplomatic' copies of the original print. For that reason, do not rely solely on the evidence of your ears when using MIDI playback - very frequently the prints contain 'wrong' notes that must be printing errors, as well as unexpected notes according to what we might think we understand of 16th-century music theory. These must not be altered at this stage, otherwise they will become confused with optical recognition errors.
+
+A secondary, later, ECOLM editing phase will collate the corrected systems (each will be corrected by two online editors to ensure accuracy) and produce musically-coherent versions of complete pieces to be entered into the public ECOLM database with metadata giving titles, composers and other bibliographical and historical information. At that point the music will automatically become available for other processes, such as searching, comparison with vocal models, other forms of analysis, and printing.
+
+Registration
+
+It should tell you if your web-browser is suitable and properly set up to use the online correction interface effectively. If not, try downloading Firefox or Chrome.
+
+Login Page
+
+Editor
+
+[Describe page layout]
+
+If all goes well, you will be presented with a randomly-selected system of tablature to be corrected. 
+
+An image of the system from the original source (called 'image', below) is shown in parallel with a rendering of the automatically-encoded, 'raw' (uncorrected) tablature (called 'tablature' below).
+
+Reviewing your Assignments
+
+Click on 'View previous assignments' and use the navigation buttons which then appear to review your assigned [allocated? which?] systems and their current state.
+
+MIDI Playback
+
+At any point (if your browser, operating system and computer combination allows) you can use the Playback buttons to hear the music at various speeds; the 'Stop' button instantly stops playback, which always resumes from the start of the system.
+
+Editing the Tablature
+
+As you move the mouse over the tablature (without clicking) the various symbols will be highlighted [illus of highlighted note and flag]; an empty location within an existing chord where a symbol may be added will be highlighted with a red rounded rectangle [illus]; between chords, or immediately before the first chord, or immediately after the last, this becomes a small grey 'insertion' rectangle [illus].
+
+If the mouse is clicked on a highlighted symbol, a palette of buttons opens up, appropriate to the actions you can then perform (always including 'Cancel', which simply closes the palette without changing anything).
+
+Any editing action, or sequence of actions, you perform can be reversed by clicking 'Undo' in the editor window. You can reverse the entire sequence of editing actions you have done on this system by clicking 'Revert', which returns the encoded tablature to its original, raw state, and you will have to re-enter any corrections you wish to preserve. (Use with care!)
+
+On clicking on a highlighted symbol, the editing actions you can perform depend on its type:
+
+If the highlighted symbol is a rhythm flag, you can:
+
+select a new value;
+add/remove a dot (as appropriate);
+change the notation from flags to beams (or vice versa);
+delete the rhythm flag;
+delete the entire chord (Use with care!)
+
+If the highlighted symbol is a barline, you can:
+
+select a new barline-type;
+delete the barline
+
+If the highlighted symbol is a tablature letter/number, you can:
+
+change its letter/number;
+move the symbol up or down a string (if there is space to do so) using the arrow-buttons;
+move the same note (same pitch) to another string preserving its pitch (if this is possible) using the special combined note-arrow button;
+add an ornament or fingering sign (see 'Tenuto signs', below);
+delete the note altogether (including any ornaments, etc.);
+delete the entire chord (Use with care!)
+
+On clicking in a suitable empty space within an existing 'chord' (red highlight rectangle), you can add:
+
+a tablature symbol - a note or rhythm-sign depending on where you clicked - chosen from the palette
+a 'star' (*) symbol (or Tenuto sign) which may then be changed to another shape by clicking again on it
+
+On clicking in the space between chords (grey rectangle) you are given a choice:
+
+'Add Chord' - you will be shown a palette from which to choose the tablature symbol to be added at this point
+'Add Barline' - you will be shown a palette from which to choose a barline type to be inserted
+'Cancel' - closes the palette
+
+Automatic Updating and Saving of Corrections
+
+If you are online when editing, your browser will connect with the ECOLM system via the broadband connection and automatically save all changes you make to the server. If the connection is broken, you can continue to edit, but if you don't close the window [SYSTEM? PAGE? BROWSER?] in the meantime, the changes will be saved when you reconnect. This updating procedure may take a second or two (depending on your internet connection and the network traffic), and is indicated by the green circle at the bottom right of your browser winder turning red; when it returns to green, your changes have been saved to the ECOLM database.  [DOES THIS NEED MORE CLARIFICATION?]
+
+Beneath the tablature is a row of buttons which enable other actions:
+
+Add Message
+
+This allows you to attach a message to the system that has been allocated to you and that you are currently working on (whether you have done any corrections or not). You are offered a list of generic message-types which are helpful for the project team in analysing the issues surrounding tablature recognition, the correction interface, or the allocation of systems for correction. Without this feedback the team would have to make informed guesses about the nature of any difficulties you might encounter. Having selected a message-type (the first option "-- --" indicates a non-specific or unlisted type), type your message in the text box below. Please be as explicit and clear as you can about any problems you encounter. Clicking 'OK' will enter your message, attached to the allocated system, for later perusal by the project team.
+
+NB Please do not try to use this message mechanism as a 'helpline', or for personal or time-sensitive messages. These messages will be plainly visible to the whole project team (though not, in general, to other correctors), and they are simply stored in the ECOLM database until they are reviewed by the project team; they are unlikely to be read soon after entry.
+
+View changes [not yet working]
+
+The tablature is displayed with your corrections highlighted in an intuitive way.
+
+Submit Corrections
+
+Click on this button only when you are sure that you have completed corrections on the allocated tablature system. (However, you can return to a previously-submitted system and edit it further. See 'Reviewing your Assignments', above.)
+
+When you click this button, you will immediately be presented with a new, randomly-selected system for correction. Note that the allocation time of a system is dispolayed at the top of the editing area.
+
+Page Thumbnail and Zoom Page
+
+At the bottom right of the editing window a 'thumbnail' view of the original source-page is displayed, with the allocated system highlighted. If you move the mouse over the thumbnail, a greatly-enlarged image of the detail of the page under the mouse pointer is displayed on the left. Using this may give a better idea of the page-context for a system. [PLEASE LET US KNOW IF THIS IS HELPFUL]
+
+Show/Hide TabCode

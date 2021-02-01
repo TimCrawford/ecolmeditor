@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/099_fairy_round_galliard_holborne.}
+|
+Qh1f2g4a6
+[[e1a2c4
+]]a1
+[[d3
+]]c2
+|
+Qc1c2d3e4
+[[e2a3c5
+]]a2
+[[c4e6
+]]a1
+|
+Qc2d3a5
+[[d3c6
+]]c1
+[[[c5
+]]]a1
+Ee2a3
+|
+E.a1a2c3a6
+Sd2
+[[c2d3a5
+]]a2c3a6
+[[c4
+]]e1
+|
+E.c1a2b4
+Sd3
+Ea1a2c3c4
+E.e2a3c5
+Sa5
+Ea1a2c4e6
+|
+Qf1c2d3c6
+Ee1a2c4a6
+E.c1c2d3a5
+Sa3
+Ea1a2c4a6
+|
+{^}
+|
+[[e2a3c5
+]]a2
+[[a1c4e6
+]]a6
+[[f2e4c5
+]]e2
+|
+Qa1a2c3a6

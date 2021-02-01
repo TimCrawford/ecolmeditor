@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Spinacino/ricercar_02.}
+|
+M(C/)
+Qc5
+[[[d5
+c5
+a5
+]]]c5
+[[d6
+a5
+c5
+]]d6
+|
+[[d5
+c5
+a5
+]]d6
+[[c6
+]]a6
+Qc6
+|
+{^}
+|
+[[a2a6
+c6
+d6
+]]a5
+[a2c5
+]d3e5
+|
+Ea2a4
+[[[a6
+]]]c6
+[[[d6
+a5
+c5
+]]]e5
+Ef5
+[[[e4
+]]]c4
+[[[b4
+c4
+e4
+]]]b4
+|
+[[a2c4
+a3
+b3
+]]d3

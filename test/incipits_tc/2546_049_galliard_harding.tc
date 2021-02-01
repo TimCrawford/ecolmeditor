@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/049_galliard_harding.}
+|
+E.a1b2b3c4d5
+Sa4
+[[a1a2c4
+]]f1d3d5
+[[f1c4
+]]e1
+|
+E.f1d3c4a5
+Sc5
+[[d5
+]]a5
+[[a1b2b3c4d5
+]]c1
+|
+Qd1a2a4d6
+[[b1b2d3a5
+]]a1
+[[f1f2d4
+]]d2
+|
+Qe1f2f3a6
+Hc4
+|
+{^}
+|
+E.a1a2b3c4
+Sd4
+[[d2f3f4
+]]b2c4
+[[d2g3f4
+]]f3
+|
+[[a1d5
+]]d3
+[[c1a4
+]]a2
+[[d1c4
+]]b2
+|
+[[f1d4
+]]d2
+[[h1a2g4a6
+]]h4
+[[h1a2a6
+]]g4
+|
+Qf1f2h3a5
+Hd3#
+:||:

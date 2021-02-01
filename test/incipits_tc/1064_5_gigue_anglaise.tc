@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/suite_Cm/5_gigue_anglaise.}
+|
+:||:
+E.b2,a5
+Sa2
+Ed3
+E.a1
+Sf4
+Ef1d4
+|
+E.e1,a6
+Sf1
+Eh1
+E.a1
+Sa4
+Ec4
+|
+E.d5
+Sa1
+Ef1
+Qf1c5
+Ee1c4
+|
+Qf1a5
+Ef1
+E.f1d3
+Sa1b3
+Ec1a3
+|
+{^}
+|
+Qd1c4
+Ed1
+E.d1c2d3a5
+Sb1
+Ea1
+|
+[[b1d2d3a4
+]]a1
+[[d2
+]]b2d3
+[[a2,
+]]d3
+|
+E.a1b2a5
+Sa5
+Ed6
+E.b6
+Sa1
+Ed2,

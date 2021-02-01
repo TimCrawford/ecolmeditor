@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Hirsch_lute_book_1595/01_pavane_frag_anon.}
+|
+M(C/)
+[[b1d3a4
+]]d1
+Ea1c2d3a5
+[[[a1c2d3
+]]]d6
+Ef1b2d4b6
+[[[f1
+]]]d1
+|
+Eb1d2e3b5
+[[[b1d2e3
+]]]a5
+Eg1d2f4d6
+[[[g1
+]]]f1
+Ed1f2g3d5
+[[[d1f2g3
+]]]b5
+Ei1a5
+[[[i1
+]]]g1
+|
+[[f1g2d4
+d1f2d5
+b1d3a4
+]]a1c2d3a5
+Ed1d2e3d6
+[[[b1
+]]]d3
+[[[a1
+b3
+d2
+]]]d4
+|
+{^}
+|
+[[[c2c4
+a5
+d2d4
+]]]a4
+[[[a5
+d2c4
+c2
+]]]b3
+Ed2d3a4

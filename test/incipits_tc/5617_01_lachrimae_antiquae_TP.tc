@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/rdowland_lachrimae/01_lachrimae_antiquae/01_lachrimae_antiquae_TP.}
+|
+Hc1c2d3c6
+Qe4
+[[f2c3
+]]d2
+Hc2d3e4c6
+[f1
+]c2
+|
+Qa3a4
+[[a2
+]]d3
+[e1a2
+]c1
+Hg2h3g4e5
+HXa/
+|
+Hc1c2d3c6
+[c2
+]c6
+[d3c4a5
+c2
+a1
+]a1c2d3c4a5
+|
+[c2f3c5
+d3
+a2c3a4
+]a3
+Q.c2c3e4e5
+Ee4
+[d4Xa/
+]e1
+|
+Hf1e4c6
+[c1c2d3
+]e4
+He1a2c4
+Hg2h3g4e5
+|
+{^}
+|
+[c1a3a4
+]f1
+[[a2
+]]e1
+Qc1
+Hg2h3g4e5

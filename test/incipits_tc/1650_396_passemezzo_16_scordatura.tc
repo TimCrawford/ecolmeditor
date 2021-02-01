@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ f5Xa line 7 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_10/396_passemezzo_16_scordatura.}
+|
+a1f2
+a2e3
+a3f4
+a4h5
+a5f6
+f5Xa
+||
+M(C/)
+[[a4
+a3
+]]c3
+|
+[[[d3a5
+]]]b2
+Ed2
+[[b2c3d4
+]]d3f4
+[[c3a4
+]]d1b2b4
+[[[f1f5
+]]]d1
+Ec1d2c3a4
+|
+E.d1a2a3a4a5
+Sc3
+[[[d3a5
+]]]b2
+Ec1d2c3a4
+[[[d1f6
+f1
+g1
+]]]c5
+[[b1d2d5
+]]d1f2f5
+|
+{^}
+|
+[[f1g2f3d6
+g2
+f2f3
+]]d2d3
+Eb2c3d4
+[[[d2d5
+]]]c5
+[[[[d3a5
+c3
+a3

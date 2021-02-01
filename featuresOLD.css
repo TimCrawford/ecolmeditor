@@ -1,0 +1,21 @@
+rect.red {
+  fill: red;
+}
+line.red {
+  stroke: red;
+}
+rect.blue {
+  fill: blue;
+}
+line.blue {
+  stroke: blue;
+}
+rect.gray {
+  fill: gray;
+}
+line.gray {
+  stroke: gray;
+}
+.simpleGraphLine{
+  stroke-width: 3px;
+}

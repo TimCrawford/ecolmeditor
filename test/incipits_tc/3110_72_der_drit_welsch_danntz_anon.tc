@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/D-Mbs_bayrische_staatsbibliothek/mus_ms_1512/72_der_drit_welsch_danntz_anon.}
+|
+Qd2a4
+|
+Q.c1d3a4
+Ed1
+Qc1d3a4
+|
+Qc1d3a4
+[[[a1
+d2
+c2
+]]]a2
+[[[c2
+d2
+a1
+]]]c1
+|
+Q.d1a2d6
+Ed1a2
+Qd6
+|
+Qd1a2d6
+[[[f1
+d1
+c1
+]]]a1
+Qc1d3a4
+|
+[[a1b3d5
+a3
+b3
+]]d3
+Qd2a3c5
+|
+Qd2c4a5
+[[[a1
+d2
+c2
+]]]a2
+Qc2c4a5
+|
+{^}
+|
+Qd2a3a4
+[[[c2
+a2
+d3
+]]]b3
+[[a3
+]]c4

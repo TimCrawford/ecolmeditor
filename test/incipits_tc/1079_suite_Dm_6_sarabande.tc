@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa2Xa/ line 6 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -3 0 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_6_sarabande.}
+|
+Qa2a3Xa///
+Q.e3,f5Xa//
+Ea2
+|
+Qa2Xa/
+Qa3
+Qf1a2Xa
+|
+Qf1e3a6
+Qe1
+[[f2
+]]e1
+|
+Qd2,a5
+[[c2
+a1
+c2
+]]a2
+|
+Qf1
+Qf1d2Xa///
+Qe1c2X4
+|
+{^}
+|
+Qa2X5
+Qc1
+Qa1d3a6
+|
+Qb3Xa
+Qc2
+Qa2a3Xa/
+|
+[[e3c4Xa//
+]]a2
+Q.a2,Xa///
+[[[e3
+]]]a2
+|
+Qc2ua6
+[[a3
+Xa
+Xa/
+]]Xa//
+:||:
+Qa2a3Xa///
+[[e1
+a1
+a2
+]]d3

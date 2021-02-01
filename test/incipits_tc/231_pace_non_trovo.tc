@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bakfark/pace_non_trovo.}
+|
+M(C/)
+[[[a2c3c4
+a3
+c3
+]]]d3
+[[[a2
+c3
+d3
+]]]a2
+Qc2e3c4e5
+Qe2f3e4c5
+|
+Qa1a2c3c4
+Qc2d3c4a5
+[[c2d3c4a5
+a1
+a1d3
+]]c1
+|
+[[d2f3c5
+a1c4
+c2d3e4a5
+]]a2a3a4c5
+[[[b3c4d6
+]]]a4
+[[a1e5f6
+d3a5c6
+]]e2
+|
+Qa1c3c4c5a6
+Ec4
+[[[d2
+]]]c2
+[[a1a2c3a6
+d3
+a1a2c3c4
+]]c3
+|
+{^}
+|
+Qc2d3c4a5
+[[c2d3c4a5
+]]c2d3c4a5
+[[[d3
+]]]a2
+Ec2d3c4a5
+Qd2a3a4

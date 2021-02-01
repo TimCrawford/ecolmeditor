@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Adriaenssen/pratum_musicum_1584/61b_galliarda_in_basso.}
+|
+M(3)
+[[d3
+]]a2
+|
+Qa1b2d3a5
+[[c4
+]]d2
+Qa1b2d3a5
+[[f1
+]]d1
+Qc1a4
+[[a1
+]]c1
+|
+Qd1a2b3d6
+[[a4
+]]b2
+[[a2
+]]d3
+Qb3
+Qd1a2b3d6
+[[c1
+]]d1
+|
+Qf1a5
+[[a5
+]]h1
+Qi1
+[[a5
+]]h1
+Qf1
+[[e1a6
+]]f1
+|
+{^}
+|
+Qh1
+[[a6
+]]f1
+Qe1
+[[a6
+]]c1
+Qa1
+[[a6
+]]d2
+|
+[[a1b2d5
+]]a2

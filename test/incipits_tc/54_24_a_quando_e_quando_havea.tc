@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Abondante/Libro_secundo/24_a_quando_e_quando_havea.}
+|
+M(C/)
+Qc1d2d3a4
+Qc1d2d3a4
+Qa1c2d3a5
+|
+Qd1d2f3d6
+Qc1d2f3c5
+Qc1d2d3a4
+[[a1c2
+]]d2f3
+|
+Ha1c2d3a5
+Q
+Qc1d2d3a4
+|
+Qc1d2d3a4
+[[a1c2d3a5
+]]c1
+[[d1d2f3d6
+a5
+c1d2f3c5
+]]e5
+|
+Qc1d2d3a4
+[[a1c2
+]]d2f3
+Ec2d3a5
+[[[a2
+]]]c2
+[[[d2
+]]]a1
+[[[[c1
+a1
+c1
+]]]]d1
+|
+Qf1c2c4a5
+[[c1d2f3c5
+]]d1f2f3c4
+Qf1d2a4
+Qc1d2d3a4
+|
+{^}
+|
+Qh1d2f4d6
+[[d1c4d5
+]]f1c2c4a5
+Qh1d2f4d6
+Qf1d2a3a4

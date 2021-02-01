@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Gumprecht/suite_Dm/03_allemande.}
+|
+M(C/)
+Ea3
+|
+Q.a3a4d5Xa///
+[[[c3,
+]]]e3
+Ea2a5
+[[c5
+]]a2a4
+[[[c2,c4
+]]]a2
+|
+[[e3e4
+]]a6
+[[[a2
+e2
+a2
+]]]c6
+E.c2a3e6
+Sc2
+E.a1d2a5
+Sc1
+|
+{^}
+|
+Ec2
+[[[a6
+]]]d3
+[[a1
+]]a6
+EXd
+[[[c1a2
+]]]e1
+E.c1,
+[[[[a1
+]]]]c2
+|
+Ea1
+[[[Xa/
+]]]c1
+E.e1,
+Sf1
+E.h1a4
+Sf5
+E.a3,
+Sb3
+|
+[[[d3

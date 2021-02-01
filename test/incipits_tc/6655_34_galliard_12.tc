@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Waissel/1592/34_galliard_12.}
+|
+Qc1a2a3b4
+[[a1a2c3c4
+]]e2
+Qc2e3e4
+|
+Qe2f3e4c5
+[[e4
+]]c2
+[[e2
+]]f2
+|
+Qc1c2d3c6
+[[h3g4e5
+]]g2
+[[[h2
+g2
+e2
+]]]g2
+|
+Qc1c2e3c6
+[[[e4
+c3
+e3
+]]]f3
+Qc1c2e3c6
+|
+Qc2a3b5
+[[a2a3c5
+]]e3
+Qc3d4e5
+|
+Qe3e4c6
+[[c2
+]]a2e6
+Qc2a3b5
+|
+[[a2a3c5
+]]e3
+[[c3d4e5
+]]a3
+Qc3d4e5
+|
+{^}
+|
+Qc2e3e4c6
+[[[e4
+c3
+e3
+]]]f3

@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/116_knights_galliard_dowland.}
+|
+E.a2a3c5
+Sc2
+[[d2
+]]a2
+[[d2c5
+]]a1e5
+|
+E.c1a2a3Xa
+SXc
+[[c1Xd
+]]c1a2Xa
+[[Xd
+]]e1a6
+|
+E.f1e4c6
+Sc3
+[[d3
+]]e4
+Ed3
+[[[e1a2e6
+]]]c1
+|
+Qa1c2d3a5
+[[c4
+]]d2
+Qc2d3c4a5
+|
+[[d2a3Xa
+]]c5
+[[a2
+]]c2a3a5
+[[c6
+]]e2c5
+|
+Qa1c3a6
+[[Xc
+]]c1
+Qd2a3Xd
+|
+{^}
+|
+EXa
+[[[a1c3
+]]]d2
+[[c2e3e4c6
+]]d2f3
+[[[c2c6
+]]]f3

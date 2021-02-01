@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Dowland/solos/64_go_from_my_window.}
+|
+M(C/)
+Qa1a2c3a6
+[[c4
+]]c1d3
+Qe1a2a6
+[[c1a2b4c5
+]]d3
+|
+E.a1a2c3#a6
+Sd3
+[[c3
+]]a3
+Ha1a2c3c4c5a6
+|
+Qc1c2d3c6
+[[e4
+]]e1f3
+Qf1c2c6
+[[e1d4e5
+]]a2
+|
+E.c1c2e3c6
+Sf3
+[[e3
+]]c3
+Hc1c2e3e4e5c6
+|
+Qc1c2d3c6
+[[e4
+]]e1f3
+Qf1c2c6
+Qe1f3
+|
+[[c1c2d3c6
+f2
+c1
+]]e1
+[[f1c6
+]]c1
+Qc2#
+|
+{^}
+|
+[[a1a2c3a6
+c1
+e1
+]]a6
+E.c1a2a3c5#
+Sa1

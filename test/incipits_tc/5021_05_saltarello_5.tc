@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/molinaro_1599/05_saltarello_5.}
+|
+Qd1b3c4
+Qc1d3a4
+Qa1d3e5
+|
+[[d2f3c5
+]]c2
+[[d2
+]]a1c2
+Qc1d2
+|
+Qa1c2c4
+[[d2f3
+]]f2
+Qc2e3e4
+|
+[[a2f3c5
+]]f4
+[[e4
+]]c4
+Qe4
+|
+[[[d1b3c4
+]]]a3
+Eb3
+[[[c1d3a4
+]]]a1
+Ec1
+[[[a1d3e5
+]]]c1
+Ea1
+|
+[[d2f3c5
+]]c2
+[[d2
+]]a1c2
+[[[c1d2
+]]]a1
+Ec1
+|
+{^}
+|
+[[[a1c2a6
+]]]c1
+Ea1
+[[[d2f3
+]]]f2
+Ed2
+Qc2e3c6

@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/siena_ms_1590/130_fantasia_3_feliciani.}
+|
+M(C/)
+Ha1
+Q.d1
+Ef1
+|
+Qd1a2
+Qc1
+[[d1f2
+f1
+h1
+]]d2
+|
+Eh3e4
+[[[g1
+]]]e1
+[[[h1
+g1
+e1
+]]]g1
+[[h1d2f3
+f1
+d1
+]]c1c2d3
+|
+Qa1a2b3
+Qc1d3e4
+[[a2c5
+a1
+d2
+]]c2
+|
+Qa2b3c4
+[[c2
+]]a4
+[[d3e5
+]]d2
+Qa1
+|
+{^}
+|
+[[b3c5
+]]e2
+Ee2a3
+[[[c2
+]]]e2
+[[a1a2a6
+c6
+d6

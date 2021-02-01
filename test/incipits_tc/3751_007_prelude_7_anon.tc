@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/007_prelude_7_anon.}
+|
+M(C/)
+[[d2
+d3
+d2
+]]a1
+[[c1
+d2
+f1
+]]d1
+|
+[[c1
+a1
+d2
+]]c2
+[[[d2
+c2
+d2
+]]]a1
+[[[c1
+a1
+d2
+]]]c2
+|
+[[[d2
+c2
+d2
+]]]a1
+[[[c1
+d2
+a1
+]]]c1
+[[[d1
+a1
+c1
+]]]d1
+[[[f1
+d1
+c1
+]]]a1
+|
+{^}
+|
+[[[d2a4
+d3
+d2
+]]]a1

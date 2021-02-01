@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_A_minor/07_sarabande.}
+|
+M(3)
+Qc2d3e4
+Qa2c3e4
+[[d4
+]]c2
+|
+Q.d3e4
+Ec3
+Qa3
+|
+Qe1c2d3
+[[c3
+]]a2
+[[e1
+]]d1
+|
+Qe1a3
+[[a6
+]]d3
+[[a2
+]]c2
+|
+{^}
+|
+Qa1d2a5
+[[Xa
+]]c3
+[[d2
+]]c1
+|
+Q.c2d6
+Ed2
+Qc2
+|
+[[c2a3Xa/
+]]d2
+Q.a2
+[[[d3
+]]]a2
+|
+Qc2
+HXa//
+|
+Qc3d4c5
+Q.c2
+Ef3
+|
+Q.d3e4
+Ec3
+[[[a3
+]]]c3
+Ed3

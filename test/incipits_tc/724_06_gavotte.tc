@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_GM/06_gavotte.}
+b1
+M(C/)
+Qc4a5Xa
+E.a3,a5Xa/
+[[[[c4
+]]]]a3
+|
+Qc3ua5Xa
+[[a3,
+]]c4
+Qa2d3c6
+[[[c2d6
+]]]b1
+Ec1
+|
+Qb1a2a5
+[[c2
+]]a2
+[[[c2d6
+]]]b1
+Ec1
+[[a2c6
+]]c2Xa
+|
+{^}
+|
+[[[d3a6
+]]]a2
+Ec2
+[[a3Xa/
+]]d3Xa///
+Qc3a5Xa
+E.a3,c5X4
+Sc4
+|
+Qb4,a5Xa///
+[[c5
+]]a5
+Qc4a5c6
+[[[c3
+]]]a3
+Ec4
+|
+Q.a3c4d6
+Ec3b4a5
+[[[d3c4c5
+]]]a2
+Ec2

@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_GM/05_sarabande.}
+11b2
+Qc4ua5Xa
+Qc3x
+[[[c3
+]]]d3
+Ea2
+|
+H.a3,a5Xa/
+|
+Qc4uXa//
+Qc3
+[[[c3
+]]]d3
+Ea2
+|
+Q.b4,Xa///
+Ec5
+Qa5,
+|
+E.a2d3c6
+Sc1
+E.c1
+Sc4
+Qc4a5c6
+|
+E.c2d6
+Sc4
+Q.c4x
+Ea2c4c6
+|
+{^}
+|
+[[[a3
+]]]c3
+Ed3
+Q.a3,c5X4
+Ec4
+|
+Q.b4,a5Xa///
+[[[c5
+]]]b4
+E.a5,
+Sd6
+|
+E.a2d3c6
+Sc4
+Q.c4x
+Ec4a5c6
+|
+E.c2d3d6
+Sa3

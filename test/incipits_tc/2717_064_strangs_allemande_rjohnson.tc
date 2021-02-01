@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.9.33_c/064_strangs_allemande_rjohnson.}
+|
+M(C/)
+[[[a1
+]]]c1
+:||:
+E.d1a2c4
+Sd1
+E.c1a2b4
+Sc1
+E.a1a2c4
+Sa1
+E.e2a3c5
+Sa2
+|
+[[[h1a2a3Xa
+]]]k1
+El1
+[[[k1
+]]]h1
+Ek1
+Q.h1a2a3Xa
+[[[h1d2f4
+]]]f1
+|
+Ed1f2g3
+[[[i1f2h4
+]]]h1
+Ef1h2i3
+[[[l1k4
+]]]k1
+Eh1i2l3
+[[[n1
+]]]l1
+[[i1a5
+]]h1d6
+|
+{^}
+|
+Ef1a4
+[[[a1
+]]]c1
+[[[d1
+]]]f1
+Ec1e2Xa
+[[a1a2c3a6
+]]c4
+Ea6

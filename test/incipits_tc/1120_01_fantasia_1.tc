@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Adriaenssen/pratum_musicum_1584/01_fantasia_1.}
+|
+M(C/)
+Hh1
+Qh1
+[[a1
+]]c1
+|
+[[d1
+]]f1
+Qh1
+[[a2
+f1
+d1
+]]c1
+|
+Qd1a2
+[[d1c4
+]]a3
+[[b3
+d3
+d1a2
+]]c2
+|
+Qc1d2
+Qa1b3
+Qa1d3
+Qe2f3
+|
+Qa1b2c4
+[[a2
+]]c1
+Ed1a2c4
+[[[c1
+]]]d1
+[[f1a5
+]]c5
+|
+{^}
+|
+[[a1b3d5
+c1a4
+d1a2c4
+]]a3
+[[d2b3
+]]a1
+Qc1d2a4
+|
+[[d2
+c1
+a1c2c4

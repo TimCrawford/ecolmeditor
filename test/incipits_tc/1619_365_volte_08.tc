@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Eb1Xa line 8 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-11 8 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_09/365_volte_08.}
+|
+[[d3
+d2
+]]a1
+:||:
+E.b1d2d3a4
+Sd1
+Eb1Xa
+E.a1c2d3a5
+Sd2
+Ea1c2d3
+|
+Qd2d3a4
+EXa
+Eb3c4d5
+[[[a3
+]]]b3
+Ed3d4
+|
+E.b3c4d5
+Sd3
+Eb3
+[[d3d4b6
+b3d4d5
+]]c4
+|
+[[d3d4b6
+d4
+]]d3
+[[[d1a4
+]]]b1
+[[a1a5
+]]d2b5
+|
+{^}
+|
+[[c2d3a5
+]]d3b6
+[[[a2d6
+c2
+d2
+]]]a1
+E.c2d3c4a5
+[[[[a2
+]]]]c2
+|
+[[d2
+a4

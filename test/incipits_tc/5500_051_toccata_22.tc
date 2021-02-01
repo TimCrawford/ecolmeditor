@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ d5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/Piccinini/book_1_1623/1_archlute/051_toccata_22.}
+|
+d5Xa/
+||
+M(C/)
+H.b1d2d3a4
+Qc4
+|
+Hb1b2d3d4
+Hb6
+|
+Ha1b2b3Xa/
+Hd5
+|
+Hd2d3d4Xa
+Hf5
+|
+Hc2d3c4Xa///
+Ha5
+|
+Hd2d4f5g6
+Qe3f4f6
+Qd6
+|
+Hb2d3d4b6
+Qa6
+QXa
+|
+Hb2b3c4Xa/
+Qa2d4
+Qd3
+|
+Hb3d4d5
+Hc4
+|
+Hd3d4d5b6
+Qb1b2d3d4
+[[c4
+]]a4
+|
+{^}
+|
+Qa1b2b3d5
+[[c5
+]]a5
+Qd1d2e3d6
+[[b6
+]]a6
+|
+[[b1d2d3Xa
+a4
+d4
+]]b3
+[[d3
+Xa
+b6
+]]d6

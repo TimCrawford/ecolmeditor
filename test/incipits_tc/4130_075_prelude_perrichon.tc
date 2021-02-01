@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/herbert_of_cherbury/075_prelude_perrichon.}
+|
+M(C/)
+Qd2
+Qa1
+Qb1a4
+Qd1c4
+|
+Qf1d4
+Qg1f4
+Qf1d3
+Qd1e3
+|
+Qf1d3
+[[a4
+]]d1
+Qb1Xa
+Qa1a6
+|
+Qd2b6
+[[a1d6
+]]d2
+Qc2a5
+[[d2b5
+]]a1
+|
+Qb1a5
+[[a1d3
+]]d2
+[[b2
+b3
+d2d4
+]]c4
+|
+[[a4
+b2
+e3
+]]d3d5
+[[b5
+]]a5
+Qb3b5
+|
+{^}
+|
+[[a5
+d4
+c4
+]]a4
+[[c4
+]]d6
+Qd4b6

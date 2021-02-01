@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Piccinini/book_2_1639/06_toccata_6.}
+|
+M(C/)
+Wc1d2d3a4
+|
+Qc1d2d3a4
+Qf1
+Qc1
+Qd2
+|
+Q.f1
+[[[d1
+]]]c1
+[[[a1
+d2
+c2
+]]]a2
+[[[d3
+b3
+a3
+]]]c4
+|
+Qa4
+Qd3
+Qa3
+Qa4
+|
+Q.d3
+[[[b3
+]]]a3
+[[[c4
+a4
+e5
+]]]c5
+[[[a5
+d6
+c6
+]]]a6
+|
+{^}
+|
+E.Xa
+Sa5
+E.c5
+Se5
+E.a4
+Sc4
+E.a3
+Sb3
+|
+Qd3

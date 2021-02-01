@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Milano/milano_039.}
+|
+M(C/)
+Q.f1
+Ee1
+[[c1
+]]d1
+Qf1
+|
+Qd2
+[[c1
+]]c2
+[[d1a2
+]]c2
+Qc1d2
+|
+Qa1d3
+[[c2
+]]b3
+[[d2a3a4
+b3
+d3
+]]e5
+|
+[[b3c5
+]]e5
+Qa3f5
+Qf1c4
+[[e5
+]]d1
+|
+[[c1d2a4
+d1
+f1
+]]c2
+[[d1a2c4
+]]c2
+Qc1d2a4
+|
+Qa1d2d3a5
+[[c2
+]]b3
+[[d2a3a4
+b3
+c1d3
+]]d5
+|
+{^}
+|
+Qc5
+Qa1b3d5

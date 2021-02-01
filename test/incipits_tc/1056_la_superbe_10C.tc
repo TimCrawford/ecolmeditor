@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/VGaultier/la_superbe_10C.}
+|
+Sd2
+Ea1
+Sc1
+|
+Qd1
+Qb3
+[[d2,
+]]b2
+|
+Qa2,d6
+[[b3
+a1
+b2Xa/
+]]a1
+|
+Q.a1d3d5
+Eb3
+[[d3
+]]b2
+|
+Qa2d6
+Qb3a4
+[[d2
+]]d2
+|
+Qd2c6/
+[[a4
+d3
+a2d6
+]]a2
+|
+{^}
+|
+Q.a2b3a4c5
+Ea2
+[[d3,Xa/
+]]b3
+|
+Qa3Xa/
+Qa4
+[[b3,
+]]d3
+|
+[[a2d6
+]]b3
+Ec2,
+[[[d2
+]]]c2
+[[d2
+]]c6

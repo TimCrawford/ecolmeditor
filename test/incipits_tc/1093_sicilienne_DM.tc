@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ b4Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -11 8 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ c6X5 line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -11 8 -2 -3 0 -2 -2)</bass_tuning></rules>}
+{ e6X4 line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -11 8 -3 -2 0 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Weiss/warsaw_2003_3/sicilienne_DM.}
+|
+b4Xa/
+c6X5
+e6X4
+:||:
+E.c2e3
+Se2
+[[[d1d3
+]]]e1
+Qd1X5
+Ee1
+Ea2c3Xa//
+[[[d4
+]]]a2
+Ee3e4
+[[e3e4Xa//
+c3d4
+]]c2
+|
+[[[X5
+c2
+b2
+]]]c3
+Ee1
+[[e1e2Xa//
+d1c2
+]]c2
+[[[X5
+c2
+b2
+]]]c3
+Ee1
+[[e1e2Xa//
+d1c2
+]]c2
+|
+{^}
+|
+Ec2Xa//
+[[[d1
+]]]b1
+[[[c2X5
+]]]b2
+Ec2Xa//
+[[[d1

@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/partita_in_Dm/2_Allemande.}
+|
+M(C/)
+Ee1
+|
+Q.e1a2a3Xa///
+Ee1
+Q.a1,a5
+Ec2
+Ea2
+|
+Qf1a2Xa
+[[c2
+]]f1
+Qe1,Xa/
+[[a2
+]]f1
+|
+Qc1,a2Xa//
+[[e3
+]]e1
+Qa1,a3Xa///
+[[c2
+]]a2
+|
+Qa1c2a3Xa///
+[[b3
+]]c1
+Qc2,b3X4
+[[a1a3
+]]c2
+|
+Qa2,a3X5
+[[c2c4
+]]a2
+Qe3,
+[[c3
+]]a3
+|
+{^}
+|
+Qc2e3
+[[Xa
+]]c2
+[[Xa/
+c2
+]]a3
+[[[c3
+]]]e3
+|
+Qa2f3
+[[Xa/

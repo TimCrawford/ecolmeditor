@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Bossinensis/v1_1509/95_ricercar_25.}
+|
+M(C/)
+Hd2d3a4
+[[d2d6
+b6
+d6
+]]a5
+|
+[[d2b5
+a5
+b5
+]]d5
+[[b1d2a4
+c4
+d4
+]]c4
+|
+Qa4
+Qb1d2
+Qa1b3d5
+Qd2b5
+|
+[[a1b2a5
+c5
+d5
+]]a4
+[[a1c4a5
+a4c5
+c4d5
+]]e4a5
+|
+[[d1d2f3f4f5d6
+d3
+f3
+]]c2
+[[d2
+a1
+c1
+]]d1
+|
+{^}
+|
+[[f1a3a4
+d1
+f1
+]]h1
+[[i1
+h1
+i1

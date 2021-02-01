@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.3.18/009_quadran_pavane_duet_anon/009_quadran_pavane_duet_treble_anon.}
+|
+M(C/)
+[[a1
+]]c1
+|
+Qe1#
+[[a1
+]]h1
+E.h1
+Sf1
+[[e1
+]]c1
+|
+E.e1#
+Sf1
+[[e1
+]]c1
+[[a1
+d2
+c2#
+]]a2
+|
+Ed3#
+[[[d3
+]]]a2
+[[[c2
+]]]d2
+Ea1
+Ec1#
+[[[a1
+]]]c1
+[[[a1
+d2
+c2
+]]]a2
+|
+{^}
+|
+Ec2#
+[[[d3
+]]]a2
+[[[c2
+d3
+c2
+]]]d2
+Ea1
+[[[c2
+]]]e2

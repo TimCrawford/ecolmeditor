@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/siena_ms_1590/114_celle_qui_fut_sandrin.}
+|
+M(C/)
+Hf1d2a4
+Qf1c2a3
+Qf1c2c4
+|
+Qc1d2d3a4
+[[a1e5
+]]d2c5
+[[c2d3a5
+a2
+d2b3c5
+]]a1
+|
+[[d2a3
+]]c2
+Ec2d3c6
+[[[a2
+]]]d3
+[[a2b3c4d6
+d3
+a2b3a4
+]]a3
+|
+[[[d3c4a5
+a4
+e5
+]]]c5
+[[d3a4a5
+]]e5
+Ea3a4
+[[[c4
+]]]a3
+[[[b3
+d3
+a2
+]]]c2
+|
+{^}
+|
+[[[d2a4
+a2
+c2
+]]]d2
+[[[a1d3a5
+c2
+d2
+]]]a1

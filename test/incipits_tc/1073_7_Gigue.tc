@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/partita_in_Dm/7_Gigue.}
+|
+Ea3
+|
+[[e4
+a3
+]]e4
+[[e4
+a3
+]]e4
+|
+[[e4
+b3
+]]e4
+[[c4
+b3
+]]c4
+|
+[[c4
+a3
+]]c4
+[[a4
+a2
+]]a4
+|
+[[c5
+a2
+]]c5
+[[e4
+e3
+]]e4
+|
+[[a5
+a2
+]]a5
+[[a5
+a1
+]]a5
+|
+{^}
+|
+[[a5
+c2
+]]a5
+[[d6
+e1
+]]d6
+|
+[[Xd
+e1
+]]a2

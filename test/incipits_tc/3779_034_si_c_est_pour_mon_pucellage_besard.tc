@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/034_si_c_est_pour_mon_pucellage_besard.}
+|
+a5Xa/
+:||:
+Hf1d2a3a4
+Qc1d2d3a4
+|
+Hd1a2c4
+[[c1a4
+]]a1
+|
+Qd2a3c5
+Q.a1a5
+[[[d2
+]]]a1
+|
+Q.c1d2d3a4
+Ea1
+Qd2d3Xa
+|
+Qf1a4
+QXa
+Qc1
+|
+Qd1
+Qa6
+[[c1c6
+]]a1
+|
+[[d2d6
+]]c1
+Q.a1a5
+[[[d2
+]]]c2
+|
+Qc1d2d3a4
+HXa
+:||:
+Ha1c2d3a5
+Qa1e6
+|
+{^}
+|
+Q.a1c2d3a5
+Ec1
+Qe1a2c4
+|
+Qf1a5
+[[e1a6
+]]f1
+Qh1
+|
+Qf1a5
+HXa/

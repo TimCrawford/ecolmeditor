@@ -1,0 +1,69 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Visee/gigue_from_suite_Dm.}
+|
+Qc1
+|
+Q.d2
+Ec2
+Qa2
+|
+Hc1
+Qa2
+|
+Q.c2e3
+Ec3
+Qa3
+|
+Qd2f3
+Qd2
+Qc2d3
+|
+Q.a2b3
+Ea3
+Qc2c4
+|
+He3e4
+Qe4
+|
+Q.a2a4
+Ee5
+Qc5
+|
+Qc2b5
+Qc6
+Qd2c5
+|
+{^}
+|
+Qa1e5
+[[a5
+]]c1
+Qd1
+|
+Qc1a4
+Qc1
+Qd2c6
+|
+Qa2d6
+[[e6
+]]c2
+Qd2
+|
+Qc2a5
+Qd3
+Qd2a3c5
+|
+Qd2a3d6
+[[a6
+]]a1

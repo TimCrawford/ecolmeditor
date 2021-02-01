@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Cutting/10_galliard_P.}
+|
+E.a1a2b3c4
+Sc1
+[[d1a2
+]]c4
+[[d1a2b4
+]]c1
+|
+E.a1a2c4
+Sa3
+[[a2b3
+]]c4
+[[d3e4
+]]e2
+|
+E.d1a2c4
+Sc2
+[[c1d2a4
+]]a2
+[[a1e5
+]]e3
+|
+E.d2a3c5
+Se5
+[[a4
+]]c5
+[[a1b3d5
+]]d3
+|
+E.a2b3c5
+Sc2
+[[d2a3
+]]c5
+[[b2b3a5
+]]a3
+|
+{^}
+|
+E.a2b3a4d6
+Sa5
+[[c5
+]]d6
+[[a1b2d5
+]]c1
+|
+E.d1a2c4a6
+Sc6
+E.a1a2c4d6
+Sa5

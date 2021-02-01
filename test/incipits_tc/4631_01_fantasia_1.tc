@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/kargel_novae_elegantissimae_1574/01_fantasia_1.}
+|
+M(C/)
+Qd2
+[[d2
+]]a1
+[[c1
+d2
+a1
+]]c1
+|
+Qd1b3
+[[b3
+]]d3
+[[d1a2
+b3
+c1d3
+]]a2
+|
+Qa1b2
+Qc1d3a4
+[[d2a4
+d1c4
+f1a3
+]]c1a4
+|
+[[d1b3c4
+f1e4
+h1f4
+]]h4
+[[a2
+b3
+f1d3e4
+]]a2
+|
+{^}
+|
+[[b2c4
+d1a2
+d1d3
+]]b3
+[[[d3a4
+d1
+c1
+]]]a1
+[[[d1
+]]]c1
+[[[[d1
+c1

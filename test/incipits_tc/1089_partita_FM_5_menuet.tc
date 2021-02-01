@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/warsaw_2003_3/partita_FM/partita_FM_5_menuet.}
+|
+M(3)
+[[h2Xa/
+]]a1
+[[h1
+]]a1
+[[h2
+]]a1
+|
+Qk1
+Qi5
+Qh1a6
+|
+Qf1,Xa
+[[h2
+]]f2
+[[h2Xa/
+]]f1
+|
+[[h2X4
+]]f2
+[[a1
+]]h3
+[[a2
+]]h4
+|
+{^}
+|
+[[h2Xa/
+]]a1
+[[h1
+]]a1
+[[h2
+]]a1
+|
+Qk1
+Qi5
+Qh1a6
+|
+Qf1,Xa
+[[h2
+]]f2
+[[h2Xa/
+]]f1
+|
+Qf2,Xa//
+[[a1
+]]c2
+[[a1Xa///
+]]c1
+|
+Qc2,X4

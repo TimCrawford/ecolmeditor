@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Abondante/Libro_primo/30_la_disperata.}
+|
+Qa1a2c3a6
+Qa1a2c3
+Qa1a2c3a6
+|
+Ea1a2c3a6
+[[[c1
+]]]a1
+[[[c1
+a1
+d2
+]]]b2
+[[[a2
+d3
+c3
+]]]a3
+|
+Qa1a2c3a6
+[[c4
+]]d3
+[[c3
+]]a3
+|
+Qa1a2c3a6
+[[d3a5
+]]a3
+[[b3
+]]d3
+|
+Qa2b3d6
+[[a4
+]]d3
+[[b3
+]]a3
+|
+Qa2b3d6
+Ha4
+|
+Qd1d2f3d6
+Qd1d2f3
+Qd1d2f3d6
+|
+{^}
+|
+[[d1d2f3d6
+]]g3
+[[d2
+]]g3
+[[f3
+]]d3

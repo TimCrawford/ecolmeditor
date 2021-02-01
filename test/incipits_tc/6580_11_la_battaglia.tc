@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Waissel/1573/11_la_battaglia.}
+|
+M(C/)
+[[f1d2a3a4
+e1
+f1
+]]h1
+Qf1d2a3a4
+Qf1d2a3a4
+|
+[[c1d2d3a4
+]]a1
+[[[c1
+a1
+c1
+]]]d1
+Qc1d2d3a4
+Qd1a2b3d6
+|
+Qd1a2b3d6
+[[d1
+]]c1
+[[a1a2b3d6
+]]d2
+[[[a1
+d2
+c2
+]]]a2
+|
+[[c2d3c4a5
+c3
+d3
+]]a2
+Ec2d3c4a5
+[[[a2
+]]]c2
+[[[d2
+a1
+c1
+]]]d1
+|
+{^}
+|
+[[f1c2d3a5
+c3
+d3
+]]a2
+Qf1c2d3a5
+Qf1c2d3a5

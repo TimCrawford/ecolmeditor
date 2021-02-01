@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Kapsberger/intavolatura_di_lauto_v1_1611/11_galliard_3.}
+|
+E.a1b3c4
+Sc1
+[[d1c4
+]]a2
+[[c1d3d5
+]]a1
+|
+Q.c1a2a3b4c5
+Ed1
+Qc1
+|
+E.c4d5
+Sa3
+[[b3
+]]c5
+[[b2a5
+]]a3
+|
+E.a2a4d6
+Sc2
+[[d2
+]]a1
+[[c4d5
+]]a3
+|
+[[b3c5
+]]d5
+Qd2d3f4f5
+Qe4
+|
+Q.d2f3f4d6
+Ea3
+[[b3
+]]d3
+|
+E.a2a4d6
+Sc2c4
+[[d2e4
+]]a1b3
+[[c1d3
+]]e1f3
+|
+{^}
+|
+E.f1g3a5
+Sh1
+[[f1
+]]d1f3
+[[c1d3

@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Cutting/36_galliard.}
+|
+[[a1a2c4
+]]c1
+Qd1
+Qc1a2b4
+|
+E.a1a2b3c4
+Sd3
+[[a2
+]]c2
+Qd2a3c5
+|
+[[d1a2c4
+]]c2
+[[c1d2d3a4
+]]d1
+[[b2
+]]c1
+|
+[[d6
+]]d1a2b3
+[[a4
+]]d6
+Qd1a2b3d6
+|
+{^}
+|
+[[b2b3d5
+]]a1
+[[d1
+]]f1a5
+Ec1d3a4
+[[[a1
+]]]c1
+|
+[[d1a2d6
+]]b3
+[[a2
+]]c2a5
+[[c1d2c5
+]]a2
+|
+Ea1a2a6
+[[[d3
+]]]b3
+[[a3c5
+]]c4
+Qe2a3
+|
+[[a6

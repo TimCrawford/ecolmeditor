@@ -1,0 +1,67 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_F_major/09_rigadon.}
+|
+M(C/)
+Qd3
+|
+Ha1d2a3Xa/
+Q.c1X4
+[[[d2
+]]]c1
+|
+Qe1Xa/
+[[c1
+]]e1
+Qa1
+Qd3
+|
+Ha1d2a3Xa/
+Q.c1X4
+[[[d2
+]]]c1
+|
+Qe1Xa/
+[[c1
+]]e1
+Qc1
+Qe1Xa/
+|
+{^}
+|
+Qf1Xa
+Qc1Xa//
+Qe1Xa/
+Qf1Xa
+|
+[[c1X4
+d2
+c1
+]]e1
+Qc1
+Qe1a4
+|
+Qa1a5
+[[c2d6
+]]a1
+Q.a2Xa
+Ed3
+|
+H.d3c4c5X4
+|
+Qc1
+|
+Qc1c2d6
+Qe1
+Qc1c5
+[[d2

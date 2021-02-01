@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ d5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ d6Xa/// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -4 1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/british_library/BL_ms_add_38539_sturt_lute_book/21va_sturt_volte.}
+|
+d5Xa/
+d6Xa///
+||
+Qd1x
+|
+Qa1#
+Qb2
+Qd4
+|
+Qb2c4
+Qd5
+Qa1
+|
+Qb2
+Q.a2#a4d6
+[[[d3
+]]]a2
+|
+Qb2#
+Qd5
+QXa/
+|
+Qb2
+Qb3#
+Qd4
+|
+Qc4#d5
+QXa/
+Qb3
+|
+Qc5
+[[a5
+]]d2
+Qb2#
+|
+Qa2#d6
+Qb3
+Qd2
+|
+{^}
+|
+Qb6
+[[a6
+]]d1
+Qb1#Xa
+|
+Qa1#
+[[Xa/
+]]d2
+[[b2
+]]d2
+|
+[[a1
+]]b2

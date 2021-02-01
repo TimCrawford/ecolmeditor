@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_1_prelude.}
+|
+M(C/)
+[[Xa///
+d2
+e1
+]]d2
+[[a5
+d2
+e1
+]]d2
+|
+[[Xa///
+f2
+f1
+]]f2
+[[a5
+f2
+f1
+]]f2
+|
+{^}
+|
+[[Xa///
+f2
+e1
+]]f2
+[[a5
+f2
+e1
+]]f2
+|
+[[Xa///
+d2
+e1
+]]d2
+[[a5
+d2
+e1
+]]d2
+|
+[[Xa///
+c2
+c1
+]]c2
+[[a5
+c2
+c1
+]]c2

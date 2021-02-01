@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/partita_in_Dm/6_Menuet.}
+|
+Qa3a4Xa///
+Ec4,
+[[[a3
+]]]c4
+[[a3
+]]c5
+|
+Qa4c5Xa///
+Qa5,
+Qk1
+|
+Qh3Xa
+Qk1
+Qi1,a6
+|
+Qk1uXa///
+[[i3
+]]a2
+[[k1
+]]h1
+|
+{^}
+|
+Qf1,Xa
+[[f3
+]]f4
+[[f2
+]]i3
+|
+Qh3X4
+[[f2
+]]h3
+[[h1Xa//
+]]f1
+|
+Qe1,Xa/
+[[d3
+]]a3
+[[a1
+]]c2
+|
+Qa2,X5
+[[a1
+]]a2
+[[f1
+]]c1
+|
+Qc2,X4
+[[d3
+]]a2

@@ -1,0 +1,155 @@
+Array
+(
+    [0] => Array
+        (
+            [imageURL] => images/deCrema1546_fA2r_4.png
+            [tabcode] => d2a3a4c5
+Ea1a2b3d6
+d2.
+|
+a5
+b2.d3c4
+a2a4
+d3.
+Qa2b3a6
+c4
+|
+e4
+f3f5
+d3d5
+b3c5
+|
+a3a5
+c4d6
+c6
+c1b4
+|
+d1a2c4a6
+c1a2a4c5
+a1b3c4d5
+d3a5
+|
+d2a3a4c5
+Ea1a2b3d6
+d2.
+a5
+b2.d3c4
+a2a4
+d3.
+|
+Qa2b3a6
+Ed2c5
+a3.
+Qb2b3c4d5
+a2b3a4d6
+|
+Ec6
+d3.
+d3c5
+a5
+Qd3c4c5a6
+c3
+|
+Fd3c4a5
+|
+            [contextDur] => Q
+            [contextTuning] => Array
+                (
+                    [0] => 67
+                    [1] => 62
+                    [2] => 57
+                    [3] => 53
+                    [4] => 48
+                    [5] => 43
+                    [6] => 41
+                    [7] => 40
+                    [8] => 38
+                    [9] => 36
+                    [10] => 35
+                    [11] => 33
+                    [12] => 31
+                )
+
+            [tabType] => Italian
+            [fontName] => Varietie
+            [id] => 2
+            [source] => IOAN MARIA DA CREMA
+            [title] => Stuff
+            [system] => 5
+            [state] => 0
+        )
+
+    [1] => Array
+        (
+            [imageURL] => images/Besard1603_f2v_4.png
+            [tabcode] => M(C/)
+Ha1a2c3c4c5a6
+Qc2f3c4c5
+a1a2c4e6
+a3a5
+c2f3e4c5
+|
+f2b3g4e5
+e1
+c1e2f3e6
+Eg1
+h1
+|
+Qe2f3e4c5
+c1
+c1c2d3c6
+Ee1
+f1
+|
+Qd3c4a5
+c2
+a1
+a1a2c3a6
+Ec1
+e1
+|
+a2a3Xb
+c1
+c3c4c5a6
+a1
+Qb1e2h6
+Ea3
+f1
+|
+Qe1a2c4
+Ec1
+d3
+c3c5
+a1
+a1a3
+c4
+|
+
+            [contextDur] => Q
+            [contextTuning] => Array
+                (
+                    [0] => 67
+                    [1] => 62
+                    [2] => 57
+                    [3] => 53
+                    [4] => 48
+                    [5] => 43
+                    [6] => 41
+                    [7] => 40
+                    [8] => 38
+                    [9] => 36
+                    [10] => 35
+                    [11] => 33
+                    [12] => 31
+                )
+
+            [tabType] => French
+            [fontName] => Varietie
+            [id] => 14
+            [source] => Besard, Thesarus Harmonicus (1603)
+            [title] => A title
+            [system] => 2
+            [state] => 0
+        )
+
+)

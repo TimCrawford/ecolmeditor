@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Holborne/galliard_muy_linda.}
+|
+Qa1b2d3
+[[a1a2b3
+]]c4
+[[d2d4
+]]a2b3
+|
+[[d3
+b2
+]]d2d4
+[[a1a2b3
+c4
+]]d1
+|
+Qb1b2d3
+[[a1a2b3
+]]c4
+[[f1d2d4
+]]d3
+|
+Qd1a2c4
+Ec1d2a4c5
+Qa1d3c4d5
+Ed2f3a4
+|
+{^}
+|
+Eb2b3c4
+[[[d2
+]]]b2
+[[a2d4
+]]d3
+[[a2d3c4
+]]c3
+|
+[[a5
+]]c2d3
+[[[c4
+d2
+c2
+]]]a2
+Qd3
+:||:
+Ec3c4
+[[[d3
+]]]a2
+Eb2
+Ed3d4

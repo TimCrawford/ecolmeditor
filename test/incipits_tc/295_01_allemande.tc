@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Baron/suite_FM/01_allemande.}
+|
+M(C)
+[[d3
+]]c2
+|
+Ea1d2Xa/
+[[[c2
+]]]a2
+[[d3Xa//
+]]b3
+[[a3Xa/
+c4
+]]a3
+[[[c4
+]]]a4
+|
+Ec4c5X4
+[[[d6
+]]]b6
+[[d6
+]]b6
+[[a6
+d3
+a1
+]]d3
+|
+[[[a2
+]]]c2
+[[a1
+d3a6
+]]a1
+[[b3Xa
+a2
+d3Xa//
+]]b3
+|
+{^}
+|
+Qa3,Xa/
+[[c4Xa
+]]a3
+[[a4a6
+]]e1
+[[[e1Xa/
+]]]c1
+Ee1
+|
+[[e1Xa/
+a2

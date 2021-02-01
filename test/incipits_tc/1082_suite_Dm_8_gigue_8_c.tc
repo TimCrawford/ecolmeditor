@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_8_gigue_8_c.}
+|
+Ea2
+|
+[[a1
+a2
+]]e3
+[[a2
+a2
+]]a3
+|
+[[d2
+c1
+]]e3
+[[a2
+a2
+]]a3
+|
+[[d2
+c1
+]]e3
+[[a2
+a2
+]]a3
+|
+{^}
+|
+[[b3
+c1
+]]a1
+[[a3
+a1
+]]d2
+|
+[[c4
+d2
+]]c2
+[[a4
+c2
+]]a2
+|
+[[e5
+a1
+]]e3
+[[a2c5
+c2
+]]d2
+|
+Qc2c6
+Ea3
+Qc1

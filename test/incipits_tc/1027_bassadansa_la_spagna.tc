@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Spinacino/bassadansa_la_spagna.}
+|
+M(3)
+[[a6
+]]c4
+[[d5
+]]a4
+[[[a1c4a6
+a3
+b3
+]]]d3
+|
+[[a2c4
+]]a1d5
+[[b2a5
+]]d2b6
+[[[a1a6
+c6
+d6
+]]]a5
+|
+[[a2c5
+]]d5
+[[[a1a5
+c5
+d5
+]]]a4
+[[[a1c4
+a3
+b3
+]]]d3
+|
+[[[a1a2b3
+d3
+b3
+]]]a3
+[[[a1b3
+c4
+a4
+]]]d5
+[[[d2c5
+a1
+c1
+]]]d1
+|
+{^}
+|
+[[[c1a4
+d1

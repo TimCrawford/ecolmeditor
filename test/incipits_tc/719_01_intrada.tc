@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_GM/01_intrada.}
+|
+Qa2c3c4Xa
+Qa2c3c4Xa
+|
+Qa2a3a5Xa/
+[[a2a3a5Xa/
+]]c2
+[[[e2
+]]]c2
+Ea2
+|
+Qc1c2c3Xa//
+Qc1a2c6
+Qc1a2c6
+|
+Qe1c2d6
+[[e1e2f3Xa///
+]]g1
+[[[h1
+]]]g1
+Ee1
+|
+Qg1a2f3Xa
+Qg1a2Xa
+Qg1a2Xa
+|
+{^}
+|
+Qe1a2Xa/
+[[a2a3Xa/
+]]c2
+[[[e2a3Xa/
+]]]c2
+Ea2
+|
+Qc1a2Xa//
+[[e1e3
+]]c1
+[[e2a3Xa///
+]]c2
+|
+Ee2a3Xa///
+[[[c2
+]]]a2
+Ec1Xa//
+[[[e2
+]]]c2
+Ee1Xa/
+[[[c1
+]]]e2

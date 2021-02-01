@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bakfark/fantasia_08.}
+|
+M(C/)
+Q.a1f2
+Ec1
+[[d1f2
+f1
+c1
+]]d1
+|
+Qf1d2
+[[h1h3
+]]f3
+Eh3
+[[[g1
+]]]e1
+[[[h1
+]]]g1
+[[[[h1
+g1
+e1
+]]]]g1
+|
+[[h1f3h5
+f5
+h5
+]]a3
+[[b3c4
+d3
+d1a2c4
+]]b3
+|
+{^}
+|
+Qc1d3e4f5
+[[a1a2b3d5
+]]d2c5
+Ea1b2b3d5
+[[[a3
+]]]b3
+[[a1d3e4
+]]c4
+|
+Qe2f3e4c5
+[[d3
+]]f4
+[[e4
+]]c4
+Qe2f3e4c5

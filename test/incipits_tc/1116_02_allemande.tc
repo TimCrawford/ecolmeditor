@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Zamboni/sonata_09/02_allemande.}
+|
+Ea1
+|
+Qa1b2d3a5
+E.a5
+Sc5
+E.a1d3d5
+Sf1
+E.h1
+Sf1
+|
+E.f1a6
+Se1
+E.a6
+Sc6
+E.a2e6
+Sd2
+E.a1a6
+Sd2
+|
+E.a1d2a5
+Sb2
+E.a5
+Sc5
+E.a1d3d5
+Sa1
+E.f1a5
+Sd1
+|
+[[d1a4
+]]b1
+E.a4
+Sc4
+Ed3d4
+[[[f1
+]]]d1
+[[[b1a4
+a1
+d2
+]]]b2
+|
+{^}
+|
+[[b2b3
+]]a2
+E.d6
+Sa5
+E.a2b3c5

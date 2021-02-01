@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bianchini/22_le_dur_travail.}
+|
+M(C/)
+Hc1d2d3a4
+Qc1d2a4
+Qf3
+|
+[[d1a2c4
+b4
+c4
+]]c1
+[[a1c2a5
+d3
+a2
+]]c2
+|
+Qc1d2a4
+Qc1d3a4
+Qf1e4f5
+[[d3
+]]d1
+|
+Qc1d3a4
+[[d3c4e5
+]]a1
+[[d2e4f5
+e5
+d2a3a4c5
+]]c3
+|
+Qc2d3a5
+[[c4
+]]a2
+[[c2
+d2
+c2d3a5
+]]e4
+|
+Qb3a4c5
+Qd3c4e5
+Qf1e4f5
+[[f4
+]]e4
+|
+{^}
+|
+Qd1a2c4
+Qc1d2a4
+Ea1d3
+[[[c2
+]]]a2

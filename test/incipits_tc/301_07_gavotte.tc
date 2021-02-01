@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Baron/suite_FM/07_gavotte.}
+M(C)
+[[a1
+]]c2
+|
+Qa1Xa/
+Qd3
+Qa2b6
+Qa2
+|
+Qa2Xa/
+[[d3Xa
+]]b3
+Qa1
+Qa3Xa/
+|
+Qb3Xa
+[[d3
+]]a2
+Qd3Xa//
+Qb3
+|
+Qa3,Xa/
+[[c4
+]]a3
+Qa4
+[[a1
+]]c1
+|
+Qe1e5
+Qd3
+Qd3a5
+Qd3
+|
+{^}
+|
+Qd3Xa
+[[c3
+]]a3
+Qc3
+[[c4
+]]a3
+|
+[[c3Xa
+]]d3
+[[a2
+]]c2
+Qa1a6
+Qa1c6
+|
+Qa1d6
+[[c2

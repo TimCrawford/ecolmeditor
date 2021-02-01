@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/partita_in_Dm/1_Fantasia.}
+|
+{^}
+|
+[[Xa///
+a5
+a4
+]]a3
+[[a2
+a1
+e1
+]]c2
+[[a1
+e3
+a2
+]]c4
+[[a3
+c5
+a4
+]]a5
+EXa///
+[[[a5
+]]]c4
+[[b3
+]]a2
+Q.c1
+Sa5
+E.e6
+E.a3
+Ec2
+E.c1
+[[f1
+]]e1
+E.c1
+[[X4
+]]a3
+[[a2
+b1
+X5
+]]b3
+[[a2
+c1
+]]d3
+[[a2

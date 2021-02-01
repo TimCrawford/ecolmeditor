@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Losy/partita_Cm/01_sarabande.}
+|
+[[b2a5
+]]d2
+[[a1
+]]b2
+[[b1a4
+]]d3
+|
+[[a2b3
+]]b2
+[[d2
+]]a2
+[[a1d5
+]]b3
+|
+[[d3d4
+]]a2
+[[b2
+]]d3
+[[c5
+]]d2
+|
+{^}
+|
+[[c3c4
+]]d3
+[[a2
+]]c3
+Qc4a6
+|
+[[a2c4
+]]a3
+[[c3
+]]c4
+[[b2d3
+]]a5
+|
+[[d2a4
+]]c4
+[[d4
+]]a4
+[[a2b3
+]]d6
+|
+[[a1d5
+]]a4
+[[c4
+]]d5
+Ed2d4

@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Bakfark/harmoniarum_musicarum_1565/13_faulte_d_argent.}
+|
+M(C/)
+Qf4
+Qb3
+Qc4
+Qb3c4
+|
+Qf4
+[[a3
+]]c4
+Q.a3a4
+Ec4
+|
+Qa3a4
+Qa4c5
+Qc4d5
+Qc4
+|
+Qc4
+Qa3c5
+[[a5
+]]c4
+Qc4d6
+|
+E.c6
+Sb4
+[[[c4
+]]]b4
+[[[[c4
+b4
+e5
+]]]]b4
+Qc4a6
+[[d1c4
+]]a3
+|
+{^}
+|
+Qb3
+Qa1d3a5
+E.d1a2c4
+[[[[c2
+]]]]a2
+[[[d2
+]]]c2
+[[[[d2
+c2
+a2
+]]]]c2

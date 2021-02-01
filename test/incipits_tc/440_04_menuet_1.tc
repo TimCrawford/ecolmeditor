@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa3X5 line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -3 0 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Daube/sonata_AM/04_menuet_1.}
+b1
+[[a6
+]]e1
+Qa3
+Qa3X5
+|
+[[a3X4
+]]c3
+[[e3
+]]a2
+Qc2
+|
+{^}
+|
+[[Xa///
+]]e1
+[[d1
+]]e2
+[[c2Xa//
+]]a2
+|
+[[e3a6
+]]a2
+[[e3
+]]c3
+Qa3#
+|
+[[
+]]e1
+Qa3
+Qa3X5
+|
+{^}
+|
+[[a3X4
+]]c3
+[[e3
+]]a2
+Qc2
+|
+[[e2Xa///
+]]c1
+[[e2
+]]c2
+[[a2
+]]a3
+|
+H.c3#d4Xa//
+:||:
+[[c3Xa//
+]]a3

@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/042_ein_alter_greiss_hassler.}
+|
+M(C/)
+Qa2
+[[a2
+]]a2
+Q.a1
+Ec1
+||
+[[e1c4
+f1
+h1h5
+]]e1c4
+Ef1d3
+[[[e1
+]]]c1
+[[a1d3
+]]a2
+|
+[[a1c2
+c1e2
+e1f2
+]]a1c2
+[[[c1e2c5
+]]]f2
+Ee1
+[[c1f2f3c5
+]]e2c5
+|
+[[e1f2c4
+h1
+h1h5
+]]f1e4
+[[e1c3a6
+d3
+e1a2a6
+]]c3a6
+|
+{^}
+|
+Ec2a5
+[[[c3
+]]]a3
+[[c4
+]]c5
+[[c4e5
+a3b4
+c3c4
+]]c4e5

@@ -1,0 +1,66 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qc5X4 line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -12 9 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Baron/suite_FM/03_minuet.}
+[[a3Xa/
+]]b3
+Qd3
+Qc5X4
+|
+Qa4d5Xa///
+[[b6
+]]a2
+[[a6
+]]d3
+|
+Qb3Xa
+[[d3
+]]b3
+[[d3Xa//
+]]c4
+|
+Qa3,Xa/
+[[c4
+]]a3
+Qa4
+|
+Qe1Xa/
+[[a2
+]]c2
+Qa2
+|
+[[a2
+]]c2
+Qd2
+Qe1
+|
+Qc1Xa//
+[[d3
+]]a2
+Qd3
+|
+{^}
+|
+[[d3
+]]a2
+Qc2
+Qc1
+|
+Qa1Xa///
+[[c3
+]]d3
+Qc3
+|
+Qc4c6
+Qa2

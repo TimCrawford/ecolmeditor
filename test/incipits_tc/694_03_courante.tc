@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Jacobus/suite_for_lute_in_EbM/03_courante.}
+b1
+Ef1
+[[f2
+]]f1
+|
+[[b2
+]]c1
+[[b3Xa
+]]a6
+[[a4a5
+]]a2
+|
+Q.b2c4Xa//
+Eb3
+[[d3ua6
+]]b2
+|
+[[b3,Xa
+]]d4
+[[b3
+]]c4
+[[d4Xa/
+]]b3
+|
+[[c4,Xa//
+]]a4
+[[c4
+]]a5
+[[a4Xa///
+]]a5
+|
+[[c4,Xa//
+]]a4
+[[c4
+]]a5
+[[a4Xa///
+]]a5
+|
+[[c4,Xa//
+]]b3
+[[d4Xa/
+]]d3
+[[b3Xa
+]]e3
+|
+{^}
+|
+[[d3a6
+]]b2

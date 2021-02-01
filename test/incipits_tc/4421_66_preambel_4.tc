@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/HNewsidler/1536_1/66_preambel_4.}
+|
+M(C/)
+Q.c1a3c5
+Ea1
+[[d2
+]]b2
+[[[a2
+d3
+b3
+]]]a3
+|
+Qb2b3c4
+Qa2a3a4
+Qa2d5
+Qd3
+|
+[[a2a3c5
+d3
+b3
+]]a3
+Qb3c4
+Qa3a4
+|
+Qc4d5
+Qa4c5
+Qa5
+Qa3
+|
+Qa2b3d6
+[[d6
+]]a5
+Qb3c5
+Qd5
+|
+Qb3
+[[c5
+]]a5
+[[a2b3d6
+a5
+c5
+]]d5
+|
+{^}
+|
+Qa3a4
+Qd2
+[[c4a5
+d2
+c2
+]]a2

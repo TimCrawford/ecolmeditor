@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/022_canzon_3_hassler.}
+|
+M(C/)
+Hf1d3
+Qf1d2
+Qf1d2
+|
+[[c1d2
+a1
+c1
+]]d1
+[[f1c2
+c1
+e1
+]]f1
+|
+[[h1a2
+f1
+e1
+]]h2
+[[e1
+f2
+h2
+]]e1
+|
+Hf1c2d3a5
+Qd3e5
+Qd3e5
+|
+[[a3a4
+c4
+a3
+]]c3
+[[d3e5
+a3
+c3
+]]d3
+|
+{^}
+|
+[[a2c5
+d3
+c3
+]]a3
+[[c3
+c4
+a3
+]]c3
+|
+Qd3c4a5
+Qf1

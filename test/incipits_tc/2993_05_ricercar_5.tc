@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Crema/intabolatura_de_lauto_1546/05_ricercar_5.}
+|
+Hh1
+Qc1
+Qf1
+|
+Qa1
+Qd1
+Hc1a2
+|
+Qa3
+Qd3
+[[a1
+]]c4
+Qb3
+|
+Qa3c5
+Qa4
+[[d3
+]]a5
+Qd5
+|
+Qa1c4
+Qb3
+[[[d2c5
+a5
+c5
+]]]d5
+Qa4
+|
+[[[b2c4a5
+a2
+d3
+]]]b3
+Qd3
+Qd1b3a6
+Qc4
+|
+Qc1a3a4
+Qd3
+[[a1
+]]c4
+Qb3
+|
+{^}
+|
+Qe2a3
+Qa2c5
+[[e5
+]]a2
+Qd3b4

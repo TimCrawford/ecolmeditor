@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/de_Bellis_MS_1615/23_repeggiata_in_soprano.}
+|
+M(C/)
+Ec2
+Qd2
+Qa1
+|
+[[c1a4
+a1
+d2
+]]c2
+[[d2xa3
+a1
+c1
+]]d2x
+|
+[[a1b3
+d2
+c2
+]]a2
+[[c2d3
+d2
+a1
+]]c2
+|
+[[d2a4
+a2
+b2
+]]d2
+[[a1d5x
+d3
+a2
+]]b2
+|
+[[d2c5x
+a2
+b2
+]]d2
+[[b2a5
+d3
+a2
+]]b2
+|
+{^}
+|
+[[a2d6x
+d3
+b3
+]]a3
+[[b3d6

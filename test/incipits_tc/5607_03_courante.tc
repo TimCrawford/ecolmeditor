@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_G_major/03_courante.}
+|
+M(3)
+[[a2
+]]c2
+Eb1
+|
+[[Xa
+]]c3
+[[c1
+]]a5
+[[c5
+]]b4
+|
+[[c4
+]]c3
+[[a2
+]]b4
+[[c5
+]]d3
+|
+Qa5
+[[b4
+]]d3
+[[c4
+]]c3
+|
+[[d6
+]]c5
+[[a3
+]]c4
+[[b4a5
+]]d6
+|
+{^}
+|
+[[c6
+]]c4
+Q.a6Xa///
+Eb4
+|
+Qc4c6
+[[Xa
+]]a2
+[[c2
+]]e2
+|
+[[c5
+]]c3
+[[c1
+]]c6
+[[d6

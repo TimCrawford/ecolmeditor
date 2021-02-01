@@ -1,0 +1,51 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bocquet/praeludium.}
+|
+M(C/)
+[[[d2Xa
+a1
+c1
+]]]a2
+[[[a1e5
+d3
+c1a4
+]]]a3
+[[[a2c5
+c2
+d2
+]]]c3
+[[[c2d3c4a5
+d2
+a1
+]]]d6
+|
+[[[c6
+c2
+d2
+]]]d6
+[[[a1a6
+c1
+d1
+]]]c2
+[[[c1Xa
+d2
+c1
+]]]d1
+[[[f1
+a4
+a3
+]]]b3
+|
+[[[d3
+Xa
+c6
+]]]d6
+[[[a5
+c5
+a1e5
+]]]f1

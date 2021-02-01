@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Ea4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/besard_thesaurus_harmonicus_1603/book_08/284_branle_02.}
+|
+Ea4Xa
+a5Xa/
+||
+M(C/)
+[[h2Xa
+i2a5
+f1a4
+]]h1a5
+|
+[[f1Xa
+h2a5
+i2a4
+]]f1a5
+Eh2Xa
+[[[f2a5
+]]]h2
+[[i3a4
+]]f1a5
+|
+[[i2Xa
+h2a5
+f2a4
+]]i3a5
+[[[i2Xa
+h2
+f2a5
+]]]h2
+[[[i3a4
+f2
+h2a5
+]]]i2
+|
+{^}
+|
+[[[f1Xa
+i2
+f1a5
+]]]h1
+[[f1a4
+]]a5
+[[a3Xa
+b3a5
+d3a4
+]]a2a5
+|
+[[d3Xa
+a3a5
+b3a4

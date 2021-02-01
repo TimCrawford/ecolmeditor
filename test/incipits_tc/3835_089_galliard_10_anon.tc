@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/089_galliard_10_anon.}
+|
+E.d2d3a4Xa
+Sa1
+Qc1a4
+Qd1d2f3d6
+|
+Qf1d2a3a4
+[[[Xa
+d1
+c1
+]]]a1
+Qc1a4
+|
+Qc1d2a4c5
+Qd1f2g3d5
+Qf1f2g3a5
+|
+Qh1d2f4d6
+E.f4
+Sf1
+Qd1d5
+|
+E.i1f2h4f6
+Sh1
+Qf1h2i3f5
+E.l1h2h6
+Sk1
+|
+Qh1f2h5
+[[f1a5
+]]d1
+Qc1e2c5
+|
+Qa1f2d6
+Qd1f2a5
+Qc1e2f3c5
+|
+{^}
+|
+Ea1f2a6
+[[[d2
+]]]c2
+[[[a2
+d3
+b3
+]]]a3
+[[[b3
+d3
+a2
+]]]c2

@@ -1,0 +1,61 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_AM/01_gigue.}
+|
+Ec5
+|
+[[a6
+a3
+]]e4
+[[Xa
+a3
+]]e4
+|
+[[[a3b4Xa/
+c3
+e3
+]]]a2
+Ec2u
+[[[a3X4
+]]]c3
+[[[e3
+]]]a2
+Ec2u
+|
+[[[Xa///
+a3
+e2
+]]]e1
+[[[d1,
+e2
+Xa//
+]]]d4
+[[[c2
+a2
+e3
+]]]c3
+|
+{^}
+|
+[[e3a6
+c2
+]]e3
+Qe4
+Ec3d4Xa//
+|
+[[e3a6
+c2
+]]e3
+[[[a3
+]]]c3
+[[[e3

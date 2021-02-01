@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/doni_MS_1640/048_toccata.}
+|
+M(C/)
+Qf1
+[[d2
+]]f1
+[[d1
+]]c1
+Qa1
+|
+Qd3
+[[c1a4
+]]d2
+[[c2
+]]a2
+Qd3
+|
+Qc1a4
+[[d1a2d6
+]]b3
+[[c2a3
+]]c4
+Qc1d2a4
+|
+QXa
+[[d1a2X4
+]]d6
+[[c6
+]]a6
+Qc1d2Xa
+|
+Qd3
+[[a4
+]]d2
+[[c2
+]]a2
+Qd3
+|
+{^}
+|
+Qf1a3
+[[d2a4
+]]f1
+[[d1a2d6
+c1a4
+a1c2e5
+]]c5
+|
+[[a5
+f2
+d3

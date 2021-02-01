@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.3.18/013_greensleeves_duet_anon/013_greensleeves_cambridge_treble.}
+|
+M(C/)
+E.d1
+Sf1
+[[h1
+]]d1
+[[f1
+]]c1
+Qd2
+|
+[[d1
+]]a1
+Ea1
+[[[e2
+]]]a1
+[[c1
+]]e2
+Qa2
+|
+E.d1
+Sf1
+[[h1
+]]d1
+[[f1
+c1
+d2
+]]f1
+|
+[[d1
+a1
+f2
+]]e2
+Qa1a2c3a6
+Qc4
+||
+E.h1
+Sf1
+Ed1
+[[[c1
+]]]a1
+[[c1
+]]d2
+Qf1
+|
+Ed1
+[[[a1
+]]]c1

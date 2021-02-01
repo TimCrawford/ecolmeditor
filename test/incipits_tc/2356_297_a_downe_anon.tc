@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.2.11/091-101/297_a_downe_anon.}
+|
+M(C/)
+Qb3d6
+Qa4
+Qb3c5
+Qa4
+|
+Qb3d5
+Qc4
+Qa3a5
+Qa4
+||
+[[d6
+b3
+a4
+]]b3
+[[c5
+b3
+a4
+]]b3
+|
+[[d5
+b3
+c4
+]]b3
+[[a5
+a3
+a4
+]]a3
+||
+[[b3d6
+d3
+a2a4
+]]b2
+[[d2b3c5
+a2
+b2a4
+]]d2
+|
+{^}
+|
+[[a1b3d5
+d1
+c1c4
+]]a1
+[[c1a3a5
+d2
+a1a4
+]]c1

@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Holborne/galliard_17.}
+|
+E.c1d2a4
+Sd1
+Qf1e4
+[[d2f3f4
+]]a1
+|
+Q.c1d3a4
+Ec1d3
+[[a1a2b3
+]]d2
+|
+Qd2d3e4
+Qd1d2c4
+Qd1c2
+|
+Q.c1d2a4
+[[[c2
+]]]a2
+[[d3
+]]a2
+|
+{^}
+|
+[[a1e5
+]]d3
+Qc1d2c5
+Qe1d2
+|
+Q.f1c2d3a5
+Ef1d2c6
+[[d1a2a6
+]]c2
+|
+Qc1d2a4
+[[a1c2d3a5
+]]d2
+[[a1
+]]b3
+|
+[[Xa
+]]d2d3e4
+[[f5
+]]Xa
+Qd2d3e4
+:||:
+Qf1d2c6
+[[d1a2a6
+]]c2
+Qc1d2a4Xa

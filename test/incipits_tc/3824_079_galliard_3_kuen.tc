@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/fuhrmann_testudo_gallo-germanica_1615/079_galliard_3_kuen.}
+|
+[[a2
+]]c2
+[[d2a3
+]]c5
+Qc2a3b5
+|
+[[a2a3c5
+]]e5
+[[a4
+]]a2
+[[e5
+]]e3
+|
+[[d2f3c5
+]]f2
+[[c1
+]]e5
+[[f5
+]]c4
+|
+[[c2d3e4
+]]e1
+[[f1
+]]e4
+[[e1c2c3
+]]d4
+|
+[[c1c2d3c6
+]]e6
+[[a5
+]]c2a3
+[[c6
+]]a2d4
+|
+Qc1c2e3c6
+[[e4
+]]f3
+Qc1c2e3
+|
+{^}
+|
+[[a2a3Xa/
+]]Xc/
+[[Xa
+]]a2
+Qf2e3Xc/
+|
+Hd2f3e4Xa/
+Qc5

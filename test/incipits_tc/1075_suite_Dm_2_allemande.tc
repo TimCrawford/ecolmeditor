@@ -1,0 +1,63 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_2_allemande.}
+|
+M(C/)
+Ee1
+|
+Qe1d2Xa///
+[[f3
+]]e1
+Q.f1f2
+Ef1
+|
+[[e3a6
+f1
+e1
+]]f2
+Qd2,a5
+[[c2
+]]a2
+|
+Qf1
+[[X4
+]]e1
+[[e1a2X5
+c1
+c1d3a6
+]]a1
+|
+[[b3Xa
+c2
+c2a3Xa/
+]]a2
+[[e3c4Xa//
+]]a2
+Qa2,Xa///
+|
+Qc2ua6
+[[a3
+]]c2
+Qa1c2Xa///
+[[c2
+]]a2
+|
+{^}
+|
+[[d3Xa//
+c1
+d3
+]]b3
+Qa3,Xa/
+[[c4
+]]a4

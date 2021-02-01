@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Bianchini/08_pass_e_mezo.}
+|
+M(C/)
+Qb2d3a5
+|
+Qb2d3a5
+[[c4
+]]c3
+[[d3
+a2
+b2
+]]d2
+|
+Qb2c4a5
+[[d3
+]]a2
+[[b2
+]]c5
+Qd3d5
+|
+Qd2f3d6
+[[f4
+]]g3
+[[f3
+d3
+f3
+]]g3
+|
+Qd2f3d6
+[[f4
+]]g3
+[[f3
+]]d3
+Qd2f3d6
+|
+{^}
+|
+[[d3a5
+c3
+d3
+]]a2
+[[b2
+d2
+a1
+]]d2
+|
+Qb2d3a5
+[[a2a4d6
+]]a6
+[[b6
+d3

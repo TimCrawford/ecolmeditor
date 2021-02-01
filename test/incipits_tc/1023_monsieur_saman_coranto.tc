@@ -1,0 +1,69 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ e5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -4 0 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Saman/monsieur_saman_coranto.}
+|
+a4Xa
+e5Xa/
+a5Xa//
+||
+Ec2
+|
+E.c2d3c4Xa//
+Sd2
+Ec2
+|
+[[a2a6
+d3
+]]c3c4c5
+|
+[[d3c6
+e5
+]]e4
+|
+[[c1c2d3
+a6
+]]Xa
+|
+[[Xa/
+e5
+]]a1d3
+|
+Ec5
+E.c2a5
+[[[[a2
+]]]]d3
+|
+[[a2
+a6
+]]c4
+|
+Qa1a2c3
+Ee1
+|
+E.e1a2a6
+Sf1
+Eh1
+|
+{^}
+|
+[[a1e5
+d3
+]]c5
+|
+E.f1f2h3a5
+Sh1
+Ek1
+|
+[[c1d2c5
+e1
+]]f1a5

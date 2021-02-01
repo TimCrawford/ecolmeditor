@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Meusel/suite_AM/03_courante.}
+|
+Ea3
+[[d4
+]]a3
+|
+[[[e3a6
+]]]c3
+Ea3
+[[c2X4
+]]a3
+[[d4Xa//
+]]c3
+|
+[[[e3a6
+]]]c3
+Ea3
+[[c2X4
+]]a3
+[[d4Xa//
+]]c3
+|
+[[[e3a6
+]]]c3
+Ea3
+[[e1X4
+]]c2
+[[e3a6
+]]a3
+|
+[[e2a5
+]]c2
+Qa2,Xd
+EXa//
+[[[e3
+]]]a2
+|
+[[e3a6
+]]c2
+[[e2a5
+]]c2
+[[a2,Xa///
+]]e3
+|
+{^}
+|
+[[c3,Xa//
+]]c5
+[[c2Xa
+]]c3

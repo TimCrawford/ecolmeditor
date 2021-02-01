@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	  <title>Electronic Corpus of Lute Music -- editors page</title>
+	  <!-- <link type="text/css" rel="stylesheet" href="webeditor.css" /> -->
+	  <link type="text/css" rel="stylesheet" href="../newlook.css" />
+	  <link type="text/css" rel="stylesheet" href="../render.css" />
+	  <link type="text/css" rel="stylesheet" href="../print.css" media="print" />
+	  <link type="text/css" rel="stylesheet" href="../features.css" />
+	  <script src="../jquery-1.4.4.js" type="text/javascript"></script>
+	  <script src="../jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+	  <script type="text/javascript" src="../soundfont-player.js"></script>
+	  <script type="text/javascript" src="../dom.js"></script>
+	  <script type="text/javascript" src="../formatdate.js"></script>
+	  <script type="text/javascript" src="../user.js"></script>  
+	  <script type="text/javascript" src="../php.js"></script>
+	  <script type="text/javascript" src="../diff.js"></script>
+	  <script type="text/javascript" src="../corebuttons.js"></script>
+	  <script type="text/javascript" src="../buttons.js"></script>
+	  <script type="text/javascript" src="../base.js"></script>
+	  <script type="text/javascript" src="../basic-drawing.js"></script>
+	  <script type="text/javascript" src="../tabclasses.js"></script>
+	  <script type="text/javascript" src="../parser.js"></script>
+	  <script type="text/javascript" src="../ornaments.js"></script>
+	  <script type="text/javascript" src="../ornament-buttons.js"></script>
+	  <script type="text/javascript" src="../rules.js"></script>
+	  <script type="text/javascript" src="../midi_mod_TC.js"></script>
+	  <script type="text/javascript" src="../editor.js"></script>
+    <script src="../siamese/siamese.js"></script>    
+	  <script type="text/javascript" src="test.js"></script>
+	  <script type="text/javascript" src="user.js"></script>
+	  <script type="text/javascript" src="distance.js"></script>
+	  <script type="text/javascript" src="../pianoroll-ajax.js"></script>
+	  <script type="text/javascript" src="../pianoroll.js"></script>
+	  <script type="text/javascript" src="../imgpreview.js"></script>
+    <!-- slider stuff from http://loopj.com/jquery-simple-slider/ -->          
+    <script src="simple-slider.js"></script>                                       
+    <link href="simple-slider.css" rel="stylesheet" type="text/css" />         
+    <link href="simple-slider-volume.css" rel="stylesheet" type="text/css" />  
+	  <script type="text/javascript" src="test.js"></script>
+	  <script type="text/javascript" src="../features.js"></script>
+	  
+	  <style type="text/css">
+	  	#search_controls {
+			border:1px solid black;
+			padding:0.5px 0.5px 4px 0.5px;
+	  	}
+	  </style>
+	  
+  </head>
+  <body onload="javascript:initialiseTestPage(true);">
+    <div id="banner">
+      <div class="logo_centre"><img src="../full_ECOLM_logo.gif" height="100px" alt="Electronic Corpus of Lute Music"/></div>
+
+    </div>
+    <div id="menubar" class="clear">
+      <div class="left" id="editbuttons">
+        <button class="reditbutton" id="undobutton"
+                onclick="javascript:TabCodeDocument.parameters.history.undo();">Undo</button>
+        <button class="reditbutton" id="redobutton"
+                onclick="javascript:TabCodeDocument.parameters.history.redo();">Redo</button>
+        <button class="editbutton" id="revertbutton"
+                onclick="javascript:revert();">Revert</button>
+      </div>
+      <div class="widerright" id="playback">
+        <button  onclick="javascript:  playOrResume(); ">Play</button>
+        <button  onclick="javascript:  stopOrPause(); ">Stop</button>
+        <select id="soundSelect">
+          <option value="G_lute" selected>G lute</option>
+          <option value="E_lute">E lute</option>
+          <option value="Bar_lute">D minor lute (A=415Hz)</option>
+        </select>
+        <small>
+        	<label class="tempo">Tempo:
+		<input id="tempoSlider" type="range" min="30" max="480" value="240" onchange="showTempoValue(this.value);" onload="showTempoValue(this.value);" onmouseup="updateTempo();" /></label>
+		<div class="editbutton" id='tempoReadOut'><span id='tempoReadOutvalue'></span> bpm</div>
+        </small>
+        <br><span id="search_controls" >
+		<select id="CorpusSelection">
+			<option value="ecolm">ECOLM</option>
+			<option value="gerbode" selected>Gerbode incipits</option>
+		</select>
+     <button disabled onclick="javascript: corpusSearch();">Search</button>
+ <!--          <button  onclick="javascript: corpusSearch();">Search</button> -->
+        </span>
+      </div>
+    </div>
+    <div id="settingsbar" class="clear">
+      <div class="left">
+        <button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Type: Italian</button>
+        <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button>
+        <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button>
+      </div>
+
+      <div class="right">
+      	<span class="barNumChoiceLabel">Bar number display:</span>
+      	<select id="BarnumberDisplay" onchange="SetBarNumDisplay(this.value);">
+      		<option value="none" selected>None</option>
+      		<option value="systems">Every system</option>
+      		<option value="five_bars">Every five bars</option>
+      		<option value="all_bars" >Every bar</option>
+      	</select>
+<!--
+      	<br>
+      	<span class="chordNumChoiceLabel">Chord number display:</span>
+      	<select id="ChordnumberDisplay" onchange="SetChordNumDisplay(this.value);">
+      		<option value="none" selected>None</option>
+      		<option value="systems">Every system</option>
+      		<option value="five_bars">Every five chords</option>
+      		<option value="all_bars" >Every bar</option>
+      	</select>
+-->
+      	<br>
+		<label for="chord">Highlight chords:</label>
+		<input style="width:60px" type="text" id="chord" name="chord">
+		<input style="width:60px" type="text" id="chord_sel_end" name="chord_sel_end">
+		<input style="width:20px" type="text" id="ng_len" name="ng_len">
+		<input type="button" value="Go" onclick="goto()">
+      </div>
+
+      <div class="right">
+      </div>
+
+    </div>
+    <div id="editor">
+      <div id="rendered" class="notation">
+        <svg class="rendered" id="notation" width="900px" height="200px"></svg>
+  	  </div>
+    </div>
+    <div id="resultTab" class="hasControls"></div>
+	  <div id="codediv">
+      <button id="tcshow" onclick="tcShow();">Show TabCode</button>
+      <div id="tcspan">Tabcode for this system:<br/>
+		    <textarea rows="6" cols="68" id="code" 
+                  onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea><br/>
+        <button onclick="stash()" id="stash">Stash</button>
+        <button onclick="compare()" id="compare">Compare</button>
+        <button onclick="tcHide();">Hide TabCode</button>
+      </div>
+    </div>
+    <div class="searchResults" id="searchResults"></div>
+    <div class="lamp lampsaved" id="statuslamp"></div>
+    <div id="debug_mess"></div>
+  </body>
+</html>
+                  <!-- onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value) parseTCDoc(this.value);"> -->

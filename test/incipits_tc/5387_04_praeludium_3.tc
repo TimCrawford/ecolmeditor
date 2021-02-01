@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Phalese/chansons_reduictz_en_tabulature_1545/04_praeludium_3.}
+|
+M(C/)
+Qa2b3c4
+[[[d3
+b3
+a3
+]]]c4
+Qa4
+Qa2b3c4
+|
+Qd2a3c5
+[[[c2
+a2
+d3
+]]]b3
+Qa3
+Qd2b3c5
+|
+Qa1b2d5
+[[[d2
+b2
+a2
+]]]d3
+Qb3
+Qa1d3d5
+|
+[[d2a3c5
+b2
+a2
+]]b2
+[[[d2
+b2
+d2
+]]]a1
+[[[d2
+b2
+a2
+]]]d3
+|
+{^}
+|
+Qa2b3d6
+[[c6
+]]a6
+Qd3c6
+Qb4
+|
+[[a1b3c4
+]]a3

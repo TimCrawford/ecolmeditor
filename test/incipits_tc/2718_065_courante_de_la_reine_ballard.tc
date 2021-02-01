@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ a4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ d5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ a5Xa// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -3 0 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/cambridge_university_library/Dd.9.33_c/065_courante_de_la_reine_ballard.}
+|
+a4Xa
+d5Xa/
+a5Xa//
+||
+:||:
+[[f1f2g3h4
+i1
+]]g4
+E.i1f2h4
+Sh1
+Ef1
+|
+[[e1a6
+a1
+]]i1
+[[h1f3
+f2g3
+]]f1
+|
+E.e1f2f3a6
+Sa1c2
+Ef1d2d4
+[[d1b2c4
+b1a4
+]]a2
+|
+Ea1b2b3d5
+[[[Xa/
+]]]c1
+Ed1
+E.c1d2d3Xa
+Se1
+Ef1
+|
+{^}
+|
+[[e1a6
+]]i1
+[[h1f3
+]]f1g3
+Ee1
+Sa6
+[[[[c1
+]]]]e1
+|
+[[f1a5
+c4
+]]Xa//

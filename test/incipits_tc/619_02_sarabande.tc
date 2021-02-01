@@ -1,0 +1,68 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qa3Xa// line 6 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -7 3 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Gumprecht/suite_Dm/02_sarabande.}
+|
+Qa3a4a5Xa///
+Ec4
+[[[a4
+]]]c4
+Qa3Xa//
+|
+Q.a3,Xa/
+[[[c4
+]]]a3
+Qa4
+|
+[[Xa
+]]a2
+Q.a2b3c4
+Ea2
+|
+{^}
+|
+Qe3,
+Qa6
+Qc5
+|
+Qa2a3a4Xa///
+[[a2a3a4
+]]a2a3a4
+E.d3Xa//
+Sb3
+|
+Q.a3,Xa/
+[[[c4
+]]]a3
+Qa4
+|
+[[b3Xa
+]]c5
+E.d3
+Sb3
+Qa3Xa/
+|
+{^}
+|
+Q.c4,X4
+Ea4
+QXa/
+:||:
+Qa3a4
+Qa2
+Qe3,Xa//
+|
+Q.a2,Xa///
+[[[e3
+]]]a2

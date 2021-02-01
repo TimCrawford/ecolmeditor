@@ -1,0 +1,71 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_F_major/11_untitled.}
+|
+M(6:8)
+Ha3a4d5d6Xa/
+Qa3a4d5d6
+|
+Hc4c5d6Xa//
+Qc4c5d6
+|
+Q.d5Xa///
+Ec4
+Qa3c4d5a6
+|
+Qa3c4d5b6
+QX4
+Qa3a4c5d6
+|
+H.a3a4d5d6Xa/
+|
+Q.a3a4d5d6Xa/
+Ea3
+Qb3Xa
+||
+Q.d3a6
+Ea2
+Qd3
+|
+Q.a2b3a4Xd
+Ea2
+Qa2
+|
+Qd3a4a6
+Q.b3c5Xa
+Ea3
+|
+Q.a3a4d5Xa/
+Ea3
+Qb3c4c5
+|
+Q.d3a4a6
+Ea2
+Qd3
+|
+Q.a2b3a4Xd
+Ea2
+Qa2
+|
+{^}
+|
+Qd3a6
+Qa2b3Xa
+Qc2
+|
+Hd2a3Xa/
+QXa
+|
+Q.a1d2d3a6
+Ea1
+Qd3

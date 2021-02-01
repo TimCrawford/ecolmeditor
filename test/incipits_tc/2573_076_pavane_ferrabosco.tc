@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.5.78/076_pavane_ferrabosco.}
+|
+M(C/)
+Q.d2d3a4
+Ea1
+[[b1d3a4
+]]d2
+Qb1
+|
+Qa1d3e5
+Qf1
+[[d2d3a4
+d1
+b1d2
+]]a1
+|
+[[b1d2d3a4
+b2
+a2
+]]b2d3
+Qa1a2c3c4
+Qa1b2c4
+|
+[[d3d4
+]]a2
+Qd2d3d4
+Qa1a2d3c4
+Qc3
+|
+Qc2d3a5
+Qa1d3e5
+[[d2d3a4
+]]c3
+Qb1d3a4
+|
+{^}
+|
+Qa1a2d3c4
+[[c3
+]]d2
+Ec2d3c4a5
+[[[a3
+]]]c3
+[[[d3
+c3
+d3
+]]]a2
+|
+[[c2d3a5
+]]c4
+Qa5

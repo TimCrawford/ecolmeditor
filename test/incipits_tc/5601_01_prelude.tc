@@ -1,0 +1,59 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/Suite_in_F_major_b_de_w/01_prelude.}
+|
+M(C/)
+[[a1
+c2
+d2
+]]e4
+[[f5
+f4
+d3
+]]e4
+[[d5
+Xa/
+c4
+]]a3
+[[c5
+a5
+b3
+]]d3
+[[a6
+a4
+a2
+]]Xa
+Eb3
+|
+E.c2
+Sa1
+Sc2
+[[a1
+Xa/
+c1
+e1
+Xa//
+c1
+d3
+c5
+]]Xa///
+|
+{^}
+|
+[[a1
+c3
+a2
+]]d6
+[[d3
+c4
+b6

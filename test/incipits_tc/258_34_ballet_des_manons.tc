@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Wa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wa5Xa/// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Ballard/34_ballet_des_manons.}
+|
+Wa4Xa
+Wa5Xa///
+||
+M(C/)
+Qf1d2a3Xa
+Qf1a4
+[[c1d2d3Xa
+]]d1
+Qf1a4
+|
+Qd2d3a4Xa
+[[a1a5
+]]c1
+[[d1a2d6
+]]c2
+Qc1d2d3Xa
+|
+{^}
+|
+Qa1c2d3a5
+[[a1Xa///
+]]d2
+[[c2a5
+d2
+a1
+]]d6
+|
+Qd3c6
+[[c1d2d3Xa
+]]e1
+[[f1
+]]c2
+Qe1a2a6
+|
+Q.f1c2a5
+Ed1
+[[c1d2d3a4
+]]a1
+Qc1d2
+|
+{^}
+|
+Q.d1a2a4d6
+Ec1
+[[a1a5
+]]d2
+Qa1c2d3
+|
+Qc1d2d3Xa
+[[a1a4
+]]d2
+[[c2a5

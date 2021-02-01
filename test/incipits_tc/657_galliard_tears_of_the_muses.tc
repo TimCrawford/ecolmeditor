@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Holborne/galliard_tears_of_the_muses.}
+|
+E.d2d3a4
+Sa1
+Eb1
+[[[d1
+]]]c4
+[[f1d4
+]]f4
+|
+Ed3
+[[[d1
+]]]b1
+Ea1
+[[[b3
+]]]d4
+Ed1c4
+[[[b1d4
+]]]a1
+|
+E.d2f3f4
+Sa1
+Eb1d3a4
+[[[d1
+]]]b1
+[[[a1a5
+]]]d2
+Ec2
+|
+{^}
+|
+E.d2d3a4
+Sa2
+Sc2
+[[[[d2
+]]]]c2
+[[[[d2
+c2
+d2
+]]]]c2
+[[[[a2
+]]]]c2
+Ed2
+Sb2
+Sa2
+|
+E.d3c4a5
+Sa2

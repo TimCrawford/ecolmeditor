@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_G_minor/03_rondeau.}
+|
+M(C/)
+Qa2
+|
+Q.c1b3Xa
+Ea2
+Qb2d6
+Qd3
+|
+Qa2d3Xa
+[[b3
+]]a3
+Q.b3
+Ea2
+|
+[[a6
+c4
+d3
+]]c4
+Qb4
+[[a5
+]]b3
+|
+Qa3
+QXa///
+Qa3b4a5
+Qa2
+|
+{^}
+|
+Q.c1b3Xa
+Ea2
+Qb2d6
+Qd3
+|
+Qa2d3Xa
+[[b3
+]]a3
+Q.b3
+Ea2
+|
+[[d3a6
+a2
+b3Xa
+]]a3
+Q.a3Xa///
+[[[c4
+]]]a3
+|
+Qc4
+QXa
+Qc4

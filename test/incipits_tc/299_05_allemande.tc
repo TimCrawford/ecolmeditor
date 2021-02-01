@@ -1,0 +1,70 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qd3Xa/ line 1 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -5 2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Ea3Xa/ line 5 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -8 5 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Baron/suite_FM/05_allemande.}
+Qd3Xa/
+Qa1
+|
+Q.c4,X4
+Ea3Xa/
+|
+[[b3Xa
+]]b3
+Eb3X4
+[[[a3
+]]]c4
+|
+[[[a3Xa/
+]]]b3
+Ed3
+[[d3a6
+]]a1
+|
+[[b3Xa
+]]b3
+Eb3X4
+[[[a3
+]]]c4
+|
+[[[a3Xa/
+]]]b3
+Ed3
+[[d3a6
+]]a1
+|
+{^}
+|
+[[a2b6
+]]d3a6
+[[b3Xa
+]]a3Xa/
+|
+Hc4,X4
+|
+Qc1d3Xa//
+Qe1d3Xa/
+|
+Q.c1d3Xa//
+Eh1
+|
+[[f2Xa//
+]]a1
+[[h3
+]]a1
+|
+Ef2Xa//
+[[[h1
+]]]g1

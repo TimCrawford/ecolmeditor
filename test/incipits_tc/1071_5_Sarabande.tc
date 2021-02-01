@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Weiss/partita_in_Dm/5_Sarabande.}
+|
+Qk1h2i3Xa///
+Qi1h3a6
+E,Xa
+[[[k2
+]]]i1
+|
+Q.k1uXa/
+Ek1
+Qh2
+|
+Qf1h2Xa
+[[h2a6
+]]f2
+Ea1
+[[[c1
+]]]c2
+|
+Qa1c2a3Xa///
+Qa2,
+Qb3a4Xa///
+|
+Qb3,c5X4
+Qa3
+Qc2
+|
+{^}
+|
+Qc2,a3Xa/
+[[a2a3X5
+]]a1
+[[c2c4Xa//
+]]a2
+|
+[[e3e4a6
+]]a2
+Qa2,a3a5
+EXa///
+[[[c2
+]]]a1
+|
+Qc2,a6
+[[a3
+]]Xa
+[[Xa/
+]]Xa//
+:|
+|
+Qc2,a6
+Ha3
+:||:

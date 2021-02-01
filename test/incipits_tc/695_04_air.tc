@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Jacobus/suite_for_lute_in_EbM/04_air.}
+b1
+M(C)
+E.f2f4Xa//
+Sg2
+|
+[[f1Xa/
+]]b2
+E.b2,b3Xa
+Sa2
+[[b2d3a6
+]]a5
+[[[a6
+g3
+a1Xa/
+]]]f2
+|
+{^}
+|
+Eg2Xa/
+[[[f1Xa//
+]]]h1
+Ef1,Xa///
+[[[a4a5
+]]]g2
+[[[f2Xa//
+i3
+f2Xa///
+]]]g2
+[[[f2Xa//
+f1
+d1,d2a6
+]]]f2
+|
+[[a1a2a5
+]]a6
+Ea5
+[[[b2,b3
+]]]a2
+[[[d3a6
+a2
+d3
+]]]a2
+[[b3Xa
+]]b2
+|
+{^}
+|
+[[[a1d3a6
+c1

@@ -1,0 +1,55 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/Piccinini/book_2_1639/03_toccata_3.}
+|
+M(C/)
+Hb4Xa
+Qe5Xa/
+Qc5Xa//
+||
+Wa1a2c3a6
+|
+[[[a1a2c3a6
+c1
+e1
+]]]f1
+[[[h1
+a2
+c2
+]]]e2
+[[[f2
+a3
+c3
+]]]d3
+[[[f3
+h1
+k1
+]]]l1
+|
+[[[n1
+a2
+d3
+]]]c3
+[[[a3
+d3
+c3
+]]]a3
+[[[c4
+a2
+d3
+]]]c3
+[[[a3
+c4
+a4
+]]]e5
+|
+{^}
+|
+[[[c5
+a2
+c2a5
+]]]d2e6

@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.2.11/021-030/068_si_vous_voulez_wilder.}
+|
+M(C/)
+E.a1
+Sc1
+[[[d1
+c1
+d1
+]]]f1
+E.h1f3
+Sh3
+[[[i3
+h3
+i3
+]]]f2
+|
+E.f1h2
+Sd1
+Sc1
+[[[[d1
+]]]]c1
+[[[[d1
+c1
+a1
+]]]]c1
+[[[d1f2
+a1
+c1
+]]]d1
+[[[f1c2
+c1
+d1
+]]]f1
+|
+Qh1d2
+[[f2
+]]h1
+[[f1h2
+]]h1
+Qd1f2c4
+|
+{^}
+|
+Ef3
+[[[d2
+]]]c2
+[[c1d2c5
+]]f3

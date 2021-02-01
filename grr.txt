@@ -1,0 +1,12 @@
+SELECT description, classmark, imageNumber, part,
+       u.systemNumber systemNumber, u.prevUnit prevUnit, u.duration ctxdur, 
+       u.tuning ctxTuning, u.font ctxFont, 
+       u.tabtype ctxTabtype, u.ocr_tabcode ocr_tabcode, u.imagePath imagePath,
+       name, state, Alloc.allocID id, 
+       Alloc.duration duration, Alloc.tuning tuning, Alloc.font font, 
+       Alloc.tabtype tabtype, tabcode, prev.finalFlag prevFlag
+     FROM Allocation AS Alloc LEFT JOIN Contributor AS User USING (username)
+            LEFT JOIN Unit u USING (unitID) LEFT JOIN Face USING (faceID)
+            LEFT JOIN Batch USING (batchID) 
+            LEFT JOIN Unit prev ON u.prevUnit = prev.unitID
+     WHERE username='dlewis' AND password='6547d8212ae604e35b4e61327f08ef3d';

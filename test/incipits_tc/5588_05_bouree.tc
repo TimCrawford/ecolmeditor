@@ -1,0 +1,68 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/suite_in_E_minor/05_bouree.}
+|
+M(C/)
+[[c2
+]]b2
+|
+Qc2Xa//
+Qc3
+Qd3a6
+[[a2Xa/
+]]d3
+|
+Qc3Xa
+Qa5
+Qc3c4
+Qc2Xa
+|
+Qb2Xa/
+Qc2Xa//
+Qb1b5
+Qc1c5/
+|
+{^}
+|
+Qb1X4
+Qc6
+Qb1b2c3
+|
+[[c3
+]]d3
+|
+Qa2c3Xa
+[[d3
+]]c3
+Qd3a6
+[[c3
+]]a3
+|
+Qc3Xa
+[[d3
+]]c3
+Qa3Xa/
+Qa2
+|
+{^}
+|
+Qd3a6
+[[c3Xa
+]]a3
+Q.a3Xa///
+[[[c4
+]]]a3
+|
+Qc4
+QXa
+Qc3c4

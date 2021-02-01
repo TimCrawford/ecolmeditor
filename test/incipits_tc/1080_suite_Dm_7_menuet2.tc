@@ -1,0 +1,70 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Qe1Xa/ line 7 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -6 3 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Weiss/suite_Dm/suite_Dm_7_menuet2.}
+|
+Qa2a3Xa///
+[[d2
+]]c1
+Qe1
+|
+Qe1Xa/
+Qa1
+Qa2
+|
+Qa2Xa
+[[f2
+]]e1
+Qf1
+|
+Qf1X4
+Qc1
+Qc2
+|
+{^}
+|
+Qe1Xa/
+Qc1Xa//
+Qa1Xa///
+|
+H.c2,a3a6
+:||:
+Qa3a6
+[[e3
+]]a2
+Qc2
+|
+Qc2Xa
+Qe3
+Qa3
+|
+Qa3Xa/
+Qa2
+Qc2Xa//
+|
+Qa1Xa///
+[[c2
+]]a1
+Qa2
+|
+{^}
+|
+Qa2Xa///
+[[e2
+]]c1
+Qe1
+|
+Qe1X4
+Qe2
+Qa2

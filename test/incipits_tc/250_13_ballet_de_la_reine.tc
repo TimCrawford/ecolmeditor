@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Wa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wd5Xa/ line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wa5Xa/// line 4 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -2 -1 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Ballard/13_ballet_de_la_reine.}
+|
+Wa4Xa
+Wd5Xa/
+Wa5Xa///
+||
+M(C/)
+Hb1d2d3a4
+Ha1b2d3a5
+|
+[[d2d4b5
+a1
+b1
+]]d1
+Qf1d4
+[[d1
+]]g2
+|
+Qd1f2g3d5
+[[d2b5
+]]a1
+Qb1a5
+Qa1d6
+|
+Qb1b2d3b6
+Qd4
+Qb1b2d3
+Qc4
+|
+[[a4
+b1d2
+d1
+]]b1
+[[a5
+a1b2
+b1
+]]a1
+|
+{^}
+|
+[[d2b5
+a1d5
+b1a4
+]]d1c4
+Qf1d4
+[[d1
+]]g2
+|
+Qd1f2d5
+[[d2b5
+]]a1
+[[b1b2a5

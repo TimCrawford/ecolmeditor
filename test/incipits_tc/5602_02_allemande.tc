@@ -1,0 +1,65 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/PL-Kj40625/Suite_in_F_major_b_de_w/02_allemande.}
+|
+M(C/)
+Ed3
+Qd3e4d5
+QXa/
+|
+Q.c4d6Xa//
+Ed3
+Q.b3c5X4
+[[[d3
+]]]b3
+|
+Qa3a4Xa/
+Qd6
+Qd5
+[[b3
+]]c4
+|
+[[e4
+]]d3
+Qa6
+Qd3Xa
+Qc2
+|
+Q.a1d2Xa/
+Ec1
+Qe1x
+Qf1f4
+|
+Qh1a6
+Qf3
+Q.f1f2f3f4
+Ef3
+|
+Qh3h4
+QX4
+QXd
+[[f3
+]]f2
+|
+{^}
+|
+Qe4
+[[d3
+]]d2
+[[Xa
+]]f1
+Qc2
+|
+[[Xa/
+]]d3
+Qe1

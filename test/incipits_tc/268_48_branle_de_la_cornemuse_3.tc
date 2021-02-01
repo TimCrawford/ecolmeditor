@@ -1,0 +1,64 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ Wa4Xa line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{ Wa5Xa/// line 3 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -1 -2 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/composers/Ballard/48_branle_de_la_cornemuse_3.}
+|
+Wa4Xa
+Wa5Xa///
+||
+M(C/)
+Qd2Xa
+Qa4
+Qa1a5
+Qd3
+|
+Qb1Xa
+[[a4
+]]a1
+Qd2
+[[b1
+]]d1
+|
+{^}
+|
+Qf1Xa
+Qg2a4
+Qg1Xa
+Qd1a4
+|
+Qf1Xa
+Qa5
+Qa4
+[[d1
+]]b1
+|
+[[a1Xa
+b1
+d1a4
+]]b1
+[[d2Xa
+b1
+a1a4
+]]d2
+|
+{^}
+|
+Qc2a5
+EXa///
+[[[a2
+]]]c2
+Qd3
+Qa5
+|
+Qd2b6
+QXa
+[[a1d6
+b1
+d1a5

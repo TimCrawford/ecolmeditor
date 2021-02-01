@@ -1,0 +1,56 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Newman/newman_fancy.}
+|
+M(C/)
+Hd6
+Qb3d6
+[[a5
+]]c5
+|
+Qb3d5
+[[d3
+]]a2
+Qb2d5
+[[a4
+]]c4
+|
+Eb2d4
+[[[a2
+]]]b2
+Ea2
+[[[d3
+]]]b3
+Ed3d4
+[[[b3
+]]]d3
+[[b3
+]]c4
+|
+Qd3a4
+[[a2
+]]b2
+Qd2a4
+[[c4
+]]a3
+|
+{^}
+|
+Ed2b3
+[[[b2
+]]]d2
+Eb2
+[[[a2
+]]]d3
+Ea2b3
+[[[d3
+]]]a2
+Ed3a4
+[[[b3
+]]]d3
+|
+Eb3c4

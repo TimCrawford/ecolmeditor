@@ -1,0 +1,62 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{<rules>
+	<tuning_named>baroque</tuning_named>
+	<rhythm-font>weiss</rhythm-font>
+	<pitch>65</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/composers/Baron/sonnetto_primero_grado/01_prelude.}
+|
+M(C)
+Eb5Xa//
+b6X5
+||
+[[b3Xd
+a5
+a4
+]]b3
+[[a2
+a1
+b3
+]]a2
+|
+[[d3a6
+a4
+a3
+]]d3
+[[a1
+d3
+a2
+]]a3
+|
+[[b3Xa
+a4
+c4
+]]a5
+[[b5
+c1
+d3
+]]b2
+|
+{^}
+|
+[[a3Xa/
+b5
+a4
+]]d6
+[[a5
+a1
+b3
+]]a2
+|
+[[c4Xa//
+a5
+b5
+]]b6
+[[d6
+b2

@@ -1,0 +1,54 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.3.18/101_dump_duet_treble_anon/101_dump_duet_treble_anon.}
+|
+M(C/)
+E.f1
+Sd1
+[[c1
+]]a1
+[[d2
+]]c2
+Qa2
+|
+E.d3
+Sb3
+[[a3
+]]c4
+Ea4
+[[[e5
+]]]c5
+Qa5
+|
+E.a4
+Sc4
+[[a3
+]]b3
+[[d3
+]]a3
+Qa2
+|
+Ed2
+Qf1
+Ed1
+[[c1
+]]d2
+Qa1
+|
+Qd2
+[[c1
+]]d1
+[[f1
+]]c1
+Qd1
+|
+Qc1
+[[d2
+]]f1
+[[[d1
+c1
+a1

@@ -1,0 +1,60 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{ c5Xa/ line 2 **TUNING DIAGRAM ??}
+{<rules><bass_tuning>(-2 -3 0 -2 -1 -2 -2 -2)</bass_tuning></rules>}
+{tabs/sources/Danzig_lute_book_1621/141_courante_anon.}
+|
+c5Xa/
+||
+Qa1a2b3c4
+Qc1
+Qd1
+|
+Qc1a2a3b4c5
+Qe2
+Qa2
+|
+[[a1a2b3c4
+]]c1
+[[d1
+]]c6
+[[d6
+]]a5
+|
+Q.a2a3c5
+EXa/
+Qa2a3
+|
+Q.d1d2f3d6
+Ef1
+Qh1
+|
+Q.c1d2d3a4
+Ed1
+Qf1
+|
+[[a1a2b3a6
+]]c1
+[[d1
+]]a1
+Qc1a2a3c5
+|
+Qa1a2c3c4a6
+Qc4
+Qa1a2c3
+:|
+|
+:||:
+[[a2a3c5
+]]c2
+[[d2
+]]a2
+Qc2a3c6
+|
+Qa2a3c5
+QXa/
+Qa2a3

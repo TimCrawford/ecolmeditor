@@ -1,0 +1,57 @@
+{<rules>
+	<tuning_named>renaissance</tuning_named>
+	<rhythm-font>varietie</rhythm-font>
+	<pitch>67</pitch>
+	<bass_tuning>(-2 -2 -1 -2 -2 -2 -1)</bass_tuning>
+</rules>}
+{tabs/sources/cambridge_university_library/Dd.2.11/021-030/077_j_attends_secours_gerarde_Cm.}
+|
+M(C/)
+Qd3
+[[d3
+]]d3
+Qc4
+Qb3
+|
+Qf1d3
+[[f1b2
+]]f1
+[[a1b2
+]]b2
+Qd1a2
+|
+Qf1d3a5
+[[i1a5
+]]a5
+Qi1f4a6
+Qh1f4d6
+|
+Qf1d3d4a5
+[[d3c4d5
+]]d3e4
+[[d1b3d5
+]]d3
+Qd1a2b3c5
+|
+Qb1b2d3a5
+[[a1b2
+]]d2
+Qd1f2g3d5
+Qd2f3
+|
+[[f1g2d3
+]]f2
+Ei1f2
+[[[i3
+]]]g3
+Qi3f4
+Qh1
+|
+{^}
+|
+Qi1g3h4
+[[i1f2g3h4
+]]h4
+[[h5f6
+h1i3
+f1g3f6

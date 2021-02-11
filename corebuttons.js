@@ -49,7 +49,11 @@ function boxHeight(n){
   return Math.round(Math.sqrt(n/2));
 }
 
+// function buttonBox(buttons, x, y, extras){
 function buttonBox(buttons, x, y, extras){
+//   Place buttonbox top-right of window:
+  x = 1350;
+  y = 30;
   var box = dialogueBoxFloat();
   var height = boxHeight(buttons.length);
   var width = Math.ceil(buttons.length/height);

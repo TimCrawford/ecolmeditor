@@ -562,24 +562,53 @@ function frenchTabSet(note){
     fret = tabletters[i];
     if(fret === "j") continue;
     if (!selected){
-      button = textButton(fret, "French "+TabCodeDocument.parameters.fontName,
-                          function(starts, to, code){
-                            return function(){
-                              TabCodeDocument.parameters.history.add(new Modify(starts, "", to, code, "fret"));
-                              clearButtons();};
-                            }(note[1], prefix+fret+""+note[0]+suffix, document.getElementById('code')),
-                          fret, false);
+    	// Tabfont has very bad metrics, causing weirdness in the dialog box, so use images instead
+      if(TabCodeDocument.parameters.fontName=="Tabfont") {
+      	if(i>15) continue; // forget ridiculously high frets for now
+		 button = imageButton(fret,
+			 function(starts, to, code){
+			   return function(){
+				TabCodeDocument.parameters.history.add(new Modify(starts, "", to, code, "fret"));
+				clearButtons();};
+			   }(note[1], prefix+fret+""+note[0]+suffix, document.getElementById('code')),
+			 locPrefix+"button_images/tabfont_letters/small/"+fret+".png", false);
+     }
+      else {
+		 button = textButton(fret, "French "+TabCodeDocument.parameters.fontName,
+			 function(starts, to, code){
+			   return function(){
+				TabCodeDocument.parameters.history.add(new Modify(starts, "", to, code, "fret"));
+				clearButtons();};
+			   }(note[1], prefix+fret+""+note[0]+suffix, document.getElementById('code')),
+			 fret, false);
+		}
     } else if (fret == selected){
       button = textButton(fret,  "French "+TabCodeDocument.parameters.fontName, function(){clearButtons();}, fret, true);
     } else {
+
+      if(TabCodeDocument.parameters.fontName=="Tabfont") {
+      	if(i>15) continue; // forget ridiculously high frets for now
+		 button = imageButton(fret,
+			 function(index, from, to, code){
+			   return function(){
+				TabCodeDocument.parameters.history.add(new Modify(index, from, to, code, "fret"));
+				clearButtons();};
+//			   }(note[1], prefix+fret+""+note[0]+suffix, document.getElementById('code')),
+			   }(note.starts, selected, fret, document.getElementById('code')),
+			 locPrefix+"button_images/tabfont_letters/small/"+fret+".png", false);
+     }
+      else {
       button = textButton(fret,"French "+TabCodeDocument.parameters.fontName,
-                         function(index, from, to, code) {
-                           return function(){
-                             TabCodeDocument.parameters.history.add(new Modify(index, from, to, code, 'fret'));
-                             clearButtons();};
-                         }(note.starts, selected, fret, document.getElementById('code')),
-                         fret, false);
+			function(index, from, to, code) {
+			  return function(){
+			    TabCodeDocument.parameters.history.add(new Modify(index, from, to, code, 'fret'));
+			    clearButtons();};
+			}(note.starts, selected, fret, document.getElementById('code')),
+			fret, false);
+	}
+    
     }
+
     buttons.push(button);
   }
   if(!selected && selected !== 0){

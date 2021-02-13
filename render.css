@@ -31,6 +31,16 @@ div.buttons {
   border-radius: 2px;
   padding: 3px;
   border-collapse: collapse;
+
+/* 
+ flex: ;
+ */
+ display: flex;
+ width: calc(100vw - 1050px);
+ flex-direction: row;
+ flex-wrap: wrap;
+ left: 1020px;
+ top: 500px;
 }
 #messages{
   clear: both;
@@ -38,7 +48,10 @@ div.buttons {
   padding: 5px;
 }
 .buttonrow{
+/* 
   display: table-row;
+ */
+  display: block;
   border: none;
 }
 .buttonrow.extrarow{

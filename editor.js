@@ -20,8 +20,9 @@ function parseTCDoc(TC) {
   updatePage();
 }
 
-function updatePage() {
+var doubleclick=false;
 
+function updatePage() {
 
   if (node) return;
   // document.getElementById("background").style.width = TabCodeDocument.SVG.style.width;
@@ -36,6 +37,18 @@ function updatePage() {
     if (prevdiv) prevdiv.style.marginLeft = w - parseInt(prevdiv.style.width);
   }
   document.getElementById("rendered").style.width = basicwidth();
+	document.getElementById("editor").addEventListener('dblclick',(event) => {
+	    logger.log('Double-clicked at '+event.offsetX+' '+event.offsetY+' in editor pane!');
+	    doubleclick = true;
+	});
+	document.getElementById("editor").addEventListener('click',(event) => {
+		logger.log('Clicked at '+event.offsetX+' '+event.offsetY+' in editor pane');
+	    doubleclick = false;
+	});
+
+
+  
+  
   //  TabCodeDocument.makeMidi();
   if (editable) {
     $(".editable .flag.rhythm").click(function(e) {
@@ -48,11 +61,31 @@ function updatePage() {
     });
     $(".editable .tabnote.French").click(function(e) {
       var word = $(this).data("word");
-      frenchTabSelector(e.pageX, (e.pageY), word);
+      logger.log("\ton "+word.fret+(word.course+1))
+	if(doubleclick) {
+		frenchTabSelector(e.pageX, (e.pageY), word);
+		doubleclick = false;
+	}
       return false;
     });
     $(".editable .tabnote.Italian").click(function(e) {
       var word = $(this).data("word");
+      logger.log("\ton "+word.fret+(word.course+1))
+	if(doubleclick) {
+      italianTabSelector(e.pageX, (e.pageY), word);
+		doubleclick = false;
+	}
+      return false;
+    });
+    $(".editable .bassnote.French").click(function(e) {
+      var word = $(this).data("word");
+      logger.log("\ton "+word.fret+(word.course+1))
+      frenchTabSelector(e.pageX, (e.pageY), word);
+      return false;
+    });
+    $(".editable .bassnote.Italian").click(function(e) {
+      var word = $(this).data("word");
+      logger.log("\ton "+word.fret+(word.course+1))
       italianTabSelector(e.pageX, (e.pageY), word);
       return false;
     });

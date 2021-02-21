@@ -19,7 +19,8 @@ var buttonRhythmFlags = "ZYTSEQHF";
 var tsbasics = [[1], [2], [3], [4], [5], [6], [8], [12],
   ["C"], ["C/", "Ç"], ["D", "C", "reverse"], ["D/", "d"],
   ["O", "0"]];
-var tabletters = "abcdefghijklmnopqrstuvwxyz";
+//var tabletters = "abcdefghijklmnopqrstuvwxyz";
+var tabletters = "abcdefghijklmnop";
 var allOrnaments;
 var colours = ["redReading", "blueReading", "greenReading"]; //==> collation editor?
 
@@ -62,6 +63,10 @@ var breakOptions = ["Piece"];
 var chordCounter = 0;
 var hilite = [];
 var sel_window_scroll = 0;
+
+var activeDialog = false;
+var sel_note = false; //currently-selected note  
+
 
 function tabxmlp(comment){
   return /^{<\/?(app|rdg)[^>]*>/i.test(comment[0]);

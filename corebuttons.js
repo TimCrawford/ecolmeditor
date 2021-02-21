@@ -35,6 +35,7 @@ function cancelButton(){
 }
 
 function clearButtons(){
+  document.removeEventListener('keydown', keyhandler);
   $('#buttonbox').remove();
 }
 
@@ -51,9 +52,7 @@ function boxHeight(n){
 
 // function buttonBox(buttons, x, y, extras){
 function buttonBox(buttons, x, y, extras){
-//   Place buttonbox top-right of window:
-  x = 1350;
-  y = 30;
+
   var box = dialogueBoxFloat();
   var height = boxHeight(buttons.length);
   var width = Math.ceil(buttons.length/height);
@@ -84,7 +83,7 @@ function buttonBox(buttons, x, y, extras){
   cell.appendChild(cancelButton());
 //  box.style.top = Math.min(y, window.innerHeight - box.offsetHeight) + window.innerHeight + window.pageXOffset;
 // TC 31 Jan 21
-  box.style.top = $(window).scrollTop() + $(window).height() - 250;
-  box.style.left = Math.max(0, x - (box.offsetWidth/2));
+//   box.style.top = $(window).scrollTop() + $(window).height() - 250;
+//   box.style.left = Math.max(0, x - (box.offsetWidth/2));
   return box;
 }

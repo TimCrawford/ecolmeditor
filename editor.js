@@ -21,6 +21,7 @@ function parseTCDoc(TC) {
 }
 
 var doubleclick=false;
+var currKeyStroke=false;
 
 function updatePage() {
 
@@ -37,17 +38,18 @@ function updatePage() {
     if (prevdiv) prevdiv.style.marginLeft = w - parseInt(prevdiv.style.width);
   }
   document.getElementById("rendered").style.width = basicwidth();
-	document.getElementById("editor").addEventListener('dblclick',(event) => {
-	    logger.log('Double-clicked at '+event.offsetX+' '+event.offsetY+' in editor pane!');
-	    doubleclick = true;
-	});
-	document.getElementById("editor").addEventListener('click',(event) => {
-		logger.log('Clicked at '+event.offsetX+' '+event.offsetY+' in editor pane');
-	    doubleclick = false;
-	});
 
+/*
+  document.getElementById("editor").addEventListener('dblclick',(event) => {
+//    logger.log('Double-clicked on '+word.fret+(word.course+1)+ 'at '+event.offsetX+' '+event.offsetY+' in editor pane!');
+    doubleclick = true;
+  });
+  document.getElementById("editor").addEventListener('click',(event) => {
+//    logger.log('Clicked on '+word.fret+(word.course+1)+ 'at '+event.offsetX+' '+event.offsetY+' in editor pane!');
+    doubleclick = false;
+  });
+*/
 
-  
   
   //  TabCodeDocument.makeMidi();
   if (editable) {
@@ -60,35 +62,37 @@ function updatePage() {
       return false;
     });
     $(".editable .tabnote.French").click(function(e) {
+      doubleclick = true;
       var word = $(this).data("word");
-      logger.log("\ton "+word.fret+(word.course+1))
-	if(doubleclick) {
-		frenchTabSelector(e.pageX, (e.pageY), word);
-		doubleclick = false;
-	}
+      sel_note = word;
+//      logger.log('Clicked on '+word.fret+(word.course+1)+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
+      activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
+//      logger.log(activeDialog)
+//      frenchTabSelector(e.pageX, (e.pageY), word);
+      getKeys(activeDialog);
+    });
+
+	$(".editable .tabnote.Italian").click(function(e) {
+      doubleclick = true;
+      var word = $(this).data("word");
+      sel_note = word;
+//      logger.log('Clicked on '+word.fret+(word.course+1)+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
+      activeDialog = italianTabSelector(e.pageX, (e.pageY), word);
+//      logger.log(activeDialog)
+//      italianTabSelector(e.pageX, (e.pageY), word)
+      getKeys(activeDialog);
+    });
+
+    $(".editable .bassgroup").click(function(e) {
+      var word = $(this).data("word");
+    //  logger.log(word)
+      if(word.TC.length) logger.log('Clicked on bass course '+word.TC+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
+      else logger.log('Clicked on bass number '+word.course+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
+      if(this.querySelectorAll(".French").length) activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
+      else activeDialog = italianTabSelector(e.pageX, (e.pageY), word);
       return false;
     });
-    $(".editable .tabnote.Italian").click(function(e) {
-      var word = $(this).data("word");
-      logger.log("\ton "+word.fret+(word.course+1))
-	if(doubleclick) {
-      italianTabSelector(e.pageX, (e.pageY), word);
-		doubleclick = false;
-	}
-      return false;
-    });
-    $(".editable .bassnote.French").click(function(e) {
-      var word = $(this).data("word");
-      logger.log("\ton "+word.fret+(word.course+1))
-      frenchTabSelector(e.pageX, (e.pageY), word);
-      return false;
-    });
-    $(".editable .bassnote.Italian").click(function(e) {
-      var word = $(this).data("word");
-      logger.log("\ton "+word.fret+(word.course+1))
-      italianTabSelector(e.pageX, (e.pageY), word);
-      return false;
-    });
+
     $(".pieceBreak").click(function(e) {
       var word = $(this).data("word");
       breakSelector(e.pageX, (e.pageY), word);
@@ -172,6 +176,68 @@ function updatePage() {
       beamTable(e.pageX, (e.pageY), beamgroup);
     });
   }
+}
+
+
+
+// Deal with keystrokes for user-interaction in pane
+let keysPressed = [];
+var alpha = /[ A-Za-z]/;
+var numeric = /[0-9]/; 
+var alphanumeric = /[ A-Za-z0-9]/;
+function getKeys() {
+   document.addEventListener('keydown', keyhandler);
+}
+function keyhandler(event) {
+   keysPressed[event.key] = true;
+   if ((keysPressed['Control']||keysPressed['Meta']) && (event.key == '.')) {
+	  logger.log(event.code +" [Cancelled!]");
+	  releaseKeys();
+	  clearButtons();
+	  activeDialog = false;		  
+   }
+   else {
+	var keyChar = String.fromCharCode(event.which || event.key)
+	
+	// experiment to test keystroke entry: needs doing properly!
+	
+	if(alphanumeric.test(keyChar)) {
+	  var selected = false;
+	  var prefix = false;
+	  var suffix = false;
+	  if(Array.isArray(sel_note)){
+	    prefix = (note[2] && " ") || "";
+	    suffix = (note[3] && " ") || "";
+	  } else {
+	    selected = letterPitch(sel_note.fret);
+	  }
+	  var tab_alpha="abcdefghjklmnop";
+		if(selected) {
+			if(curTabType=="Italian") {
+				logger.log("Change tab number " 
+					+ selected  +" to "+event.key 
+					+ " on course "+ (sel_note.course + 1) 
+					+ " (code offset " + sel_note.starts + ")");
+				TabCodeDocument.parameters.history.add(new Modify(sel_note.starts, "abcdefghjklmnop"[selected], "abcdefghjklmnop"[event.key], code, "fret"));
+			}
+			else {
+				logger.log("Change tab letter " 
+					+ "abcdefghjklmnop"[selected] +" to "+event.key 
+					+ " on course "+ (sel_note.course + 1) 
+					+ " (code offset " + sel_note.starts + ")");
+				TabCodeDocument.parameters.history.add(new Modify(sel_note.starts, "abcdefghjklmnop"[selected], event.key, code, "fret"));
+			}
+			clearButtons();
+		  }
+	}
+	// end of keyboard entry experiment code
+
+   }
+}
+	
+function releaseKeys() {
+//   delete keysPressed[event.key];
+   keysPressed.length = 0;
 }
 
 function refresh() {
@@ -300,7 +366,7 @@ function italianTabSelector(x, y, note) {
     };
   }(note, x, y), "Ornaments/Fingerings", false));
   //  genericSelector(set, x, y, extras);
-  buttonBox(set, x, y, extras);
+  return buttonBox(set, x, y, extras);
 }
 
 function frenchTabSelector(x, y, note) {
@@ -327,7 +393,7 @@ function frenchTabSelector(x, y, note) {
     };
   }(note, x, y), "Ornaments/Fingerings", false));
   //  genericSelector(set, x, y, extras);
-  buttonBox(set, x, y, extras);
+  return buttonBox(set, x, y, extras);
 }
 
 function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {

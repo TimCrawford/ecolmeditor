@@ -26,19 +26,15 @@ div.buttons {
 #buttonbox{
   background-color: white;
   z-index: 12;
-  position: absolute;
+ 
+  position: fixed;
+ 
   border: 2px solid #AAB;
   border-radius: 2px;
   padding: 3px;
   border-collapse: collapse;
 
-/* 
- flex: ;
- */
- display: flex;
- width: calc(100vw - 1050px);
- flex-direction: row;
- flex-wrap: wrap;
+ 
  left: 1020px;
  top: 500px;
 }
@@ -50,9 +46,14 @@ div.buttons {
 .buttonrow{
 /* 
   display: table-row;
- */
   display: block;
-  border: none;
+ */
+ border: none;
+ flex: auto;
+ display: flex;
+ width: calc(100vw - 1050px);
+ flex-direction: row;
+ flex-wrap: wrap;
 }
 .buttonrow.extrarow{
   display: block;

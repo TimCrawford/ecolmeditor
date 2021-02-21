@@ -474,6 +474,7 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
           }
         }
         this.mainCourses[i].draw(this.DOMObj, " "+extraClasses.join(" "));
+
         if(isNaN(this.mainCourses[i].rpos)) {
 //          alert([this.mainCourses[i].fret, this.mainCourses[i].course]);
         } else {
@@ -487,6 +488,7 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
         $(el).data("word", this);
         $(el).data("course", i+1);
       }
+
     }
   };
   this.drawBassCourses = function(){
@@ -695,7 +697,7 @@ function TabNote(fret, extras, starts, course){
 function bassNote(fret, code, course, starts, numeric){
   this.tType = "BassNote";
   this.fret = fret;
-  this.extra = new Array();
+  this.extras = new Array();
   this.start = starts;
   this.course = course;
   this.fingerings = false;
@@ -738,6 +740,7 @@ function bassNote(fret, code, course, starts, numeric){
   this.pitch = function(tuning){
     return tuning[this.course+mainCourseCount]+letterPitch(this.fret);
   };
+return this.DOMObj;
 }
 
 var barNumDisplay = "";

@@ -500,7 +500,8 @@ function italianTabSet(note){
   var buttons = new Array(24);
   var fret;
   var button;
-  for(var i=0; i<24; i++){
+//  for(var i=0; i<24; i++){
+  for(var i=0; i<16; i++){
     if(!selected && selected !== 0) {
       // This is an insertion
       button = textButton("f-"+i,"Italian",

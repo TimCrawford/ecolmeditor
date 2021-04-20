@@ -16,7 +16,7 @@ function goto(){
 	ng_len = parseInt(document.getElementById('ng_len').value);
 	if(endChord<selectedChord) alert("End chord must be >= "+selectedChord);
 	else {
-		hilite.length=0; // empty the hilite array
+ 		hilite.length=0; // empty the hilite array
 		TabCodeDocument.draw();
 		refresh();
 		window.scrollTo(0,sel_window_scroll);
@@ -33,8 +33,9 @@ function refresh2(){
   var newTC = new Tablature($("#code")[0].value, TabCodeDocument.SVG, curParams);
   var newdiff = new NW(TabCodeDocument.TabWords, newTC.TabWords);
   if(newdiff.setCosts()>0){
-    TabCodeDocument = newTC;
+    if(editable) updatePage();
     TabCodeDocument.draw();
+    TabCodeDocument = newTC;
     if(editable) updatePage();
   } else {
     TO = setTimeout(function(){parseTCDoc($("#code")[0].value);}, 1000);

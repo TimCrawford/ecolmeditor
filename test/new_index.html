@@ -67,16 +67,26 @@
     <link href="simple-slider.css" rel="stylesheet" type="text/css" />         
     <link href="simple-slider-volume.css" rel="stylesheet" type="text/css" />  
  -->
+<!-- 
 	<script type="text/javascript" src="test.js">
+ -->
 	</script>
 	<script type="text/javascript" src="../features.js">
 	</script>
+	<script>
+		function getEditorScroll() {
+		  var elmnt = document.getElementById("editor_container");
+		  oldTop = elmnt.scrollTop;
+		}
+	</script>
+
 	<style type="text/css">
 	  	#search_controls {
 			border:1px solid black;
 			padding:0.5px 0.5px 4px 0.5px;
 	  	}
 	  </style>
+	  
 </head>
 <body onload="javascript:initialiseTestPage(true);">
 
@@ -107,39 +117,48 @@
 				</div>
 			</small> 
 			<br/>
+<!-- 
 			<span id="search_controls"> 
 				<select id="CorpusSelection">
 					<option value="ecolm">ECOLM</option>
 					<option value="gerbode" selected>Gerbode incipits</option>
 				</select>
 				<button disabled onclick="javascript: corpusSearch();">Search</button> 
-		<!--          <button  onclick="javascript: corpusSearch();">Search</button> -->
+		<!~~          <button  onclick="javascript: corpusSearch();">Search</button> ~~>
 			</span> 
+ -->
 		</div>
 	</div>
 	<div id="settingsbar" class="clear">
 		<div class="left">
 			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Type: Italian</button> <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
 		</div>
-	</div>
-	<div id="barnum_highlight" class="clear">
-		<span class="barNumChoiceLabel">Bar number display:</span> 
-		<select id="BarnumberDisplay" onchange="SetBarNumDisplay(this.value);">
-			<option value="none" selected>None</option>
-			<option value="systems">Every system</option>
-			<option value="five_bars">Every five bars</option>
-			<option value="all_bars">Every bar</option>
-		</select>
-		<br /> 
-		<label for="chord">Highlight chords:</label> 
-		<input style="width:60px" type="text" id="chord" name="chord" /> 
-		<input style="width:60px" type="text" id="chord_sel_end" name="chord_sel_end" /> 
-		<input style="width:20px" type="text" id="ng_len" name="ng_len" /> 
-		<input type="button" value="Go" onclick="goto()"/> 
+		<span class="right" id="barnum_highlight" class="clear">
+			<span class="barNumChoiceLabel">Bar number display:</span> 
+			<select id="BarnumberDisplay" onchange="SetBarNumDisplay(this.value);">
+				<option value="none" selected>None</option>
+				<option value="systems">Every system</option>
+				<option value="five_bars">Every five bars</option>
+				<option value="all_bars">Every bar</option>
+			</select>
+			<br /> 
+		</span>
+<!-- 
+		<span id="chord_hlite_controls">
+			<label for="chord">Highlight chords:</label> 
+			<input style="width:60px" type="text" id="chord" name="chord" /> 
+			<input style="width:60px" type="text" id="chord_sel_end" name="chord_sel_end" /> 
+			<input style="width:20px" type="text" id="ng_len" name="ng_len" /> 
+			<input type="button" value="Go" onclick="goto()"/> 
+		</span>
+ -->
 	</div>
 </div>
 
-<div id="editor_container" class="editor_left" style="bottom: 0; margin-left: 15px; margin-right: 15px; margin-bottom: 15px; width: 1000px;top: 270px; position: fixed; y-overflow: auto; overflow-x: scroll;">
+<!-- 
+<div id="editor_container" class="editor_left" style="bottom: 0; margin-left: 15px; margin-right: 15px; margin-bottom: 15px; width: 1000px;top: 270px; position: fixed; y-overflow: auto; overflow-x: scroll;" onscroll="getEditorScroll()">
+ -->
+<div id="editor_container" class="editor_left" style="bottom: 0; margin-left: 15px; margin-right: 15px; margin-bottom: 15px; width: 1000px; position: relative; y-overflow: scroll; overflow-x: scroll;" onscroll="getEditorScroll()">
 	<div id="editor">
 		<div id="rendered" class="notation">
 			<svg class="rendered" id="notation" width="900px"  ></svg> 
@@ -152,20 +171,43 @@
 <div id="code_container" style="float: right;width: 40%; position: fixed; top: 30;
     right: 0;">
  -->
-<div id="code_container" style="width: calc(100vw - 1050px); position: fixed; top: 30px; left: 1020px;">
-	<div id="codediv">
-		<button id="tcshow" onclick="tcShow();">Show TabCode</button> 
+<!-- 
+<div id="code_container" style="width: calc(100vw - 1050px); position: fixed; top: 30px; left: 1000px;">
+ -->
+<div id="code_container" style="width: 30%; position: fixed; top: 30px; left: 75%">
+	<div id="codediv" >
+		<input type="file" id="filetoRead" /> <br>
+		<button id="tcshow" onclick="tcShow();" style="display:none">Show TabCode </button> 
+		<button id="tchide" onclick="tcHide();"  style="display:none">Hide TabCode</button> 
+		<script>
+		  document.getElementById("filetoRead").addEventListener("change",function(){
+			  var file = this.files[0];
+			  var name = file.name;
+			  if (file) {
+				 if(name.substring(name.length-3,name.length)==".tc") {
+					 var reader = new FileReader();
+					 reader.onload = function (evt) {
+					   console.log(evt);
+					   document.getElementById("code").value = evt.target.result;
+					 };
+					 reader.onerror = function (evt) {
+					   console.error("An error ocurred reading the file",evt);
+					 };
+					 reader.readAsText(file, "UTF-8");
+					 refreshFromTabCode();
+					 $(document.getElementById('tcshow')).show();
+				    }
+				else alert("Not a TabCode file! Please try again!")
+			    }
+			},false);
+		</script>
+
 		<div id="tcspan">
 <!-- 
 			Tabcode for this piece:<br />
  -->
-			<textarea style=" height:400px; resize: none" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
+			<textarea style=" height:400px; width:250px; resize: both" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
 			<br />
-<!-- 
-		   <button onclick="stash()" id="stash">Stash</button>
-		   <button onclick="compare()" id="compare">Compare</button>
- -->
-			<button onclick="tcHide();">Hide TabCode</button> 
 		</div>
 	</div>
 </div>

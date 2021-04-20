@@ -29,12 +29,13 @@ function refreshFromTabCode(){
   TO = setTimeout(function(){refresh2();}, 250);
 }
 function refresh2(){
-  curBeams = 0;
+ curBeams = 0;
   var newTC = new Tablature($("#code")[0].value, TabCodeDocument.SVG, curParams);
   var newdiff = new NW(TabCodeDocument.TabWords, newTC.TabWords);
   if(newdiff.setCosts()>0){
-    TabCodeDocument = newTC;
+    if(editable) updatePage();
     TabCodeDocument.draw();
+    TabCodeDocument = newTC;
     if(editable) updatePage();
   } else {
     TO = setTimeout(function(){parseTCDoc($("#code")[0].value);}, 1000);

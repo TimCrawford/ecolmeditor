@@ -22,9 +22,9 @@ function parseTCDoc(TC) {
 
 var doubleclick=false;
 var currKeyStroke=false;
+var oldTop = 0;
 
 function updatePage() {
-
   if (node) return;
   // document.getElementById("background").style.width = TabCodeDocument.SVG.style.width;
   if (document.getElementById("banner")) {
@@ -176,6 +176,9 @@ function updatePage() {
       beamTable(e.pageX, (e.pageY), beamgroup);
     });
   }
+
+document.getElementById("editor_container").scrollTop = oldTop;
+
 }
 
 
@@ -200,7 +203,7 @@ function keyhandler(event) {
 	var keyChar = String.fromCharCode(event.which || event.key)
 	
 	// experiment to test keystroke entry: needs doing properly!
-	
+/*	
 	if(alphanumeric.test(keyChar)) {
 	  var selected = false;
 	  var prefix = false;
@@ -231,7 +234,7 @@ function keyhandler(event) {
 		  }
 	}
 	// end of keyboard entry experiment code
-
+*/
    }
 }
 	
@@ -245,6 +248,7 @@ function refresh() {
     $(TabCodeDocument.SVG).empty();
   }
   if (document.getElementById('code') && document.getElementById('code').value.trim().length) {
+    sel_window_scroll = cury;
     parseTCDoc(document.getElementById('code').value);
     if (curUser) {
       dbSynchronise();
@@ -346,7 +350,7 @@ function italianTabSelector(x, y, note) {
   if (!note.extras) note.extras = [];
   var extras = [deleteButton(x, y, note.starts, note.starts + 2 + note.extras.length, "tabNote")];
   extras.push(deleteChordButton(x, y, note.chord.starts, note.chord.finishes, note.chord));
-  extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, note.chord.finishes, note.chord));
+//  extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, note.chord.finishes, note.chord));
   var course = note.chord.mainCourses.indexOf(note);
   var same;
   if (course > 0 && !note.chord.mainCourses[course - 1]) {
@@ -373,7 +377,7 @@ function frenchTabSelector(x, y, note) {
   var set = frenchTabSet(note);
   var extras = [deleteButton(x, y, note.starts, note.starts + 2 + note.extras.length, "tabNote")];
   extras.push(deleteChordButton(x, y, note.chord.starts, note.chord.finishes, note.chord));
-  extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, note.chord.finishes, note.chord));
+//  extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, note.chord.finishes, note.chord));
   var course = note.chord.mainCourses.indexOf(note);
   var same;
   if (course > 0 && !note.chord.mainCourses[course - 1]) {
@@ -409,7 +413,7 @@ function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
   if (!noDelete) {
     extras.push(deleteButton(x, y, chord.starts, chord.starts + ((chord.dotted && 2) || 1), "Flag"));
     extras.push(deleteChordButton(x, y, chord.starts, chord.finishes, chord));
-    extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, chord.finishes, chord));
+//    extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, chord.finishes, chord));
   }
   if (typeof(noBeams) == "undefined" || !noBeams) {
     extras.push(beamifyButton(x, y, chord));
@@ -421,12 +425,14 @@ function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
 function tcShow() {
   if (document.getElementById('tcspan')) {
     $(document.getElementById('tcspan')).show();
-    document.getElementById('tcspan').style.width = Math.max(parseInt(TabCodeDocument.SVG.style.width), 600) + 'px';
+    document.getElementById('tcspan').style.width = Math.max(parseInt(TabCodeDocument.SVG.style.width), 250) + 'px';
     $(document.getElementById('tcshow')).hide();
+    $(document.getElementById('tchide')).show();
   }
 }
 
 function tcHide() {
   $(document.getElementById('tcspan')).hide();
   $(document.getElementById('tcshow')).show();
+    $(document.getElementById('tchide')).hide();
 }

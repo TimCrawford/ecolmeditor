@@ -47,11 +47,14 @@ function courseChange(note, course, delta, up) {
 function courseChangeSamePitch(note, course, delta, up) {
   var tuning = curTuning; // FIXME: assume fixed tuning ;-)
   var newcourse = course + delta;
-  var newFretPosition = letterPitch(note.fret) + tuning[course] - tuning[newcourse];
+
+//  var newFretPosition = letterPitch(note.fret) + tuning[course] - tuning[newcourse];
+//  TC 5Apr21: not sure why, but courses were until now all out by one, so ...
+  var newFretPosition = letterPitch(note.fret) + tuning[course-1] - tuning[newcourse-1];
   if(newFretPosition < 0 || newFretPosition > 24){
     return false; // Or octave transpose?
   }
-  var newFret = "abcdefghiklmnopqrstuwxyz".charAt(newFretPosition);
+  var newFret = "abcdefghiklmnopqrstuwxyz".charAt(newFretPosition);  
   var button = imageButton((up ? "upCourse" : "downCourse"),
                            function(index, from, to, code){
                              return function(){

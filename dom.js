@@ -206,6 +206,18 @@ function svgRect(svgEl, x, y, width, height, cname, id){
   if(svgEl) svgEl.appendChild(el);
   return el;
 }
+function svgWhiteRect(svgEl, x, y, width, height, cname, id){
+  var el = document.createElementNS(SVGNS, "rect");
+  if(cname) el.setAttributeNS(null, "class", cname);
+  if(id) el.setAttributeNS(null, "id", id);
+  if(x) el.setAttributeNS(null, "x", x);
+  if(y) el.setAttributeNS(null, "y", y);
+  if(width) el.setAttributeNS(null, "width", width);
+  if(height) el.setAttributeNS(null, "height", height);
+  el.setAttributeNS(null, "fill","white");
+  if(svgEl) svgEl.appendChild(el);
+  return el;
+}
 function svgRoundedRect(svgEl, x, y, width, height, rx, ry,cname, id){
   var el = document.createElementNS(SVGNS, "rect");
   if(cname) el.setAttributeNS(null, "class", cname);

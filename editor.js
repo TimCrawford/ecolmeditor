@@ -98,6 +98,12 @@ function updatePage() {
       breakSelector(e.pageX, (e.pageY), word);
       return false;
     });
+    $(".systemBreak").click(function(e) {
+      var word = $(this).data("word");
+// alert("Clicked on "+word);
+      breakSelector(e.pageX, (e.pageY), word);
+      return false;
+    });
     $(".editable .fingering, .editable .orn").click(function(e) {
       var word = $(this).data("word");
       var orns = new ornamentbox(word);

@@ -99,6 +99,9 @@ function Tablature(TC, SVG, parameters, doc, win){
   this.systemOffsets = [];
   this.tokens = [];
   this.barCount=1;
+  
+  this.systemCount=1;
+
 	this.syscounts = new Array();
 	this.totalsys = 1;
 	this.maxwidths = new Array();
@@ -157,6 +160,11 @@ function Tablature(TC, SVG, parameters, doc, win){
 					TabWord.barnumber = this.barCount++;
             	}
             	incrementBarNo = false;
+            }
+            
+            if(TabWord.tType === "SystemBreak") {
+            	TabWord.systemnumber = this.systemCount++;
+            	this.TabWords.push(new SystemBreak(this.tokens[i]));
             }
             
             TabWord.prev = this.TabWords[this.TabWords.length-1];
@@ -295,6 +303,10 @@ function Tablature(TC, SVG, parameters, doc, win){
     var time = 0;
     var chordCounter = 0;
     var dur;
+
+//??
+    this.systemnumber=1;
+
     this.leftishHack = this.SVG.getBoundingClientRect().left;
     this.makeStaffDiv();
     if(editable) drawInsertBox(curx, cury, -1, this.SVG);
@@ -305,6 +317,18 @@ function Tablature(TC, SVG, parameters, doc, win){
       dur = 0;
       switch(this.TabWords[i].tType){
         case "SystemBreak":
+
+//??          
+          this.systemnumber++;
+//          svgText(TabCodeDocument.SVG, this.xpos + 20, this.ypos+5, "systemBreak", "sys_"+this.systemnumber.toString(), false, "&#U+23CE");
+ //         svgText(TabCodeDocument.SVG, this.xpos + 20, this.ypos+20, "systemBreak", "sys_"+this.systemnumber.toString(), false, "U+23CE");
+//          var el = svgRect(TabCodeDocument.SVG, this.xpos, this.ypos, 20, 20, "systemBreak", "sys_"+this.systemnumber.toString());
+//     $(el).data("word", i);
+
+//		drawSystemBreak(this.DOMObj, this.systemnumber, this.xpos, this.ypos);
+		drawSystemBreak(this,i);
+
+          
           if(breaks == "stop"){
             this.drawStaffLines();
             return;
@@ -330,7 +354,8 @@ function Tablature(TC, SVG, parameters, doc, win){
 		}
 //		logger.log("Reached a "+b.tType);
 		var this_bar = (b.barnumber+1);
-		var barnum_xoffset = 10;
+//		var barnum_xoffset = 10;
+		var barnum_xoffset = 24;
 		if(b.tType !== "Chord") {
 			if(typeof b.barnumber !== "undefined") {
 				this.barnumber = b.barnumber;		  	

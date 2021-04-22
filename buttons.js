@@ -1003,7 +1003,7 @@ function insertionButtonsBarlines(ins, x, y){
 
 function breakSelector(x, y, b){
   // Delete is the only option
-  buttonBox([], x, y, [deleteButton(x, y, b.starts, b.finishes, "pieceBreak")]);
+  buttonBox([], x, y, [deleteButton(x, y, b[1], b[2], "pieceBreak")]);
 }
 
 function metricalSet(mobject, i, j, extend, index){

@@ -71,6 +71,17 @@ function drawBarline(svg, x, dashed, dble){
 }
 */
 
+function drawSystemBreak(obj,i) {
+
+//	svgText(svg, x+20, y+5, "systemBreak", false, false, "&#U+23CE");
+//      var el = svgRect(TabCodeDocument.SVG, x, y, 20, 20, "systemBreak", "sys_"+number.toString());
+//         var el = svgRect(TabCodeDocument.SVG, 0, obj.systemOffsets[obj.systemnumber], 20, 20, "systemBreak", "sys_"+obj.systemnumber.toString());
+        var el = svgWhiteRect(TabCodeDocument.SVG, curx+20, cury+40, 20, 20, "systemBreak", "sys_"+obj.systemnumber.toString());
+        $(el).data("word", obj.tokens[i]);
+        var label = svgText(TabCodeDocument.SVG, curx+26, cury+52, "systemBreak", false, false, "^");
+        $(label).data("word", obj.tokens[i]);        
+}
+
 function drawTSC(svg, TS, i, j){
   var alone = j==0 && TS.components[i].length==1;
   var el = svgGroup(svg, "tscomponent i"+i+"j"+j, false);

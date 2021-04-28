@@ -318,16 +318,8 @@ function Tablature(TC, SVG, parameters, doc, win){
       switch(this.TabWords[i].tType){
         case "SystemBreak":
 
-//??          
           this.systemnumber++;
-//          svgText(TabCodeDocument.SVG, this.xpos + 20, this.ypos+5, "systemBreak", "sys_"+this.systemnumber.toString(), false, "&#U+23CE");
- //         svgText(TabCodeDocument.SVG, this.xpos + 20, this.ypos+20, "systemBreak", "sys_"+this.systemnumber.toString(), false, "U+23CE");
-//          var el = svgRect(TabCodeDocument.SVG, this.xpos, this.ypos, 20, 20, "systemBreak", "sys_"+this.systemnumber.toString());
-//     $(el).data("word", i);
-
-//		drawSystemBreak(this.DOMObj, this.systemnumber, this.xpos, this.ypos);
 		drawSystemBreak(this,i);
-
           
           if(breaks == "stop"){
             this.drawStaffLines();
@@ -342,17 +334,17 @@ function Tablature(TC, SVG, parameters, doc, win){
 
 		var before = i-1;
 		var b = this.TabWords[before];
-//		logger.log("Starting at SystemBreak, thing before is a "+b.tType);
+// 	logger.log("Starting at SystemBreak, thing before is a "+b.tType);
 		var count = 0;
 		while((typeof b !== "undefined") && (b.tType !== "Barline") && (b.tType !== "Chord") && (count <= 10)) {
 			count++;
 			if(typeof this.TabWords[before-1] !== "undefined") {
 				before -= 1;
 				b = this.TabWords[before];
-//			logger.log("Now looking "+before+" before at a "+b.tType);
+// 		logger.log("Now looking "+before+" before at a "+b.tType);
 			}
 		}
-//		logger.log("Reached a "+b.tType);
+// 	logger.log("Reached a "+b.tType);
 		var this_bar = (b.barnumber+1);
 //		var barnum_xoffset = 10;
 		var barnum_xoffset = 24;
@@ -363,8 +355,9 @@ function Tablature(TC, SVG, parameters, doc, win){
 			else this.barnumber = 0;
 		if(b.tType === "Barline") {
 			var	bar = document.getElementById("bar_"+this_bar);
-				bar.setAttributeNS(null, "class", "barNumber terminalBarnumber");
-				bar.setAttributeNS(null, "id", "");
+// TC 23Apr21: commented out next two lines as they just caused problem - I don't understand this at all
+// 				bar.setAttributeNS(null, "class", "barNumber terminalBarnumber");
+// 				bar.setAttributeNS(null, "id", "");
 			}
 		}
 		if(this.barnumber >= 9) barnum_xoffset = 15;

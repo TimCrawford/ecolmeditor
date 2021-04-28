@@ -261,6 +261,12 @@ line, .staffline, .beamelement {
   stroke-width: 2px;
   stroke: #BAA;
 }
+.systemBreakBox:hover {
+  stroke-width: 2px;
+  stroke: #D48;
+  cursor: pointer;
+  user-select: none;
+}
 .tso {
   padding-left: 0.4em;
 }

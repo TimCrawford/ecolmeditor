@@ -98,10 +98,12 @@ function updatePage() {
       breakSelector(e.pageX, (e.pageY), word);
       return false;
     });
-    $(".systemBreak").click(function(e) {
+    $(".systemBreakBox").click(function(e) {
       var word = $(this).data("word");
 // alert("Clicked on "+word);
+//       $(".systemBreak")[0].setAttributeNS(null, "fill","pink");
       breakSelector(e.pageX, (e.pageY), word);
+//       $(".systemBreak")[0].setAttributeNS(null, "fill","white");
       return false;
     });
     $(".editable .fingering, .editable .orn").click(function(e) {
@@ -203,7 +205,10 @@ function keyhandler(event) {
 	  logger.log(event.code +" [Cancelled!]");
 	  releaseKeys();
 	  clearButtons();
-	  activeDialog = false;		  
+	  activeDialog = false;		
+
+// 	   for(var p=0;p<$(".systemBreak").length;p++) $(".systemBreak")[p].setAttributeNS(null, "fill","white");
+  
    }
    else {
 	var keyChar = String.fromCharCode(event.which || event.key)

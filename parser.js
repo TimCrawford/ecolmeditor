@@ -231,7 +231,8 @@ function Tablature(TC, SVG, parameters, doc, win){
     this.systemOffsets = structure.systems;
     this.commentOffsets = structure.comments;
     this.tokens = structure.words;
-    this.systemOffsets.push(this.finishes);
+//    this.systemOffsets.push(this.finishes);
+    this.systemOffsets.push(structure.words.length);
   };
   this.fixWhitespaceNoninteractive(typeof(document)!=='undefined' && document ? document.getElementById('code') : false);
   this.initialParse();

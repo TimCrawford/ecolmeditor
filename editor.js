@@ -39,28 +39,19 @@ function updatePage() {
   }
   document.getElementById("rendered").style.width = basicwidth();
 
-/*
-  document.getElementById("editor").addEventListener('dblclick',(event) => {
-//    logger.log('Double-clicked on '+word.fret+(word.course+1)+ 'at '+event.offsetX+' '+event.offsetY+' in editor pane!');
-    doubleclick = true;
-  });
-  document.getElementById("editor").addEventListener('click',(event) => {
-//    logger.log('Clicked on '+word.fret+(word.course+1)+ 'at '+event.offsetX+' '+event.offsetY+' in editor pane!');
-    doubleclick = false;
-  });
-*/
-
-  
   //  TabCodeDocument.makeMidi();
+
   if (editable) {
     $(".editable .flag.rhythm").click(function(e) {
-      rhythmFlagSelector(e.pageX, (e.pageY), $(this).data("word"));
+      activeDialog = rhythmFlagSelector(e.pageX, (e.pageY), $(this).data("word"));
+      getKeys(activeDialog);
       return false;
     });
     $("#contextflag").click(function(e) {
       buttonBox(contextButtonSet(0, 0, $(this).data("word")), e.pageX, (e.pageY), []);
       return false;
     });
+    
     $(".editable .tabnote.French").click(function(e) {
       doubleclick = true;
       var word = $(this).data("word");
@@ -71,6 +62,7 @@ function updatePage() {
 //      frenchTabSelector(e.pageX, (e.pageY), word);
       getKeys(activeDialog);
     });
+
 
 	$(".editable .tabnote.Italian").click(function(e) {
       doubleclick = true;
@@ -90,6 +82,7 @@ function updatePage() {
       else logger.log('Clicked on bass number '+word.course+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
       if(this.querySelectorAll(".French").length) activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
       else activeDialog = italianTabSelector(e.pageX, (e.pageY), word);
+      getKeys(activeDialog);
       return false;
     });
 
@@ -102,8 +95,9 @@ function updatePage() {
       var word = $(this).data("word");
 // alert("Clicked on "+word);
 //       $(".systemBreak")[0].setAttributeNS(null, "fill","pink");
-      breakSelector(e.pageX, (e.pageY), word);
+      activeDialog = breakSelector(e.pageX, (e.pageY), word);
 //       $(".systemBreak")[0].setAttributeNS(null, "fill","white");
+      getKeys(activeDialog);
       return false;
     });
     $(".editable .fingering, .editable .orn").click(function(e) {
@@ -115,6 +109,8 @@ function updatePage() {
       var word = $(this).data("word");
       buttonBox(barlineButtonSet(0, 0, $(this).data("word")),
         e.pageX, (e.pageY), [deleteButton(0, 0, word.starts, word.finishes, "barline")]);
+ getKeys(); // ??
+
     });
     $(".missingFret").click(function(e) {
       var word = $(this).data("word");
@@ -189,7 +185,61 @@ document.getElementById("editor_container").scrollTop = oldTop;
 
 }
 
+/****** Helper functions for dealing with clicks on editor pane 
+        suggested by DL 27Apr2021] *******/
+/* See Tablature () in parser.js:
+	this.systemOffsets = structure.systems;
+*/
+function getSystem(y, systems) {
+ // Find the system whose top is immediately above the mouse pointer
+ // y is mouse y coordinate
+ // systems is an array of the form [{top, firstWordIndex, LastWordIndex},{}...]
+ var low=0;
+ var high = systems.length - 1;
+ var mid;
 
+ while(low <= high){
+   mid = Math.floor((low + high) / 2);
+   if(systems[mid].top > y) {
+     // mouse is above this system, so check earlier in array
+     high = mid - 1;
+   } else if (mid == systems.length - 1 || systems[mid+1].top > y) {
+     // mouse is at system[mid] or this is the last system, and mouse is below it
+     return systems[mid];
+   } else {
+     // mouse is below this system, so check later in array
+     low = mid + 1;
+   }
+ }
+ // mouse is above all system tops
+ return null;
+}
+
+function getPreviousChord(x, tabWords, systemStart, systemEnd){
+ // Find the Chord that starts immediately to the left of the mouse pointer
+ // x is mouse x coordinate
+ // tabWords is the array of all tabWords (in TabCodeDocument)
+ // systemStart and End are the indices of the first and last words in the system
+
+ 
+ var clickx = x - (parseInt(document.getElementById("editor_container").style.marginLeft) + parseInt(document.getElementById("rendered").offsetLeft) );
+ var low=systemStart;
+ var high = systemEnd;
+ var mid;
+ if(low==high) return tabWords[low]; // only symbol on system
+ for(var q=systemStart;q<systemEnd;q++) {
+// 	if (clickx < tabWords[q].xpos) return null; // click is before first chord
+ 	if (clickx < tabWords[q].rpos) {
+ 		continue;
+ 	}
+ 	else {
+ // click is on or after current chord, so return it
+ 		return tabWords[q];
+ 	}
+ }
+}
+
+/******** End of new helper functions 28Apr2021 ********/
 
 // Deal with keystrokes for user-interaction in pane
 let keysPressed = [];
@@ -197,22 +247,29 @@ var alpha = /[ A-Za-z]/;
 var numeric = /[0-9]/; 
 var alphanumeric = /[ A-Za-z0-9]/;
 function getKeys() {
-   document.addEventListener('keydown', keyhandler);
+    document.addEventListener('keydown', keyhandler);
+//   buttonbox.addEventListener('keydown', keyhandler);
 }
 function keyhandler(event) {
    keysPressed[event.key] = true;
+//   logger.log ("event.key "+event.key);
    if ((keysPressed['Control']||keysPressed['Meta']) && (event.key == '.')) {
-	  logger.log(event.code +" [Cancelled!]");
-	  releaseKeys();
-	  clearButtons();
-	  activeDialog = false;		
-
-// 	   for(var p=0;p<$(".systemBreak").length;p++) $(".systemBreak")[p].setAttributeNS(null, "fill","white");
-  
+// 	  logger.log(event.code +" [Cancelled!]");
    }
-   else {
-	var keyChar = String.fromCharCode(event.which || event.key)
-	
+   if(event.key == 'ArrowDown') {
+// 		logger.log(event.code + ": move "+sel_note.fret+" on "+(sel_note.course+1)+" down a course (same pitch)");
+		if(keysPressed['Shift']) {FrDownCourse(sel_note, (sel_note.course+1)).click();}
+		else {FrDownCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
+	}
+	else if(event.key == 'ArrowUp') {
+// 		logger.log(event.code + ": move "+sel_note.fret+" on "+(sel_note.course+1)+" up a course (same pitch)");
+		if(keysPressed['Shift']) {FrUpCourse(sel_note, (sel_note.course+1)).click();}
+		else {FrUpCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
+	}
+	releaseKeys();
+	clearButtons();
+	activeDialog = false;	
+}  	
 	// experiment to test keystroke entry: needs doing properly!
 /*	
 	if(alphanumeric.test(keyChar)) {
@@ -245,9 +302,8 @@ function keyhandler(event) {
 		  }
 	}
 	// end of keyboard entry experiment code
-*/
    }
-}
+*/
 	
 function releaseKeys() {
 //   delete keysPressed[event.key];

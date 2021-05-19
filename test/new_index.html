@@ -206,6 +206,33 @@
 <!-- 
 			Tabcode for this piece:<br />
  -->
+			<button id="tcdownload" onclick="download();">Download TabCode </button> 
+
+<script>
+
+	// from: https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js
+	function download() {
+		const downloadToFile = (content, filename, contentType) => {
+			const a = document.createElement('a');
+			const file = new Blob([content], {type: contentType});
+			a.href= URL.createObjectURL(file);
+			a.download = filename;
+			a.click();
+			URL.revokeObjectURL(a.href);
+		};
+// 		document.querySelector('#tcdownload').addEventListener('click', () => {
+			const textArea = document.getElementById('code');
+			var new_filename = prompt("New filename", "tabcode.tc");
+			if (new_filename != null) {
+				downloadToFile(textArea.value, new_filename, 'text/plain');
+  			}
+  			else {
+  				alert("No filename given! Try Again!");
+  			}		
+// 		});
+	}
+</script>
+
 			<textarea style=" height:400px; width:250px; resize: both" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
 			<br />
 		</div>

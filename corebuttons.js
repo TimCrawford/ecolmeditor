@@ -35,7 +35,7 @@ function cancelButton(){
 }
 
 function clearButtons(){
-  document.removeEventListener('keydown', keyhandler);
+  document.removeEventListener('keydown', keyDownhandler);
   $('#buttonbox').remove();
 }
 

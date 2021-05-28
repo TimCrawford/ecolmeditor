@@ -242,73 +242,62 @@ function getPreviousChord(x, tabWords, systemStart, systemEnd){
 /******** End of new helper functions 28Apr2021 ********/
 
 // Deal with keystrokes for user-interaction in pane
-let keysPressed = [];
-var alpha = /[ A-Za-z]/;
-var numeric = /[0-9]/; 
-var alphanumeric = /[ A-Za-z0-9]/;
+// let keysPressed = [];
 function getKeys() {
-    document.addEventListener('keydown', keyhandler);
-//   buttonbox.addEventListener('keydown', keyhandler);
+    document.addEventListener('keydown', keyDownhandler);
+//     document.addEventListener('keyup', keyUphandler);
 }
-function keyhandler(event) {
-   keysPressed[event.key] = true;
-//   logger.log ("event.key "+event.key);
-   if ((keysPressed['Control']||keysPressed['Meta']) && (event.key == '.')) {
-// 	  logger.log(event.code +" [Cancelled!]");
+// function keyUphandler(event) {
+//    logger.log(event.key +" now up")
+// }
+function keyDownhandler(event) {
+   if((event.key == 'Shift')||(event.key == 'Meta')||(event.key == 'Alt')) return;
+//   logger.log(event.key +" now down")
+   if ((event.key == '.')) {
+// Nothing needed as Cancel is builtin!
+   }
+   if (event.key === "Backspace") {
+ 	  var target_button = false;
+ 	  if(event.shiftKey)  {
+		  logger.log(event.code +" + Shift [Delete Chord!]");
+// 		  target_button = $(".textbutton").filter(function() {
+// 			  return $(this).text("Delete Chord") ;
+// 			  });
+// 		  if(target_button) target_button.click();
+		  logger.log("Keystroke not implemented!")
+ 	  }
+ 	  else {
+ 		  logger.log(event.code +" [Delete]");
+		  target_button = $(".textbutton").filter(function() {
+			  return $(this).text("Delete");
+			  });
+		  if(target_button) target_button[0].click();
+ 	  }
+// 	  */
    }
    if(event.key == 'ArrowDown') {
-// 		logger.log(event.code + ": move "+sel_note.fret+" on "+(sel_note.course+1)+" down a course (same pitch)");
-		if(keysPressed['Shift']) {FrDownCourse(sel_note, (sel_note.course+1)).click();}
-		else {FrDownCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
-	}
-	else if(event.key == 'ArrowUp') {
-// 		logger.log(event.code + ": move "+sel_note.fret+" on "+(sel_note.course+1)+" up a course (same pitch)");
-		if(keysPressed['Shift']) {FrUpCourse(sel_note, (sel_note.course+1)).click();}
-		else {FrUpCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
-	}
-	releaseKeys();
-	clearButtons();
-	activeDialog = false;	
-}  	
-	// experiment to test keystroke entry: needs doing properly!
-/*	
-	if(alphanumeric.test(keyChar)) {
-	  var selected = false;
-	  var prefix = false;
-	  var suffix = false;
-	  if(Array.isArray(sel_note)){
-	    prefix = (note[2] && " ") || "";
-	    suffix = (note[3] && " ") || "";
-	  } else {
-	    selected = letterPitch(sel_note.fret);
-	  }
-	  var tab_alpha="abcdefghjklmnop";
-		if(selected) {
-			if(curTabType=="Italian") {
-				logger.log("Change tab number " 
-					+ selected  +" to "+event.key 
-					+ " on course "+ (sel_note.course + 1) 
-					+ " (code offset " + sel_note.starts + ")");
-				TabCodeDocument.parameters.history.add(new Modify(sel_note.starts, "abcdefghjklmnop"[selected], "abcdefghjklmnop"[event.key], code, "fret"));
-			}
-			else {
-				logger.log("Change tab letter " 
-					+ "abcdefghjklmnop"[selected] +" to "+event.key 
-					+ " on course "+ (sel_note.course + 1) 
-					+ " (code offset " + sel_note.starts + ")");
-				TabCodeDocument.parameters.history.add(new Modify(sel_note.starts, "abcdefghjklmnop"[selected], event.key, code, "fret"));
-			}
-			clearButtons();
-		  }
-	}
-	// end of keyboard entry experiment code
+   	if(event.shiftKey) {FrDownCourse(sel_note, (sel_note.course+1)).click();}
+ 	else {FrDownCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
    }
-*/
-	
-function releaseKeys() {
-//   delete keysPressed[event.key];
-   keysPressed.length = 0;
-}
+   else if(event.key == 'ArrowUp') {
+      if(event.shiftKey) {FrUpCourse(sel_note, (sel_note.course+1)).click();}
+      else {FrUpCourseKeepPitch(sel_note, (sel_note.course+1)).click();}
+   }
+   
+   // Now test keystrokes for tabletters (lower case) and rhythmFlags (upper case):
+   var keyString = event.key.toString();
+   var keypatt = new RegExp(keyString);
+   if(keypatt.test(tabletters)||(keypatt.test(rhythmFlags))) {
+	  var target_button = $(".uibutton").filter(function(){
+	  	return $(this).text() == keyString;
+	  });
+	  if(target_button) {
+		  target_button.click();
+	  }
+	  clearButtons();
+	  activeDialog = false;	
+   }
+}  	
 
 function refresh() {
   if (TabCodeDocument) {

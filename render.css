@@ -145,7 +145,10 @@ div.buttons {
 .beamdotrow td.dotted span:after {
   padding-left: 0.5ex;
   content: "•";
+  font-family: varietie3;
+/* 
   font-family: varietie3FretsAndOrns;
+ */
 }
 .bassgroup .bass.number{
   font-family:TabRegular;
@@ -178,27 +181,40 @@ line, .staffline, .beamelement {
 }
 
 .flag {
+  font-family: varietie3;
+/* 
   font-family: varietie3Rhythms;
+ */
   white-space: pre;
 }
 .baroque .flag, .flag.TabFont, .tabnote.TabFont, .bassnote.TabFont {
   font-family:TabRegular;
 }
 .French, .symbol, .mordent,  .bebungii, .rhythmdot{
-  font-family: varietie3FretsAndOrns;
+/*   font-family: varietie3FretsAndOrns; */
+  font-family: varietie3;
   white-space: pre;
 }
 .martellement {
+  font-family: varietie3;
+/* 
   font-family: varietie3FretsAndOrns;
+ */
   white-space: pre;
   font-size: 120%;
 }
 .tsc, .tsd, .tso{
+  font-family: Varietie3;
+/* 
   font-family: Varietie3-ts;
+ */
   white-space: pre;
 }
 .textbutton.meter{
+  font-family: Varietie3;
+/* 
   font-family: Varietie3-ts;
+ */
 }
 .reverse {
   display: inline-block;

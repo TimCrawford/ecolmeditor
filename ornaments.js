@@ -26,7 +26,7 @@ function ShorthandExtra(character){
 	};
 }
 
-function ParseFullExtra(code) {
+function ParseFullExtra(code, note) {
 	var limit = code.length - 1;
 	var i=0;
 	if(i>limit){
@@ -65,6 +65,106 @@ function ParseFullExtra(code) {
 		i++;
 		if(i>limit) return false;
 		curchar = code.charAt(i);
+		if(curchar == "l" || curchar == "r"){
+			// could keep this info, but it makes no difference to
+			// display
+      hand = curchar;
+			i++;
+			if(i>limit) return false;
+			curchar = code.charAt(i);
+		}
+		if(curchar == "."){
+			// dot is a special case
+			finger = 0;
+			while (curchar == "."){
+				finger++;
+				i++;
+				if(i>limit) return new dotFingering(finger, 7);
+				curchar = code.charAt(i);
+			}
+			obj = new dotFingering(finger, 7);
+		} else if(curchar == "1" || curchar == "2" ||
+				  curchar == "3" || curchar == "4") {
+			obj = new numberFingering(curchar, 3);
+		} else {
+			obj = new symbolFingering(curchar, 7);
+		}
+    if(hand) obj.hand = hand;
+    return obj;
+	} else if(curchar == "C") {
+		// var finger = false;
+		// var position = false;
+    // var hand = false;
+    let line, id;
+		i++;
+		if(i>=limit) {
+			// this is a straight line to the next symbol (C)
+			line = new ConnectingLine(code, false);
+			line.startNote = note;
+			return line;
+		}
+		curchar = code.charAt(i);
+		if(curchar==='-'){
+			// Retrieve existing line – we're closing it now
+			i++;
+			if(i>=limit) return false;
+			id = code.substr(i).match(/^[0-9]+/);
+			if(id){
+				// retrieve line from Tablature lines array;
+				line = TabCodeDocument.numberedLines[Number(id[0])-1];
+				if(!line) {
+					console.log("Close without opening for line number", id);
+					return;
+				}
+				line.endNote = note;
+				line.endCode = code;
+				i += id[0].length;
+				if(i>=limit) return line;
+				// Get Position
+				i++;
+				if(i>=limit) return line;
+				curchar = code.charAt(i);
+				if(isNaN(Number(curchar))) return line;
+				line.endPosition = Number(curchar);
+				return line;
+			}
+		} else if(curchar==='d' || curchar==='u'){
+			line = new ConnectingLine(code, false);
+			line.startNote = note;
+			line.direction = curchar;
+			return line;
+		} else {
+			// Make new line
+			// i++;
+			// if(i>limit) return false;
+			id = code.substr(i).match(/^[0-9]+/);
+			if(id){
+				// retrieve line from Tablature lines array;
+				line = new ConnectingLine(code, Number(id[0])-1);
+				line.startNote = note;
+				// get direction & Position
+				i += id[0].length;
+				if(i>=limit) return line;
+				// Get Position
+				if(code.charAt(i) !==':') console.log("Broken connecting line "+code+" at char "+i);
+				i++;
+				if(i>=limit) return line;
+				curchar = code.charAt(i);
+				if(curchar==='-'){
+					line.direction="d";
+					i+=2;
+					if(i>=limit) return line;
+				} else if (curchar==='d' || curchar==='u'){
+					line.direction = curchar;
+				} else if (i<limit-1){
+					line.direction="u";
+				} 
+				i++;
+				if(i>=limit) return line;
+				if(/^[1-8]+/.test(code.charAt(i))) line.startPosition = Number(code.charAt(i));
+				return line;
+			}
+		}
 		if(curchar == "l" || curchar == "r"){
 			// could keep this info, but it makes no difference to
 			// display
@@ -161,6 +261,29 @@ function dotFingering(count, position) {
 	};
 }
 
+function ConnectingLine(code, number){
+	this.startCode = code;
+	this.number = number;
+	this.startNote = false;
+	this.startPosition = false;
+	this.endNote = false;
+	this.endPosition = false;
+	this.endCode = false;
+	this.direction = false;
+	this.tType = false;
+	this.eType = "Line";
+	this.type = "conectingLine";
+	if(this.number || this.number===0) {
+		if(TabCodeDocument.numberedLines[this.number]) {
+			console.log("ERROR: DUPLICATE ID...OVERWRITING", this.number);
+		}
+		TabCodeDocument.numberedLines[this.number] = this;
+	} else {
+		TabCodeDocument.unnumberedLines.push(this);
+	}
+	this.draw = function(){
+	}
+}
 function numberFingering(number, position) {
 	this.number = number;
 	this.position = position;

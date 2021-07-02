@@ -94,6 +94,8 @@ function Tablature(TC, SVG, parameters, doc, win){
   this.finishes = TC.length;
   this.rules = [];
   this.TabWords = [];
+	this.numberedLines = [];
+	this.unnumberedLines = [];
   this.commentOffsets = [];
   this.pageOffsets = [];
   this.systemOffsets = [];
@@ -661,8 +663,10 @@ function MainChord(TC, flag, dotted, start, finish, lbeams, rbeams, localStart, 
 					maini++;
 					if(maini==TC.length) break;
 					curchar = TC.charAt(maini);
-					curNote.extendExtras(curchar);
+					curNote.TC = curNote.TC + curchar;
+//					curNote.extendExtras(curchar);
 				}
+				curNote.extendExtras(curchar);
 			}
 		}
 	}

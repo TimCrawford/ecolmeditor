@@ -645,7 +645,7 @@ function TabNote(fret, extras, starts, course){
 					curchar = this.TC.charAt(i);
 					code+=curchar;
 				}
-				var newExtra = ParseFullExtra(code);
+				var newExtra = ParseFullExtra(code, this);
 				if(newExtra) {
 					this.extras.push(newExtra);
 				}

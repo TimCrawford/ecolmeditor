@@ -26,6 +26,41 @@ function ShorthandExtra(character){
 	};
 }
 
+function xCentre(pos){
+	// given an ornament position code, return the x-offset of the centre
+	switch(pos){
+		case 1:
+		case 4:
+		case 6:
+			return - (ld / 2);
+		case 2:
+		case 7:
+			return ld / 2;
+		case 3:
+		case 5:
+		case 8:
+			return 3 * ld / 2;
+	}
+}
+
+function yCentre(pos){
+	// given an ornament position code, return the x-offset of the centre
+	switch(pos){
+		case 1:
+		case 2:
+		case 3:
+			return 0;
+		case 4:
+		case 5:
+			return ld;
+		case 6:
+		case 7:
+		case 8:
+			return 2 * ld;
+	}
+}
+
+
 function ParseFullExtra(code, note) {
 	var limit = code.length - 1;
 	var i=0;
@@ -578,7 +613,8 @@ function bebung1(position){
     if(this.nullfret) {
       return -ld/5;
     } else {
-      return 2 * ld/3;
+			return xCentre(this.position) - ld/2;
+      //return 2 * ld/3;
     }
   };
   this.dy = function (){
@@ -586,7 +622,8 @@ function bebung1(position){
     if(this.nullfret) {
       return ld/6;
     } else {
-      return -ld/2;
+      // return -ld/2;
+			return yCentre(this.position) - ld/2;
     }
   };
   this.eq = function(o2){

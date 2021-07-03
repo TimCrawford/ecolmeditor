@@ -26,25 +26,25 @@ function ShorthandExtra(character){
 	};
 }
 
-function xCentre(pos){
-	// given an ornament position code, return the x-offset of the centre
+function xPosDelta(pos){
+	// given an ornament position code, return the x-offset tight to the symbol
 	switch(pos){
 		case 1:
 		case 4:
 		case 6:
-			return - (ld / 2);
+			return 0;
 		case 2:
 		case 7:
 			return ld / 2;
 		case 3:
 		case 5:
 		case 8:
-			return 3 * ld / 2;
+			return 3 * ld / 4;
 	}
 }
 
-function yCentre(pos){
-	// given an ornament position code, return the x-offset of the centre
+function yPosDelta(pos){
+	// given an ornament position code, return the y-offset tight to the symbol
 	switch(pos){
 		case 1:
 		case 2:
@@ -52,11 +52,45 @@ function yCentre(pos){
 			return 0;
 		case 4:
 		case 5:
-			return ld;
+			return ld/2;
 		case 6:
 		case 7:
 		case 8:
-			return 2 * ld;
+			return ld;
+	}
+}
+
+function xStart(pos, width){
+	// given an ornament position code, return the x-offset of the centre
+	switch(pos){
+		case 1:
+		case 4:
+		case 6:
+			return - ld / 2 - width;
+		case 2:
+		case 7:
+			return ld / 2 - width;
+		case 3:
+		case 5:
+		case 8:
+			return 3 * ld / 2 - width;
+	}
+}
+
+function yStart(pos, height){
+	// given an ornament position code, return the x-offset of the centre
+	switch(pos){
+		case 1:
+		case 2:
+		case 3:
+			return -ld + height;
+		case 4:
+		case 5:
+			return height;
+		case 6:
+		case 7:
+		case 8:
+			return ld + height;
 	}
 }
 
@@ -183,20 +217,26 @@ function ParseFullExtra(code, note) {
 				// Get Position
 				if(code.charAt(i) !==':') console.log("Broken connecting line "+code+" at char "+i);
 				i++;
-				if(i>=limit) return line;
+				if(i>limit) {
+					return line;
+				}
 				curchar = code.charAt(i);
 				if(curchar==='-'){
 					line.direction="d";
 					i+=2;
 					if(i>=limit) return line;
+					curchar = code.charAt(i);
 				} else if (curchar==='d' || curchar==='u'){
 					line.direction = curchar;
+					i++;
+					curchar = code.charAt(i);
 				} else if (i<limit-1){
 					line.direction="u";
+					i++;
+					curchar = code.charAt(i);
 				} 
-				i++;
 				if(i>=limit) return line;
-				if(/^[1-8]+/.test(code.charAt(i))) line.startPosition = Number(code.charAt(i));
+				if(/^[1-8]+/.test(curchar)) line.startPosition = Number(curchar);
 				return line;
 			}
 		}
@@ -308,6 +348,7 @@ function ConnectingLine(code, number){
 	this.tType = false;
 	this.eType = "Line";
 	this.type = "conectingLine";
+  this.DOMObj = false;
 	if(this.number || this.number===0) {
 		if(TabCodeDocument.numberedLines[this.number]) {
 			console.log("ERROR: DUPLICATE ID...OVERWRITING", this.number);
@@ -316,7 +357,66 @@ function ConnectingLine(code, number){
 	} else {
 		TabCodeDocument.unnumberedLines.push(this);
 	}
-	this.draw = function(){
+	this.notePoint = function(note, position){
+		return [note.xpos + xPosDelta(position),
+						note.ypos + yPosDelta(position) + yOffset(note.course) - ld/2];
+	}
+	this.drawLine = function(svgEl, point1, point2, direction){
+		if(!direction){
+			return svgLine(svgEl, point1[0], point1[1], point2[0], point2[1]);
+		} else if(direction==='u'){
+			let deltax = point2[0] - point1[0];
+			let deltay = point2[1] - point1[1];
+			let halfway = deltax / 2;
+			let peak = deltay < 0 ? 3 * deltay / 4 :
+					(deltay===0 ? - ld / 2 : deltay / 4) ;
+			let backPeak = deltay < 0 ? - deltay / 3 :
+					(deltay===0 ? - ld / 4 : -2 * deltay / 3);
+			return svgPath(svgEl, ['M '+point1.join(" "),
+														 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
+														 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
+		} else {
+			let deltax = point2[0] - point1[0];
+			let deltay = point2[1] - point1[1];
+			let halfway = deltax / 2;
+			let peak = deltay > 0 ? 3 * deltay / 4 :
+					(deltay===0 ? ld / 2 : deltay / 4 );
+			let backPeak = deltay > 0 ? - deltay / 3 :
+					(deltay===0 ? ld / 4 : -2 * deltay / 3);
+			return svgPath(svgEl, ['M '+point1.join(" "),
+														 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
+														 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
+		}
+	}
+	this.draw = function(svgEl, extraClasses){
+    if(!this.DOMObj) { 
+      this.DOMObj = svgGroup(TabCodeDocument.SVG, "line "+(extraClasses || " "));
+		}
+		if(this.startNote && this.startNote.xpos) {
+			// Safety check (haven't checked spacers yet)
+			let firstPoint = this.notePoint(this.startNote, (this.startPosition || 5));
+			let endPoint = false;
+			if(this.endNote){
+				if(this.endNote.xpos > this.startNote.xpos){
+					// Stupid check for system break (FIXME: do something cleverer)
+					endPoint = this.notePoint(this.endNote, (this.endPosition || 4));
+					this.drawLine(this.DOMObj, firstPoint, endPoint, this.direction);
+					return;
+				} else {
+					// We have a line break
+					// Don't do the thing that's here
+					endPoint = this.notePoint(this.endNote, (this.endPosition || 4));
+					this.drawLine(this.DOMObj, firstPoint, endPoint, this.direction);
+				}
+			} else {
+				endPoint = this.notePoint(this.startNote, 5);
+				endPoint[0] += ld/2;
+				endPoint[1] += ld/4;
+				firstPoint[1] += ld/4;
+				console.log(endPoint, firstPoint);
+				this.drawLine(this.DOMObj, firstPoint, endPoint, this.direction);
+			}
+		}
 	}
 }
 function numberFingering(number, position) {
@@ -613,7 +713,8 @@ function bebung1(position){
     if(this.nullfret) {
       return -ld/5;
     } else {
-			return xCentre(this.position) - ld/2;
+			//			return xCentre(this.position) - ld/2;
+			return xStart(this.position, ld / 2 );
       //return 2 * ld/3;
     }
   };
@@ -623,7 +724,8 @@ function bebung1(position){
       return ld/6;
     } else {
       // return -ld/2;
-			return yCentre(this.position) - ld/2;
+			//return yCentre(this.position) - ld/2;
+			return yStart(this.position, ld / 2)
     }
   };
   this.eq = function(o2){

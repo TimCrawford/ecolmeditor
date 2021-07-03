@@ -443,6 +443,8 @@ function Tablature(TC, SVG, parameters, doc, win){
       if(curx > this.SVG.getBBox().width) this.SVG.style.width = Math.ceil(curx+leftMargin+ld)+"px";
     }
     if(curx > this.SVG.getBBox().width) this.SVG.style.width = Math.ceil(curx+leftMargin+ld)+"px";
+		this.unnumberedLines.forEach(x => x.draw());
+		this.numberedLines.forEach(x => x.draw());
     if(fill){
       var l = $(".staffline");
       for(var k=0; k<l.length; k++){

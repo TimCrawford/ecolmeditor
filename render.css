@@ -156,7 +156,7 @@ div.buttons {
 
 /* These are... */
 
-line, .staffline, .beamelement {
+line, path, .staffline, .beamelement {
   stroke: black;
   stroke-linecap: butt;
 }

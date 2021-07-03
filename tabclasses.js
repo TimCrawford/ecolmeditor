@@ -688,6 +688,7 @@ function TabNote(fret, extras, starts, course){
     var box = el.getBoundingClientRect();
     this.rpos = box.right - TabCodeDocument.leftishHack;
     for(var i=0; i<this.extras.length; i++){
+			if(this.extras[i].eType==="Line") continue;
       this.rpos = Math.max(this.rpos,
         this.extras[i].draw(this.xpos, this.ypos+yOffset(this.course), svgEl, this));
 	  }

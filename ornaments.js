@@ -153,12 +153,12 @@ function dotFingering(count, position) {
         return "(F"+this.hand+this.textString()+":"+this.position+")";
     }
   };
-	this.draw = function(xpos, ypos, svgel, note) {
+  this.draw = function(xpos, ypos, svgel, note) {
     this.tType = curTabType;
     var el = svgText(svgel, xpos + this.dx(), ypos+this.dy(), "extra fingering fdots", 
         false, false, this.textString());
     $(el).data("word", note);
-	};
+  };
 }
 
 function numberFingering(number, position) {
@@ -200,7 +200,7 @@ function numberFingering(number, position) {
   this.TCString = function(){
     return "(F"+this.hand+this.number+":"+this.position+")";
   };
-	this.draw = function(xpos, ypos, svgel, note){
+  this.draw = function(xpos, ypos, svgel, note){
     this.tType = curTabType;
     var el = svgText(svgel, xpos+this.dx(), ypos-this.dy(), 
       "extra fingering numbered", false, false, this.number);
@@ -240,11 +240,11 @@ function symbolFingering(symbol, position) {
   this.TCString = function(){
     return "(F"+this.hand+this.symbol+":"+this.position+")";
   };
-	this.draw = function(xpos, ypos, note){
+  this.draw = function(xpos, ypos, note){
     this.tType = curTabType;
     var el = svgText(svgel, xpos, ypos+5, "extra fingering symbol", false, false, this.symbol);
     $(el).data("word", note);
-	};
+  };
 }
 
 function getOrnament(type, subtype, position){
@@ -345,7 +345,7 @@ function forefall1(position){
       return "(Oc1:"+this.position+")";
     }
   };
-	this.draw = function(xpos, ypos, svgel, note){
+  this.draw = function(xpos, ypos, svgel, note){
     this.tType = curTabType;
     var el = svgPath(svgel, 
       ["M "+xpos+","+(ypos+this.dy())+" A 6, 5, 0, 0, 0, "
@@ -353,7 +353,7 @@ function forefall1(position){
       ,"extra orn forefall", false);
     $(el).data("word", note);
     return xpos+ld/1.8;
-	};
+  };
 }
 
 function forefall2(position){

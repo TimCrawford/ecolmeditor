@@ -34,6 +34,15 @@ var test = true;//false;
 var curx = 0;
 var cury = 0;
 var leftMargin = 24;
+
+var rightMargin = 1000; // Not really the size of the margin, but its position relative to leftMargin; effectively it's the max staff-length
+var system_drawn = new Array; // for each system, keep track of number of drawn objects taking horiz space, plus end position
+var system_right_end = new Array; // for each system, keep track of number of drawn objects taking horiz space, plus end position
+var drawn_count = 0; // number of drawn (space-taking) objects in current system
+var just_shift = new Array; // for each system, the amount of space to be added after drawn objects to justify it
+var gJustify = false; // to justify or not
+var currSystem; // number of current system being considered
+
 //var topMargin = 20;
 //var topMargin = 40;
 var topMargin = 60;

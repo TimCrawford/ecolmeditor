@@ -16,6 +16,7 @@ function parseTCDoc(TC) {
     TabCodeDocument = new Tablature(TC, node ? false : document.getElementById('notation'),
       curParams);
   }
+  
   TabCodeDocument.draw();
   updatePage();
 }
@@ -25,6 +26,8 @@ var currKeyStroke=false;
 var oldTop = 0;
 
 function updatePage() {
+  
+  
   if (node) return;
   // document.getElementById("background").style.width = TabCodeDocument.SVG.style.width;
   if (document.getElementById("banner")) {

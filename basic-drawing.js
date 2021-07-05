@@ -76,9 +76,9 @@ function drawSystemBreak(obj,i) {
 //	svgText(svg, x+20, y+5, "systemBreak", false, false, "&#U+23CE");
 //      var el = svgRect(TabCodeDocument.SVG, x, y, 20, 20, "systemBreak", "sys_"+number.toString());
 //         var el = svgRect(TabCodeDocument.SVG, 0, obj.systemOffsets[obj.systemnumber], 20, 20, "systemBreak", "sys_"+obj.systemnumber.toString());
-        var el = svgWhiteRect(TabCodeDocument.SVG, curx+0, cury+40, 20, 20, "systemBreakBox", "sys_"+obj.systemnumber.toString());
+        var el = svgWhiteRect(TabCodeDocument.SVG, curx+0, cury+40, 20, 20, "systemBreakBox dont_print", "sys_"+obj.systemnumber.toString());
         $(el).data("word", obj.tokens[i]);
-        var label = svgText(TabCodeDocument.SVG, curx+6, cury+56, "systemBreakBox", false, false, "^");
+        var label = svgText(TabCodeDocument.SVG, curx+6, cury+56, "systemBreakBox dont_print", false, false, "^");
         $(label).data("word", obj.tokens[i]); 
 }
 

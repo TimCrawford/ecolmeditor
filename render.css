@@ -181,7 +181,7 @@ line, .staffline, .beamelement {
 }
 
 .flag {
-  font-family: varietie3;
+  font-family: Varietie3;
 /* 
   font-family: varietie3Rhythms;
  */
@@ -192,11 +192,11 @@ line, .staffline, .beamelement {
 }
 .French, .symbol, .mordent,  .bebungii, .rhythmdot{
 /*   font-family: varietie3FretsAndOrns; */
-  font-family: varietie3;
+  font-family: Varietie3;
   white-space: pre;
 }
 .martellement {
-  font-family: varietie3;
+  font-family: Varietie3;
 /* 
   font-family: varietie3FretsAndOrns;
  */
@@ -303,6 +303,13 @@ line, .staffline, .beamelement {
 }
 .lone.tstext {
   font-size: 280%;
+}
+
+.staffline {
+/* 
+	stroke:rgb(255,0,0);
+ */
+	stroke-width:0.8;
 }
 
 .tsslash {

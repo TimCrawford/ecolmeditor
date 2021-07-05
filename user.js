@@ -83,7 +83,7 @@ function Parameters(imageURL, tabcode, contextDur, contextTuning, tabType, fontN
 	};
   this.drawContextDur = function(DOMObj){
 //    alert(this.fontName);
-    var obj = svgText(DOMObj, 10,10, "flag "+this.fontName,
+    var obj = svgText(DOMObj, 10,10, "flag "+this.fontName+" dont_print",
       "contextflag", false, this.contextDur);
     $(obj).data("word", this);
   };

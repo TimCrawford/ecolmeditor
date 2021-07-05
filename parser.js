@@ -158,6 +158,7 @@ function Tablature(TC, SVG, parameters, doc, win){
             } else if (TabWord.tType === "Barline") {
             	if(incrementBarNo) {
 					TabWord.barnumber = this.barCount++;
+					TabWord.barnumber -= upbeat? 1:0;
             	}
             	incrementBarNo = false;
             }
@@ -318,9 +319,21 @@ function Tablature(TC, SVG, parameters, doc, win){
       dur = 0;
       switch(this.TabWords[i].tType){
         case "SystemBreak":
+          system_drawn[this.systemnumber] = drawn_count;
+          system_right_end[this.systemnumber] = curx;
+          if(!gJustify) {
+			just_shift[this.systemnumber] = (rightMargin-curx)/system_drawn[this.systemnumber];
+          }
+          else if(this.systemnumber) {
+			just_shift[this.systemnumber]  = (rightMargin-curx)/system_drawn[this.systemnumber];
+          }
 
+          logger.log("System "+this.systemnumber+": "+system_drawn[this.systemnumber] + " objects drawn; right_end = "+system_right_end[this.systemnumber])
+          logger.log("\t("+just_shift[this.systemnumber]+") "+ (gJustify==true)+" sum right_end+(drawn*just_shift[systemnumber]) = "+(system_right_end[this.systemnumber]+(just_shift[this.systemnumber]*system_drawn[this.systemnumber])));
           this.systemnumber++;
+
 		drawSystemBreak(this,i);
+          drawn_count = 0;
           
           if(breaks == "stop"){
             this.drawStaffLines();
@@ -466,6 +479,10 @@ function Tablature(TC, SVG, parameters, doc, win){
 
     fill = of;
     var words = TabCodeDocument.TabWords;
+
+          system_right_end[this.systemnumber] = curx;
+
+
   };
   this.play = function(){
     if(!this.noteEvents.length) this.makeMidi();
@@ -567,6 +584,7 @@ function Tablature(TC, SVG, parameters, doc, win){
 // }
 
 function parseTabWord(TC, start, finish){
+
   if(TC.length>0) {
     var firstchar = TC.charAt(0);
 		if(firstchar.match(/[a-z]/)||firstchar=="X"||firstchar=="-"||firstchar=="."){

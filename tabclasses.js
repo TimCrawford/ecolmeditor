@@ -389,7 +389,8 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
   this.dur = false;
   this.prev = false;
   this.next = false;
-  for(var i=0; i<this.mainCourses.length; i++){
+     
+ for(var i=0; i<this.mainCourses.length; i++){
     if(this.mainCourses[i]){
       this.mainCourses[i].chord = this;
     }
@@ -534,6 +535,8 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
     this.drawBassCourses();
     this.drawRhythm();
     curx = this.rpos ? Math.max(this.rpos + (ld/5), this.xpos + (5/4*ld)) : this.xpos + (4*ld/3);
+    curx += (gJustify == false)? 0:just_shift[currSystem]; // Amount to move next tab object to justify a system (global) TC:2Jul21
+    drawn_count++;
     if(this.selections.length) {
       $(this.DOMObj).data("word", this);
       $(this.DOMObj).click(playSelection);
@@ -621,7 +624,7 @@ function TabNote(fret, extras, starts, course){
   this.course = course;
   this.chord = false;
   this.mapping = false;
-	this.fretChar = function() {
+  this.fretChar = function() {
     // FIXME: HACKHACKHACK
     if(this.fret == "-") return " ";
 		return this.rule ? this.rule.tabChar(this.fret) : tabChar(this.fret);
@@ -630,49 +633,49 @@ function TabNote(fret, extras, starts, course){
     if(this.fret == "-") return false;
     return tuning[this.course]+letterPitch(this.fret);
   };
-	this.extendExtras = function(newChar) {
-		this.TC = this.TC + newChar;
-		var curchar;
-		extras = [];
-		for(var i=0; i<this.TC.length; i++) {
-			curchar = this.TC.charAt(i);
-			if(curchar=="("){
-				// This is a longhand ornament or fingering
-				var code = "";
-				while(curchar!=")") {
-					i++;
-					if(i >= this.TC.length) break;
-					curchar = this.TC.charAt(i);
-					code+=curchar;
-				}
-				var newExtra = ParseFullExtra(code);
-				if(newExtra) {
-					this.extras.push(newExtra);
-				}
+  this.extendExtras = function(newChar) {
+	this.TC = this.TC + newChar;
+	var curchar;
+	extras = [];
+	for(var i=0; i<this.TC.length; i++) {
+		curchar = this.TC.charAt(i);
+		if(curchar=="("){
+	// This is a longhand ornament or fingering
+			var code = "";
+			while(curchar!=")") {
+				i++;
+				if(i >= this.TC.length) break;
+				curchar = this.TC.charAt(i);
+				code+=curchar;
 			}
-			else if (curchar == ".") {
-				// Fingering dots are a special case, because multiple
-				// symbols make one piece of information (e.g. a3...)
-				var count = 0;
-				while(curchar=="."){
-					count++;
-					i++;
-					if(i >= this.TC.length) break;
-					curchar = this.TC.charAt(i);
-				}
-				this.extras.push(new dotFingering(count,7));
-				// We've overshot now
-				i--;
-			} else {
-				var newExtra = ShorthandExtra(curchar);
-				if(newExtra)
-					this.extras.push(newExtra);
+			var newExtra = ParseFullExtra(code);
+			if(newExtra) {
+				this.extras.push(newExtra);
 			}
-      if(this.fret == "-" && this.extras.length) {
-        this.extras[this.extras.length-1].nullfret = true;
-      }
 		}
-	};
+		else if (curchar == ".") {
+			// Fingering dots are a special case, because multiple
+			// symbols make one piece of information (e.g. a3...)
+			var count = 0;
+			while(curchar=="."){
+				count++;
+				i++;
+				if(i >= this.TC.length) break;
+				curchar = this.TC.charAt(i);
+			}
+			this.extras.push(new dotFingering(count,7));
+			// We've overshot now
+			i--;
+		} else {
+			var newExtra = ShorthandExtra(curchar);
+			if(newExtra)
+				this.extras.push(newExtra);
+		}
+		 if(this.fret == "-" && this.extras.length) {
+		 this.extras[this.extras.length-1].nullfret = true;
+		}
+	}
+  };
   this.draw = function(svgEl, extraClasses){
     this.xpos = curx;
     this.ypos = cury;
@@ -740,13 +743,15 @@ function bassNote(fret, code, course, starts, numeric){
   this.pitch = function(tuning){
     return tuning[this.course+mainCourseCount]+letterPitch(this.fret);
   };
-return this.DOMObj;
+  return this.DOMObj;
 }
 
 var barNumDisplay = "";
 var barNumInterval=0;
+var upbeat;
 function SetBarNumDisplay(value) {
 	barNumDisplay = value;
+	upbeat = $('#upbeat_checkbox').is(':checked');
 	switch (barNumDisplay) {
 		case "none":
 			barNumInterval=0;
@@ -805,13 +810,13 @@ function Barline(TC, start, finish) {
   this.ypos = false;
   this.barnumber = false;
   // FIXME: move these to parser.js
-	this.lRepeat = TC.charAt(0)===":";
-	this.rRepeat = TC.length>1 && TC.charAt(TC.length - 1)===":";
+  this.lRepeat = TC.charAt(0)===":";
+  this.rRepeat = TC.length>1 && TC.charAt(TC.length - 1)===":";
   this.midDots = TC.indexOf("|:|")>-1;
-	this.doubleBar = TC.indexOf("|") != TC.lastIndexOf("|");
-	this.dashed = TC.indexOf("=") >= 0;
-	this.starts = start;
-	this.finishes = finish;
+  this.doubleBar = TC.indexOf("|") != TC.lastIndexOf("|");
+  this.dashed = TC.indexOf("=") >= 0;
+  this.starts = start;
+  this.finishes = finish;
   this.DOMObj = false;
   this.xpos = false;
   this.ypos = false;
@@ -821,7 +826,8 @@ function Barline(TC, start, finish) {
   this.reading=false;
   this.prev = false;
   this.next = false;
-  this.draw = function(){
+  
+this.draw = function(){
     this.xpos = curx;
     this.ypos = cury;
     var localx = curx;
@@ -835,7 +841,6 @@ function Barline(TC, start, finish) {
 			if(this.barnumber >= 99) barnum_xoffset *= 2;
 			svgText(TabCodeDocument.SVG, this.xpos-barnum_xoffset, this.ypos+5, "barNumber", "bar_"+this_bar.toString(), false, this_bar);
 		}
-
     $(this.DOMObj).data("word", this);
     if(this.lRepeat) {
       drawRepeat(this.DOMObj, localx);
@@ -855,6 +860,8 @@ function Barline(TC, start, finish) {
       drawRepeat(this.DOMObj, localx+12);
     }
     curx += ld;
+    curx += (gJustify == false)? 0:just_shift[currSystem]; // Amount to move next tab object to justify a system (global) TC:2Jul21
+    drawn_count++;
   };
 }
 
@@ -873,6 +880,7 @@ function Meter(TC, starts, finishes){
   this.prev = false;
   this.next = false;
   // FIXME: move these to parser.js
+  
   if(TC.charAt(1) =="(" && TC.charAt(TC.length-1) == ")"){
     var code = TC.substring(2,TC.length-1);
     var subcodes = code.split(";");
@@ -927,5 +935,14 @@ function Meter(TC, starts, finishes){
       curx = newx;
     }
     if(editable) drawMetricalInsertBox(this.components.length-1, "after", this, TabCodeDocument.SVG);
+    curx += (gJustify == false)? 0:just_shift[currSystem]; // Amount to move next tab object to justify a system (global) TC:2Jul21
+    drawn_count++;
   };
 }
+
+function JustifySystems() {
+ 	gJustify = gJustify? false:true;
+	refresh();
+}
+
+

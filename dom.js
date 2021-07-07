@@ -165,6 +165,7 @@ function svgText(svgEl, x, y, cname, id, style, content){
   if(y) el.setAttributeNS(null, "y", y);
   if(style) el.setAttributeNS(null, "style", style);
   if(content == 0 || content) el.appendChild(document.createTextNode(content));
+  
   if(svgEl) svgEl.appendChild(el);
   return el;
 }

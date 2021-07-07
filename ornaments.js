@@ -359,7 +359,8 @@ function ConnectingLine(code, number){
 	}
 	this.notePoint = function(note, position){
 		return [note.xpos + xPosDelta(position),
-						note.ypos + yPosDelta(position) + yOffset(note.course) - ld/2];
+//						note.ypos + yPosDelta(position) + yOffset(note.course) - ld/2];
+						note.ypos + yPosDelta(position) + 4 + yOffset(note.course) - ld/2];
 	}
 	this.drawLine = function(svgEl, point1, point2, direction){
 		if(!direction){
@@ -373,8 +374,8 @@ function ConnectingLine(code, number){
 			let backPeak = deltay < 0 ? - deltay / 3 :
 					(deltay===0 ? - ld / 4 : -2 * deltay / 3);
 			return svgPath(svgEl, ['M '+point1.join(" "),
-														 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
-														 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
+								 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
+								 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
 		} else {
 			let deltax = point2[0] - point1[0];
 			let deltay = point2[1] - point1[1];
@@ -384,8 +385,8 @@ function ConnectingLine(code, number){
 			let backPeak = deltay > 0 ? - deltay / 3 :
 					(deltay===0 ? ld / 4 : -2 * deltay / 3);
 			return svgPath(svgEl, ['M '+point1.join(" "),
-														 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
-														 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
+								 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
+								 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);
 		}
 	}
 	this.draw = function(svgEl, extraClasses){
@@ -714,7 +715,7 @@ function bebung1(position){
       return -ld/5;
     } else {
 			//			return xCentre(this.position) - ld/2;
-			return xStart(this.position, ld / 2 );
+			return xStart(this.position, ((ld / 2)-5) );
       //return 2 * ld/3;
     }
   };
@@ -725,7 +726,7 @@ function bebung1(position){
     } else {
       // return -ld/2;
 			//return yCentre(this.position) - ld/2;
-			return yStart(this.position, ld / 2)
+			return yStart(this.position, ((ld / 2)-2))
     }
   };
   this.eq = function(o2){
@@ -746,7 +747,7 @@ function bebung1(position){
 	this.draw = function(xpos, ypos, svgel, note){
     this.tType = curTabType;
     var el = svgText(svgel, xpos+this.dx(), ypos+this.dy(), 
-      "extra orn bebungi", false, false, "#");
+      "extra orn bebungi", false, "baseline-shift:super", "#");
     $(el).data("word", note);
     return xpos+this.dx()+el.getBBox().width;
 	};
@@ -851,7 +852,7 @@ function martellement(position){
 }
 
 function mordent(position){
-	this.position = position;
+  this.position = position;
   this.nullfret = false;
   this.tType = false;
   this.eType = "Ornament";
@@ -861,7 +862,8 @@ function mordent(position){
     if(this.nullfret) {
       return 0;
     } else {
-      return 2*ld/3;
+//       return 2*ld/3;
+      return xStart(position, ((ld / 2)-5))
     }
   };
   this.dy = function (){
@@ -869,7 +871,8 @@ function mordent(position){
     if(this.nullfret) {
       return 0;
     } else {
-      return 2*ld/3;
+//       return 2*ld/3;
+      return yStart(position, ((ld / 2)-7))
     }
   };
   this.eq = function(o2){
@@ -877,7 +880,7 @@ function mordent(position){
       && this.position===o2.position;
   };
   this.htmlObj = function(){
-    return DOMDiv("ornament textmordent mordent", "ornselector", "x");
+    return DOMDiv("ornament textmordent mordent", "ornselector", "*");
   };
   this.TCString = function(){
     return "(Og:"+position+")";
@@ -885,7 +888,7 @@ function mordent(position){
 	this.draw = function(xpos, ypos, svgel, note){
     this.tType = curTabType;
     var el = svgText(svgel, xpos+this.dx(), ypos+this.dy(), 
-      "extra orn mordent", false, false, "x");
+      "extra orn mordent", false, false, "*");
     $(el).data("word", note);
     return xpos+this.dx()+el.getBBox().width;
 	};

@@ -177,6 +177,7 @@ line, path, .staffline, .beamelement {
 }
 .bebungi {
   font-family: arial, helvetica; 
+  font-size: 90%;
   white-space: pre;
 }
 
@@ -194,6 +195,11 @@ line, path, .staffline, .beamelement {
 /*   font-family: varietie3FretsAndOrns; */
   font-family: varietie3;
   white-space: pre;
+}
+.mordent {
+  font-family: varietie3;
+  white-space: pre;
+  font-size: 140%;
 }
 .martellement {
   font-family: varietie3;
@@ -317,7 +323,7 @@ line, path, .staffline, .beamelement {
   stroke-width: 2;
 }
 
-.startenuto, .bebungi{
+.startenuto{
   font-size: 135%;
 }
 

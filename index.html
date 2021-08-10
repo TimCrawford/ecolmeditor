@@ -1,132 +1,365 @@
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <link rel="shortcut icon" href="ecolm.ico" />
-	  <title>Electronic Corpus of Lute Music -- editors page</title>
-	  <!-- <link type="text/css" rel="stylesheet" href="webeditor.css" /> -->
-	  <link type="text/css" rel="stylesheet" href="newlook.css" />
-	  <link type="text/css" rel="stylesheet" href="render.css" />
-	  <link type="text/css" rel="stylesheet" href="print.css" media="print" />
-	  <script src="jquery-1.4.4.js" type="text/javascript"></script>
-	  <script src="jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
-	  <script type="text/javascript" src="dom.js"></script>
-	  <script type="text/javascript" src="formatdate.js"></script>
-	  <script type="text/javascript" src="user.js"></script>  
-	  <script type="text/javascript" src="php.js"></script>
-	  <script type="text/javascript" src="diff.js"></script>
-	  <script type="text/javascript" src="corebuttons.js"></script>
-	  <script type="text/javascript" src="buttons.js"></script>
-	  <script type="text/javascript" src="base.js"></script>
-	  <script type="text/javascript" src="basic-drawing.js"></script>
-	  <script type="text/javascript" src="tabclasses.js"></script>
-	  <script type="text/javascript" src="parser.js"></script>
-	  <script type="text/javascript" src="ornaments.js"></script>
-	  <script type="text/javascript" src="ornament-buttons.js"></script>
-	  <script type="text/javascript" src="rules.js"></script>
-	  <script type="text/javascript" src="midi_mod_TC.js"></script>
-	  <script type="text/javascript" src="editor.js"></script>
-	  <script type="text/javascript" src="pianoroll.js"></script>
-	  <script type="text/javascript" src="imgpreview.js"></script>
-  </head>
-  <body onload="javascript:newInitialisePage(false);">
-    <div id="banner">
-<!--
-      <div class="lute_pic_l"><img src="lutenist.gif" width="70px"/></div>
-      <div class="lute_pic_r"><img src="lutenist.gif" width="70px"/></div>
-      <div class="logo_centre"><img src="ECOLM_logo.png" height="48px" alt="Electronic Corpus of Lute Music"/></div>
--->
-      <div class="logo_centre"><img src="full_ECOLM_logo.gif" height="100px" alt="Electronic Corpus of Lute Music"/></div>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Electronic Corpus of Lute Music -- editors page</title>
+<!-- <link type="text/css" rel="stylesheet" href="webeditor.css" /> -->
+	<link type="text/css" rel="stylesheet" href="../newlook.css" />
+	<link type="text/css" rel="stylesheet" href="../render.css" />
+	<link type="text/css" rel="stylesheet" href="../print.css" media="print" />
+	<link type="text/css" rel="stylesheet" href="../features.css" />
+	<link type="text/css" rel="stylesheet" href="three_pane.css" />
+	<script src="../jquery-1.4.4.js" type="text/javascript">
+	</script>
+	<script src="../jquery.scrollTo-1.4.2-min.js" type="text/javascript">
+	</script>
+	<script type="text/javascript" src="../soundfont-player.js">
+	</script>
+	<script type="text/javascript" src="../dom.js">
+	</script>
+	<script type="text/javascript" src="../formatdate.js">
+	</script>
+	<script type="text/javascript" src="../user.js">
+	</script>
+	<script type="text/javascript" src="../php.js">
+	</script>
+	<script type="text/javascript" src="../diff.js">
+	</script>
+	<script type="text/javascript" src="../corebuttons.js">
+	</script>
+	<script type="text/javascript" src="../buttons.js">
+	</script>
+	<script type="text/javascript" src="../base.js">
+	</script>
+	<script type="text/javascript" src="../basic-drawing.js">
+	</script>
+	<script type="text/javascript" src="../tabclasses.js">
+	</script>
+	<script type="text/javascript" src="../parser.js">
+	</script>
+	<script type="text/javascript" src="../ornaments.js">
+	</script>
+	<script type="text/javascript" src="../ornament-buttons.js">
+	</script>
+	<script type="text/javascript" src="../rules.js">
+	</script>
+	<script type="text/javascript" src="../midi_mod_TC.js">
+	</script>
+	<script type="text/javascript" src="../editor.js">
+	</script>
+	<script src="../siamese/siamese.js">
+	</script>
+	<script type="text/javascript" src="test.js">
+	</script>
+	<script type="text/javascript" src="user.js">
+	</script>
+	<script type="text/javascript" src="distance.js">
+	</script>
+	<script type="text/javascript" src="../pianoroll-ajax.js">
+	</script>
+	<script type="text/javascript" src="../pianoroll.js">
+	</script>
+	<script type="text/javascript" src="../imgpreview.js">
+	</script>
+<!-- slider stuff from http://loopj.com/jquery-simple-slider/ -->
+	<script src="simple-slider.js">
+	</script>
+<!-- 
+    <link href="simple-slider.css" rel="stylesheet" type="text/css" />         
+    <link href="simple-slider-volume.css" rel="stylesheet" type="text/css" />  
+ -->
+<!-- 
+	<script type="text/javascript" src="test.js">
+ -->
+	</script>
+	<script type="text/javascript" src="../features.js">
+	</script>
+	<script>
+		function getEditorScroll() {
+		  var elmnt = document.getElementById("editor_container");
+		  oldTop = elmnt.scrollTop;
+		}
+	</script>
 
-    </div>
-    <div id="topstuff" class="clear">
-      <div class="threequarterleft">
-        <span id="assignment">Metadata</span>
-        <button class="reditbutton leditbutton"
-                id="viewprevbutton"
-                onclick="javascript:$(document.getElementById('browse')).show();
-                         $(document.getElementById('hideprevbutton')).show();
-                         updateNavButtons();
-                         $(this).hide();">View previous assignments</button>
-        <button class="reditbutton leditbutton"
-                id="hideprevbutton" onclick = "$(document.getElementById('browse')).hide();
-                         $(document.getElementById('viewprevbutton')).show();
-                         $(this).hide();">Hide previous assignments</button>
-        <div class="left" id="browse">
-          <button id="firstass" class="navbutton">|◀</button>
-          <button id="prevass" class="navbutton">◀</button>
-          <button id="nextass" class="navbutton">▶</button>
-          <button id="latestass" class="navbutton">▶|</button>
-        </div>
-      </div>
-      <div class="quarterright"> 
-        <span id="user">Username</span>
-        <button class="reditbutton leditbutton" 
-                id="changepwdbutton"
-                onclick="javascript:$(document.getElementById('pchange')).show(); 
-                         this.disabled='true';">Change password</button>
-        <a class="editbutton"
-           id="logout" href="http://www.ecolm.org">Log out</a>
-        <a class="leditbutton"
-           id="help" target="help" href="help/">Help</a>
-      </div>
-    </div>
-    <div id="menubar" class="clear">
-      <div class="left" id="editbuttons">
-        <button class="reditbutton" id="undobutton"
-                onclick="javascript:TabCodeDocument.parameters.history.undo();">Undo</button>
-        <button class="reditbutton" id="redobutton"
-                onclick="javascript:TabCodeDocument.parameters.history.redo();">Redo</button>
-        <button class="editbutton" id="revertbutton"
-                onclick="javascript:revert();">Revert</button>
-      </div>
-      <div class="right" id="playback">
-        Play: 
-        <button class="reditbutton" onclick="javascript:tempo=0.35; playMIDI();">Very Slow</button>
-        <button class="reditbutton" onclick="javascript:tempo=0.5; playMIDI();">Slow</button>
-        <button class="reditbutton" onclick="javascript:tempo=1; playMIDI();">Normal</button>
-        <button class="reditbutton" onclick="javascript:tempo=1.75; playMIDI();">Fast</button>
-        <button class="reditbutton" onclick="javascript:tempo=1; stopSound();">Stop</button>
-        <button id="tuning" class="editbutton" onclick="javascript:toggleTuning();">ffeff</button>
-      </div>
-    </div>
-    <div id="image"><img id="systemimage" src=""/></div>
-    <div id="editor">
-      <div id="rendered" class="notation">
-        <svg class="rendered" id="notation" width="900px" height="180px"></svg>
-  	  </div>
-      <div id="assignmentbar" class="clear">
-        <div class="right">
-          <button onclick="javascript:if(curParams) curParams.editMessage();"
-                  class="assignmentbutton" 
-                  id="addmessage">Add message</button>
-          <button disabled="true" class="assignmentbutton" id="viewchanges">View changes</button>
-          <button  onclick="javascript:dbSubmit()" class="assignmentbutton" 
-                   id="Submit">Submit corrections</button>
-        </div>
-      </div>
-      <div class="clear"</div>
-    </div>
-    <div id="preview"><!-- <img id="thumb" src=""/> --><canvas id="thumbcanvas"/></div>
-    <div id="zoomed"><canvas id="zoomcan" width="400px" height="200px"/></div>
-	  <div id="codediv">
-      <button id='tcshow'
-         onclick="$(document.getElementById('tcspan')).show(); 
-                  document.getElementById('tcspan').style.width=TabCodeDocument.SVG.style.width;
-                  $(document.getElementById('tcshow')).hide();">Show TabCode</button>
-      <div id="tcspan">Tabcode for this system:<br/>
-        <button onclick="$(document.getElementById('tcspan')).hide(); $(document.getElementById('tcshow')).show();">Hide TabCode</button>
-		    <textarea rows="6" cols="68" id="code" 
-                  onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value) parseTCDoc(this.value);"></textarea><br/>
-      </div>
-    </div>
-    <div id="pchange">
-      Current Password: <input type="password" id="pwd" name="password"/></br>
-      New Password: <input type="password" id="pwd2" name="password2"/></br>
-      New Password (again): <input type="password" id="pwd3" name="password3"/></br>
-      <input type="submit" onclick="curUser.changePwd();" 
-             value="Change Password"/>
-      <button onclick="$(document.getElementById('pchange')).hide();">Cancel</button>
-    </div>
-    <div class="lamp lampsaved" id="statuslamp"></div>
-  </body>
+	<style type="text/css">
+	  	#search_controls {
+			border:1px solid black;
+			padding:0.5px 0.5px 4px 0.5px;
+	  	}
+	  </style>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pdfkit@0.10.0/js/pdfkit.standalone.js"></script>
+<script type="text/javascript" src="https://bundle.run/blob-stream@0.1.3"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/svg-to-pdfkit@0.1.8/source.js"></script>
+
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/pdfkit@0.11.0/js/pdfkit.min.js"></script>
+<script src="https://github.com/devongovett/blob-stream/releases/download/v0.1.3/blob-stream.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/svg-to-pdfkit@0.1.8/source.min.js"></script>
+ -->
+
+<!-- svg-exportJS prerequisite: canvg -->
+<!-- <script src="https://unpkg.com/canvg@3.0.1/lib/umd.js"></script> -->
+<script src="https://unpkg.com/deepmerge@3.3.0/dist/umd.js"></script>
+<!-- svg-exportJS plugin -->
+<script src="https://sharonchoong.github.io/svg-exportJS/svg-export.min.js"></script>
+
+<script>
+// Function to export SVG to PDF using the two JS libraries above from: https://morioh.com/p/287697cc17da
+function export_SVG_as_PDF() {
+	var filename = prompt("Export filename:", "tablature");
+	if (filename != null) {
+//   	downloadPDF(document.getElementById("notation"),filename)
+		
+//	TC attempt to introduce a <defs> element into the SVG as recommended somewhere on the web - failed so far! 30 Jun 2021
+ //  var thisSVG = document.getElementById("notation");
+//   var defs = document.createElementNS(SVGNS, 'defs');
+//   var newdefs = thisSVG.appendChild(defs);
+//   var font = document.createElementNS('@import url("../varietie4-webfont.eot")','style');
+//   newdefs.appendChild(font);
+//    font = document.createElementNS('@import url("../varietie4-webfont.ttf")','style');
+//   newdefs.appendChild(font);
+//    font = document.createElementNS('@import url("../varietie-frets-orns-webfont.ttf")','style');
+//   newdefs.appendChild(font);
+//    font = document.createElementNS('@import url("../varietie-ts-webfont.eot")','style');
+//   newdefs.appendChild(font);
+		
+		svgExport.downloadPdf(document.getElementById("notation"),filename, { 
+                pdfOptions: {
+                    customFonts: [
+                     { url: "../tabfont-webfont.ttf", fontName: "TabRegular" },
+                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3Rhythms" },
+                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3" },
+//                      { url: "../varietie-frets-orns-webfont.ttf", fontName: "Varietie3FretsAndOrns" },
+                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3FretsAndOrns" },
+//                      { url: "../varietie-ts-webfont.eot", fontName: "Varietie3-ts" }
+                     { url: "../varietie4-webfont.ttf ", fontName: "Varietie3-ts" }
+                    ]
+                },
+                useCSS: true
+		} 
+     )
+  }
+}
+function export_SVG_as_JPG() {
+	var filename = prompt("Export filename:", "tablature");
+	if (filename != null) {
+//   	downloadPDF(document.getElementById("notation"),filename)
+		svgExport.downloadJpeg(document.getElementById("notation"),filename, { 
+			useCSS: true
+		} 
+     )
+  }
+}
+function export_SVG_as_PNG() {
+	var filename = prompt("Export filename:", "tablature");
+	if (filename != null) {
+//   	downloadPDF(document.getElementById("notation"),filename)
+		svgExport.downloadPng(document.getElementById("notation"),filename, { 
+			useCSS: true
+		} 
+     )
+  }
+}
+function export_SVG_as_SVG() {
+	var filename = prompt("Export filename:", "tablature");
+	if (filename != null) {
+//   	downloadPDF(document.getElementById("notation"),filename)
+		svgExport.downloadSvg(document.getElementById("notation"),filename, { 
+			useCSS: true
+		} 
+     )
+  }
+}
+
+// gJustify = 0;
+// function JustifySystems() {
+// 	gJustify = 10;
+// 	TabCodeDocument.draw();
+// 	refresh();
+// }
+
+</script>	  
+	  
+	  
+</head>
+<body onload="javascript:initialiseTestPage(true);">
+
+<div id="top_fixed_container">
+	<div id="banner">
+		<div class="logo_centre">
+			<img src="../full_ECOLM_logo.gif" height="100px" alt="Electronic Corpus of Lute Music" />
+		</div>
+	</div>
+	<div id="menubar" class="clear">
+		<div class="left" id="editbuttons">
+			<button class="reditbutton" id="undobutton" onclick="javascript:TabCodeDocument.parameters.history.undo();">Undo</button> <button class="reditbutton" id="redobutton" onclick="javascript:TabCodeDocument.parameters.history.redo();">Redo</button> <button class="editbutton" id="revertbutton" onclick="javascript:revert();">Revert</button> 
+		</div>
+		<div class="widerright" id="playback">
+			<button onclick="javascript:  playOrResume(); ">Play</button> 
+			<button onclick="javascript:  stopOrPause(); ">Stop</button> 
+			<select id="soundSelect">
+				<option value="G_lute" selected>G lute</option>
+				<option value="E_lute">E lute</option>
+				<option value="Bar_lute">D minor lute (A=415Hz)</option>
+			</select>
+			<small> 
+				<label class="tempo">Tempo: 
+				<input id="tempoSlider" type="range" min="30" max="480" value="240" onchange="showTempoValue(this.value);" onload="showTempoValue(this.value);" onmouseup="updateTempo();" />
+				</label> 
+				<div class="editbutton" id='tempoReadOut'>
+					<span id='tempoReadOutvalue'></span> bpm
+				</div>
+			</small> 
+			<br/>
+<!-- 
+			<span id="search_controls"> 
+				<select id="CorpusSelection">
+					<option value="ecolm">ECOLM</option>
+					<option value="gerbode" selected>Gerbode incipits</option>
+				</select>
+				<button disabled onclick="javascript: corpusSearch();">Search</button> 
+		<!~~          <button  onclick="javascript: corpusSearch();">Search</button> ~~>
+			</span> 
+ -->
+		</div>
+	</div>
+	<div id="settingsbar" class="clear">
+		<div class="left">
+			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Type: Italian</button> <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
+		</div>
+<!-- 		<span class="right" id="barnum_highlight" class="clear"> -->
+		<span  id="barnum_highlight" class="clear">
+			<span class="barNumChoiceLabel">Bar number display:</span> 
+			<select id="BarnumberDisplay"  onchange="SetBarNumDisplay(this.value);">
+				<option value="none" selected>None</option>
+				<option value="systems">Every system</option>
+				<option value="five_bars">Every five bars</option>
+				<option value="all_bars">Every bar</option>
+			</select>
+
+			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
+			<label  for="upbeat"><small>Upbeat?</small></label>
+
+			<button  id="justify_button" onclick="JustifySystems()">
+				Justify
+			</button>
+		</span>
+		<span width="24px" class="spacer">&nbsp;&nbsp;&nbsp;</span>
+		
+		<span id="print_controls" class="clear">
+			Export as: <button onclick="export_SVG_as_PDF()">PDF</button>
+<!-- 
+		// These two don't seem to work:	
+			<button onclick="export_SVG_as_JPG()">JPEG</button>
+			<button onclick="export_SVG_as_PNG()">PNG</button>
+		// This works, but ...
+			<button onclick="export_SVG_as_SVG()">SVG</button> // Generates huge files full of redundant data!!
+ -->
+		</span>
+<!-- 
+		<span id="chord_hlite_controls">
+			<label for="chord">Highlight chords:</label> 
+			<input style="width:60px" type="text" id="chord" name="chord" /> 
+			<input style="width:60px" type="text" id="chord_sel_end" name="chord_sel_end" /> 
+			<input style="width:20px" type="text" id="ng_len" name="ng_len" /> 
+			<input type="button" value="Go" onclick="goto()"/> 
+		</span>
+ -->
+	</div>
+</div>
+
+<!-- 
+<div id="editor_container" class="editor_left" style="bottom: 0; margin-left: 15px; margin-right: 15px; margin-bottom: 15px; width: 1000px;top: 270px; position: fixed; y-overflow: auto; overflow-x: scroll;" onscroll="getEditorScroll()">
+ -->
+<div id="editor_container" class="editor_left" style="bottom: 0; margin-left: 15px; margin-right: 15px; margin-bottom: 15px; width: 1200px; position: relative; y-overflow: scroll; overflow-x: scroll;" onscroll="getEditorScroll()">
+	<div id="editor">
+		<div id="rendered" class="notation">
+			<svg class="rendered" id="notation" width="900px"  ></svg> 
+		</div>
+	</div>
+</div>
+<div id="resultTab" class="hasControls">
+</div>
+<!-- 
+<div id="code_container" style="float: right;width: 40%; position: fixed; top: 30;
+    right: 0;">
+ -->
+<!-- 
+<div id="code_container" style="width: calc(100vw - 1050px); position: fixed; top: 30px; left: 1000px;">
+ -->
+<div id="code_container" style="width: 30%; position: fixed; top: 30px; left: 75%">
+	<div id="codediv" >
+		<input type="file" id="filetoRead" /> <br>
+		<button id="tcshow" onclick="tcShow();" style="display:none">Show TabCode </button> 
+		<button id="tchide" onclick="tcHide();"  style="display:none">Hide TabCode</button> 
+		<script>
+		  document.getElementById("filetoRead").addEventListener("change",function(){
+			  var file = this.files[0];
+			  var name = file.name;
+			  if (file) {
+				 if(name.substring(name.length-3,name.length)==".tc") {
+					 var reader = new FileReader();
+					 reader.onload = function (evt) {
+					   console.log(evt);
+					   document.getElementById("code").value = evt.target.result;
+					 };
+					 reader.onerror = function (evt) {
+					   console.error("An error ocurred reading the file",evt);
+					 };
+					 reader.readAsText(file, "UTF-8");
+					 gJustify=0;
+					 refreshFromTabCode();
+					 $(document.getElementById('tcshow')).show();
+				    }
+				else alert("Not a TabCode file! Please try again!")
+			    }
+			},false);
+		</script>
+
+		<div id="tcspan">
+<!-- 
+			Tabcode for this piece:<br />
+ -->
+			<textarea style=" height:400px; width:250px; resize: both" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
+			<br>
+			<button id="tcdownload" onclick="download();">Download TabCode </button> 
+		</div>
+
+<script>
+
+	// from: https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js
+	function download() {
+		const downloadToFile = (content, filename, contentType) => {
+			const a = document.createElement('a');
+			const file = new Blob([content], {type: contentType});
+			a.href= URL.createObjectURL(file);
+			a.download = filename;
+			a.click();
+			URL.revokeObjectURL(a.href);
+		};
+// 		document.querySelector('#tcdownload').addEventListener('click', () => {
+			const textArea = document.getElementById('code');
+			var new_filename = prompt("New filename", "tabcode.tc");
+			if (new_filename != null) {
+				downloadToFile(textArea.value, new_filename, 'text/plain');
+  			}
+  			else {
+  				alert("No filename given! Try Again!");
+  			}		
+// 		});
+	}
+</script>
+
+			<br />
+		</div>
+	</div>
+</div>
+<div class="searchResults" id="searchResults">
+</div>
+<div class="lamp lampsaved" id="statuslamp">
+</div>
+<div id="debug_mess">
+</div>
+</body>
 </html>
+<!-- onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value) parseTCDoc(this.value);"> -->

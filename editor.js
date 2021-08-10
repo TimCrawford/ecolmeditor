@@ -56,10 +56,7 @@ function updatePage() {
       doubleclick = true;
       var word = $(this).data("word");
       sel_note = word;
-//      logger.log('Clicked on '+word.fret+(word.course+1)+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
       activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
-//      logger.log(activeDialog)
-//      frenchTabSelector(e.pageX, (e.pageY), word);
       getKeys(activeDialog);
     });
 
@@ -68,19 +65,17 @@ function updatePage() {
       doubleclick = true;
       var word = $(this).data("word");
       sel_note = word;
-//      logger.log('Clicked on '+word.fret+(word.course+1)+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
       activeDialog = italianTabSelector(e.pageX, (e.pageY), word);
-//      logger.log(activeDialog)
-//      italianTabSelector(e.pageX, (e.pageY), word)
       getKeys(activeDialog);
     });
 
     $(".editable .bassgroup").click(function(e) {
       var word = $(this).data("word");
-    //  logger.log(word)
-      if(word.TC.length) logger.log('Clicked on bass course '+word.TC+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
-      else logger.log('Clicked on bass number '+word.course+ ' at '+e.offsetX+' '+e.offsetY+' in editor pane!');
-      if(this.querySelectorAll(".French").length) activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
+      var ourlist = this.querySelectorAll(".French")
+      if(ourlist.length) {
+      	logger.log ("\tstarts: "+ourlist.starts+" ends: "+ourlist.ends)
+		 activeDialog = frenchTabSelector(e.pageX, (e.pageY), word);
+      }
       else activeDialog = italianTabSelector(e.pageX, (e.pageY), word);
       getKeys(activeDialog);
       return false;
@@ -425,8 +420,19 @@ function italianTabSelector(x, y, note) {
       orns.draw(x, y);
     };
   }(note, x, y), "Ornaments/Fingerings", false));
-  //  genericSelector(set, x, y, extras);
+
+  highlightTabWord(note.chord.starts,note.chord.finishes);
   return buttonBox(set, x, y, extras);
+}
+
+// Function to highlight/select and scroll to the current TabWord in the code textarea for editing. Takes start/finishes indexes into the TabCode string:
+function highlightTabWord(starts,finishes){
+  	var input = document.getElementById('code');
+  	tcShow();
+  	// The following is odd, but works:
+  	input.setSelectionRange(starts, starts);
+  	input.focus();
+  	input.setSelectionRange(starts, finishes);
 }
 
 function frenchTabSelector(x, y, note) {
@@ -434,26 +440,33 @@ function frenchTabSelector(x, y, note) {
   var extras = [deleteButton(x, y, note.starts, note.starts + 2 + note.extras.length, "tabNote")];
   extras.push(deleteChordButton(x, y, note.chord.starts, note.chord.finishes, note.chord));
 //  extras.push(deleteToHereButton(x, y, TabCodeDocument.firstNonComment().starts, note.chord.finishes, note.chord));
-  var course = note.chord.mainCourses.indexOf(note);
-  var same;
-  if (course > 0 && !note.chord.mainCourses[course - 1]) {
-    extras.push(FrUpCourse(note, course + 1));
-    same = FrUpCourseKeepPitch(note, course + 1);
-    if (same) extras.push(same); // Only if on fingerboard
+  
+  if(note.chord.mainCourses.indexOf(note)==-1) {
+  	// In lieu of a proper dialog for bass courses, we just select the Tabcode element for manual editing:
+	highlightTabWord(note.chord.starts,note.chord.finishes);
   }
-  if (course < 5 && !note.chord.mainCourses[course + 1]) {
-    extras.push(FrDownCourse(note, course + 1));
-    same = FrDownCourseKeepPitch(note, course + 1);
-    if (same) extras.push(same); // Only if on fingerboard
-  }
-  extras.push(textButton("OrnFing", "orndialogue", function(note, x, y) {
-    return function() {
-      var orns = new ornamentbox(note);
-      orns.draw(x, y);
-    };
-  }(note, x, y), "Ornaments/Fingerings", false));
-  //  genericSelector(set, x, y, extras);
-  return buttonBox(set, x, y, extras);
+  else {
+	  var course = note.chord.mainCourses.indexOf(note);
+	  var same;
+	  if (course > 0 && !note.chord.mainCourses[course - 1]) {
+	    extras.push(FrUpCourse(note, course + 1));
+	    same = FrUpCourseKeepPitch(note, course + 1);
+	    if (same) extras.push(same); // Only if on fingerboard
+	  }
+	  if (course < 5 && !note.chord.mainCourses[course + 1]) {
+	    extras.push(FrDownCourse(note, course + 1));
+	    same = FrDownCourseKeepPitch(note, course + 1);
+	    if (same) extras.push(same); // Only if on fingerboard
+	  }
+	  extras.push(textButton("OrnFing", "orndialogue", function(note, x, y) {
+		    return function() {
+			 var orns = new ornamentbox(note);
+			 orns.draw(x, y);
+		    };
+		  }(note, x, y), "Ornaments/Fingerings", false));
+	highlightTabWord(note.chord.starts,note.chord.finishes);
+	  return buttonBox(set, x, y, extras);
+	}
 }
 
 function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
@@ -474,7 +487,7 @@ function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
   if (typeof(noBeams) == "undefined" || !noBeams) {
     extras.push(beamifyButton(x, y, chord));
   }
-  //  genericSelector(set, x, y, extras);
+  highlightTabWord(chord.starts,chord.finishes);
   buttonBox(set, x, y, extras);
 }
 

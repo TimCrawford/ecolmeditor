@@ -33,10 +33,15 @@ div.buttons {
   border-radius: 2px;
   padding: 3px;
   border-collapse: collapse;
+  
+  bottom: 4;
+  right: 4;
 
  
+/* 
  left: 1020px;
  top: 500px;
+ */
 }
 #messages{
   clear: both;

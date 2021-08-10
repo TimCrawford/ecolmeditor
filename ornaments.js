@@ -369,10 +369,10 @@ function ConnectingLine(code, number){
 			let deltax = point2[0] - point1[0];
 			let deltay = point2[1] - point1[1];
 			let halfway = deltax / 2;
-			let peak = deltay < 0 ? 3 * deltay / 4 :
-					(deltay===0 ? - ld / 2 : deltay / 4) ;
-			let backPeak = deltay < 0 ? - deltay / 3 :
-					(deltay===0 ? - ld / 4 : -2 * deltay / 3);
+			let peak = deltay < 0 ? 1.5 * 3 * deltay / 4 :
+					(deltay===0 ? - 0.75 * ld / 2 : deltay / 4) ;
+			let backPeak = deltay < 0 ? - 1.5 * deltay / 3 :
+					(deltay===0 ? - ld / 4 : 0.75 * -2 * deltay / 3);
 			return svgPath(svgEl, ['M '+point1.join(" "),
 								 "q"+halfway+" "+peak+", "+deltax+" "+deltay,
 								 "q"+(-halfway)+" "+backPeak+", "+(-deltax)+" "+(-deltay)]);

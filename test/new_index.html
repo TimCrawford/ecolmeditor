@@ -170,6 +170,14 @@ function export_SVG_as_SVG() {
      )
   }
 }
+
+// gJustify = 0;
+// function JustifySystems() {
+// 	gJustify = 10;
+// 	TabCodeDocument.draw();
+// 	refresh();
+// }
+
 </script>	  
 	  
 	  
@@ -229,18 +237,23 @@ function export_SVG_as_SVG() {
 				<option value="all_bars">Every bar</option>
 			</select>
 
-			<input  class="reditbutton" type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
-			<label  class="reditbutton" for="upbeat"><small>Upbeat?</small></label>
+			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
+			<label  for="upbeat"><small>Upbeat?</small></label>
+
+			<button  id="justify_button" onclick="JustifySystems()">
+				Justify
+			</button>
 		</span>
 		<span width="24px" class="spacer">&nbsp;&nbsp;&nbsp;</span>
 		
 		<span id="print_controls" class="clear">
-			<small>Export as: </small>
-			<button onclick="export_SVG_as_PDF()">PDF</button>
+			Export as: <button onclick="export_SVG_as_PDF()">PDF</button>
 <!-- 
+		// These two don't seem to work:	
 			<button onclick="export_SVG_as_JPG()">JPEG</button>
 			<button onclick="export_SVG_as_PNG()">PNG</button>
-			<button onclick="export_SVG_as_SVG()">SVG</button>
+		// This works, but ...
+			<button onclick="export_SVG_as_SVG()">SVG</button> // Generates huge files full of redundant data!!
  -->
 		</span>
 <!-- 
@@ -294,6 +307,7 @@ function export_SVG_as_SVG() {
 					   console.error("An error ocurred reading the file",evt);
 					 };
 					 reader.readAsText(file, "UTF-8");
+					 gJustify=0;
 					 refreshFromTabCode();
 					 $(document.getElementById('tcshow')).show();
 				    }
@@ -306,7 +320,10 @@ function export_SVG_as_SVG() {
 <!-- 
 			Tabcode for this piece:<br />
  -->
+			<textarea style=" height:400px; width:250px; resize: both" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
+			<br>
 			<button id="tcdownload" onclick="download();">Download TabCode </button> 
+		</div>
 
 <script>
 
@@ -333,7 +350,6 @@ function export_SVG_as_SVG() {
 	}
 </script>
 
-			<textarea style=" height:400px; width:250px; resize: both" rows="6" cols="68" id="code" onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value){ refreshFromTabCode();}"></textarea>
 			<br />
 		</div>
 	</div>

@@ -290,6 +290,9 @@ a.editbutton, a.leditbutton, a.reditbutton{
   padding: 1em;
   background-color: #EEE;
 }
+#codediv {  
+  right: 0;
+}
 embed{
   position: fixed;
   top: 0px;

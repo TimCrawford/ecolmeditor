@@ -28,6 +28,14 @@ function refreshFromTabCode(){
   // TO = setTimeout(function(){parseTCDoc($("#code")[0].value);}, 250);
   TO = setTimeout(function(){refresh2();}, 250);
 }
+
+function refreshFromTabCode(){
+  if(TO) clearTimeout(TO);
+  // TO = setTimeout(function(){parseTCDoc($("#code")[0].value);}, 250);
+//   TO = setTimeout(function(){refresh2();}, 250);
+  TO = setTimeout(function(){refresh();}, 250);
+}
+
 function refresh2(){
   curBeams = 0;
   var newTC = new Tablature($("#code")[0].value, TabCodeDocument.SVG, curParams);

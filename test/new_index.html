@@ -243,14 +243,14 @@ function export_SVG_as_SVG() {
 			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
 			<label  for="upbeat"><small>Upbeat?</small></label>
 
-			<button  id="justify_button" onclick="JustifySystems()">
+			<button disabled id="justify_button" onclick="JustifySystems()">
 				Justify
 			</button>
 		</span>
 		<span width="24px" class="spacer">&nbsp;&nbsp;&nbsp;</span>
 		
 		<span id="print_controls" class="clear">
-			Export as: <button onclick="export_SVG_as_PDF()">PDF</button>
+			Export as: <button disabled onclick="export_SVG_as_PDF()">PDF</button>
 <!-- 
 		// These two don't seem to work:	
 			<button onclick="export_SVG_as_JPG()">JPEG</button>

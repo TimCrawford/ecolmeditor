@@ -60,6 +60,12 @@
 	</script>
 	<script type="text/javascript" src="../imgpreview.js">
 	</script>
+
+	<script type="text/javascript" src="importMIDI.js">
+	</script>
+	<script src="https://unpkg.com/@tonejs/midi">
+	</script>
+
 <!-- slider stuff from http://loopj.com/jquery-simple-slider/ -->
 	<script src="simple-slider.js">
 	</script>
@@ -292,33 +298,84 @@ function export_SVG_as_SVG() {
  -->
 <div id="code_container" style="width: 30%; position: fixed; top: 30px; left: 75%">
 	<div id="codediv" >
-		<input type="file" id="filetoRead" /> <br>
-		<button id="tcshow" onclick="tcShow();" style="display:none">Show TabCode </button> 
-		<button id="tchide" onclick="tcHide();"  style="display:none">Hide TabCode</button> 
+		<button id="choose_tcfile" onclick="displayTabCodeFromTCFile()">Import TabCode</button>
+		<span id="tcchooser" hidden>
+<!-- 
+			<br>
+ -->
+			<input type="file" id="TCfiletoRead"  />
+		</span>
+		<br>
+		<button id="choose_midifile" onclick="displayTabCodeFromMIDIFile()">Import MIDI</button>
+		<span id="midichooser" hidden>
+<!-- 
+			<br>
+ -->
+			<input type="file" id="MIDIfiletoRead"  /> 
+		</span>
 		<script>
-		  document.getElementById("filetoRead").addEventListener("change",function(){
-			  var file = this.files[0];
-			  var name = file.name;
-			  if (file) {
-				 if(name.substring(name.length-3,name.length)==".tc") {
-					 var reader = new FileReader();
-					 reader.onload = function (evt) {
-					   console.log(evt);
-					   document.getElementById("code").value = evt.target.result;
-					 };
-					 reader.onerror = function (evt) {
-					   console.error("An error ocurred reading the file",evt);
-					 };
-					 reader.readAsText(file, "UTF-8");
-					 gJustify=0;
-					 refreshFromTabCode();
-					 $(document.getElementById('tcshow')).show();
+		  function displayTabCodeFromTCFile() {
+			document.getElementById('choose_tcfile').hidden=true;
+			document.getElementById('tcchooser').hidden=false;
+			document.getElementById('midichooser').hidden=true;
+			document.getElementById('choose_midifile').hidden=false;
+		document.getElementById("TCfiletoRead").addEventListener("change",function(){
+				  var tcfile = this.files[0];
+				  var name = tcfile.name;
+				  if (tcfile) {
+					 if(name.substring(name.length-3,name.length)==".tc") {
+						 var reader = new FileReader();
+						 reader.onload = function (evt) {
+						   console.log(evt);
+						   document.getElementById("code").value = evt.target.result;
+						 };
+						 reader.onerror = function (evt) {
+						   console.error("An error ocurred reading the file",evt);
+						 };
+						 reader.readAsText(tcfile, "UTF-8");
+						 gJustify=0;
+						 refreshFromTabCode();
+						 $(document.getElementById('tcshow')).show();
+					    }
+					else alert("Not a TabCode file! Please try again!")
 				    }
-				else alert("Not a TabCode file! Please try again!")
-			    }
-			},false);
+				},false);
+
+			}
+		  function displayTabCodeFromMIDIFile() {
+			document.getElementById('choose_midifile').hidden=true;
+			document.getElementById('midichooser').hidden=false;	
+			document.getElementById('tcchooser').hidden=true;	
+			document.getElementById('choose_tcfile').hidden=false;
+			document.getElementById("MIDIfiletoRead").addEventListener("change",function(){
+				  var midifile = this.files[0];
+				  var name = midifile.name;
+				  if (midifile) {
+					 console.log("File is "+name)
+					 if(name.substring(name.length-4,name.length)==".mid") {
+// 					 	var reader = new FileReader();
+// 						 reader.onload = function (evt) {
+// 						 console.log(evt);
+						 getMIDI(tempPath(midifile));
+						 console.log(allnotes)
+						 document.getElementById("code").value = notesToTabcode(allnotes, name);
+// 						 };
+// 						 reader.onerror = function (evt) {
+// 						   console.error("An error ocurred reading the file",evt);
+// 						 };
+						 gJustify=0;
+						 refreshFromTabCode();
+						 $(document.getElementById('tcshow')).show();
+					    }
+					else alert(name+" is not a MIDI file! Please try again!")
+				    }
+				},false);
+			}
 		</script>
 
+		<br>
+		<button id="tcshow" onclick="tcShow();" style="display:none">Show TabCode </button> 
+		<button id="tchide" onclick="tcHide();"  style="display:none">Hide TabCode</button> 
 		<div id="tcspan">
 <!-- 
 			Tabcode for this piece:<br />

@@ -356,9 +356,10 @@ function export_SVG_as_SVG() {
 // 					 	var reader = new FileReader();
 // 						 reader.onload = function (evt) {
 // 						 console.log(evt);
-						 getMIDI(tempPath(midifile));
-						 console.log(allnotes)
-						 document.getElementById("code").value = notesToTabcode(allnotes, name);
+ 						 var theTabCode = get_and_convert_MIDI(tempPath(midifile),name); // user might want to change name
+//						 var theTabCode = get_and_convert_MIDI(midifile,name); // user might want to change name
+						 console.log(theTabCode)
+						 document.getElementById("code").value = theTabcode;
 // 						 };
 // 						 reader.onerror = function (evt) {
 // 						   console.error("An error ocurred reading the file",evt);

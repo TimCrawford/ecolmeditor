@@ -5,7 +5,7 @@
 */
 
 // global variables
-	var allnotes = [];
+//	var allnotes = [];
 	var totalDur = 0;
 	var PPQ = 480;
 	var BPM = 120;
@@ -297,7 +297,7 @@ console.log("allnotes has "+allnotes.length+" notes")
 		});
 	});
 // 		document.getElementById("showButton").hidden = false;
-	
+	return allnotes;
 }
 function tempPath(name) {
 	var path = URL.createObjectURL(name);
@@ -404,3 +404,8 @@ function notesToTabcode(allnotes, fname) {
 	return tabcodestring;
 }
 
+function get_and_convert_MIDI(url,fname) {
+	var allnotes = getMIDI(url);
+	tabcodestr = notesToTabcode(allnotes, fname);
+	return tabcodestr;
+}

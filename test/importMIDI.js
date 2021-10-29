@@ -253,6 +253,7 @@ function getMIDI(url) {
 	
 	var midi = new Midi();
 	var notes = [];
+	var allnotes = [];
 
 	// load a midi file in the browser
 	Midi.fromUrl(url).then(midi => {

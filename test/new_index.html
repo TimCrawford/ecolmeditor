@@ -303,7 +303,7 @@ function export_SVG_as_SVG() {
 <!-- 
 			<br>
  -->
-			<input type="file" id="TCfiletoRead"  />
+			<input type="file" id="TCfiletoRead" class="tc-file-input" />
 		</span>
 		<br>
 		<button id="choose_midifile" onclick="displayTabCodeFromMIDIFile()">Import MIDI</button>
@@ -311,7 +311,7 @@ function export_SVG_as_SVG() {
 <!-- 
 			<br>
  -->
-			<input type="file" id="MIDIfiletoRead"  /> 
+			<input type="file" id="MIDIfiletoRead" class="midi-file-input" /> 
 		</span>
 		<script>
 		  function displayTabCodeFromTCFile() {
@@ -326,11 +326,11 @@ function export_SVG_as_SVG() {
 					 if(name.substring(name.length-3,name.length)==".tc") {
 						 var reader = new FileReader();
 						 reader.onload = function (evt) {
-						   console.log(evt);
+						   logger.log(evt);
 						   document.getElementById("code").value = evt.target.result;
 						 };
 						 reader.onerror = function (evt) {
-						   console.error("An error ocurred reading the file",evt);
+						   logger.error("An error ocurred reading the file",evt);
 						 };
 						 reader.readAsText(tcfile, "UTF-8");
 						 gJustify=0;
@@ -351,22 +351,22 @@ function export_SVG_as_SVG() {
 				  var midifile = this.files[0];
 				  var name = midifile.name;
 				  if (midifile) {
-					 console.log("File is "+name)
+					 logger.log("File is "+name)
 					 if(name.substring(name.length-4,name.length)==".mid") {
 // 					 	var reader = new FileReader();
 // 						 reader.onload = function (evt) {
-// 						 console.log(evt);
- 						 var theTabCode = get_and_convert_MIDI(tempPath(midifile),name); // user might want to change name
+// 						 logger.log(evt);
+ 						 theTabCode = get_and_convert_MIDI(tempPath(midifile),name,setAndRedrawTabcodeFun); // user might want to change name
 //						 var theTabCode = get_and_convert_MIDI(midifile,name); // user might want to change name
-						 console.log(theTabCode)
-						 document.getElementById("code").value = theTabcode;
-// 						 };
-// 						 reader.onerror = function (evt) {
-// 						   console.error("An error ocurred reading the file",evt);
-// 						 };
-						 gJustify=0;
-						 refreshFromTabCode();
-						 $(document.getElementById('tcshow')).show();
+						 logger.log(theTabCode)
+// 						 document.getElementById("code").value = theTabCode;
+// // 						 };
+// // 						 reader.onerror = function (evt) {
+// // 						   logger.error("An error ocurred reading the file",evt);
+// // 						 };
+// 						 gJustify=0;
+// 						 refreshFromTabCode();
+// 						 $(document.getElementById('tcshow')).show();
 					    }
 					else alert(name+" is not a MIDI file! Please try again!")
 				    }

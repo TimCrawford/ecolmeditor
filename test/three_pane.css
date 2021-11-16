@@ -73,6 +73,9 @@ div.editor_top-right {
 .midi-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
+#MIDIfiletoRead {
+	width: 400px;
+}
 .midi-file-input::before {
   content: 'Choose MIDI file';
   display: inline-block;

@@ -48,6 +48,9 @@ div.editor_top-right {
 .tc-file-input::-webkit-file-upload-button {
   visibility: hidden;
 }
+#TCfiletoRead {
+	width: 400px;
+}
 .tc-file-input::before {
   content: 'Choose TabCode file';
   display: inline-block;

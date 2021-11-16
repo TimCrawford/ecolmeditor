@@ -336,6 +336,7 @@ function notesToTabcode(allnotes, fname) {
 	var systemcount = 1;
 	var chordcount = 0;
 	var chordDur = 0;
+	var badChordDur=false;
 	var beatsInBar = timeSigNum*(4/timeSigDenom);
 	var needSystemBreak = false;
 
@@ -354,11 +355,21 @@ function notesToTabcode(allnotes, fname) {
 			chordDur = allnotes[i][0] - lastTicks;
 			if(tabcode.length) {
 				if(tabcode[tabcode.length-1].slice(1,2) != "|") {
-					lastChord = rhythmSymbol[chordDur*2] + tabcode[tabcode.length-1];
+					if(typeof rhythmSymbol[chordDur*2] == "undefined"){
+						lastChord = tabcode[tabcode.length-1];
+						badChordDur=true;
+					}
+					else {
+						lastChord = rhythmSymbol[chordDur*2] + tabcode[tabcode.length-1];
+					}
 					tabcode[tabcode.length-1] = lastChord;
 				}
 			}
 			tabcode.push("");
+			if(badChordDur) {
+				tabcode.push("{Bad Chord duration "+(chordDur*2)+" not inserted here}");
+				badChordDur = false;
+			}
 		}
 		if(beatcount && (allnotes[i][0] > lastTicks)) if(beatcount%beatsInBar==0) {
 			barcount++;
@@ -384,11 +395,22 @@ function notesToTabcode(allnotes, fname) {
 
 		MIDItoTabNote(allnotes[i][1]);
 		lastTicks = allnotes[i][0];
+		
 	}
 	chordDur = ((totalDur/60)*BPM*PPQ) - lastTicks;
 	if(tabcode.length && (tabcode[tabcode.length-1].slice(1,2) != "|")) {
-		lastChord = rhythmSymbol[chordDur*2] + tabcode[tabcode.length-1];
+		if(typeof rhythmSymbol[chordDur*2] == "undefined"){
+			lastChord = tabcode[tabcode.length-1];
+			badChordDur=true;
+		}
+		else {
+			lastChord = rhythmSymbol[chordDur*2] + tabcode[tabcode.length-1];
+		}
 		tabcode[tabcode.length-1] = lastChord;
+	}
+	if(badChordDur) {
+		tabcode.push("{Bad Chord duration "+(chordDur*2)+" not inserted on prev chord}");
+		badChordDur = false;
 	}
 	tabcode.push("");
 

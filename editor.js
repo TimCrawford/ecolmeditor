@@ -521,11 +521,53 @@ function tidy_rhythms() {
 }
 
 function augment_rhythms() {
-	alert("Double the duration of all rss.\nNot yet Implemented!");
+// 	alert("Double the duration of all rss.\nNot yet Implemented!");
+	var newTC="";
+	var currTC=document.getElementById("code").value;
+	var lines = currTC.split("\n");
+	var currRS="";
+	for(var i=0;i<lines.length;i++) {
+		var firstChar = lines[i].charAt(0);
+		if(firstChar=="") continue; //blank line
+		if((firstChar == "B")||(firstChar == "F")) { // already at max value so bail out!
+			alert("Cannot augment all rhythm signs!!");
+			return false;
+		}
+		else {
+			var rsloc = rhythmFlags.indexOf(firstChar);
+			if(rsloc != -1) { 
+				var rest=lines[i].substring(1);
+				lines[i]=rhythmFlags[rsloc+1] + rest;
+			}
+		}
+	}
+	document.getElementById("code").value = lines.join("\n");
+	refresh();
 }
 
 function diminish_rhythms() {
-	alert("Halve the duration of all rss.\nNot yet Implemented!");
+// 	alert("Halve the duration of all rss.\nNot yet Implemented!");
+	var newTC="";
+	var currTC=document.getElementById("code").value;
+	var lines = currTC.split("\n");
+	var currRS="";
+	for(var i=0;i<lines.length;i++) {
+		var firstChar = lines[i].charAt(0);
+		if(firstChar=="") continue; //blank line
+		if((firstChar == "Z")) { // already at min value so bail out!
+			alert("Cannot diminish all rhythm signs!!");
+			return false;
+		}
+		else {
+			var rsloc = rhythmFlags.indexOf(firstChar);
+			if(rsloc != -1) { 
+				var rest=lines[i].substring(1);
+				lines[i]=rhythmFlags[rsloc-1] + rest;
+			}
+		}
+	}
+	document.getElementById("code").value = lines.join("\n");
+	refresh();
 	
 }
 

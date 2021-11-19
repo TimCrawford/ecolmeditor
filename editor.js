@@ -531,11 +531,11 @@ function tidy_rhythms() {
 			var firstChar = word[j].charAt(0);
 			if(firstChar == "{") {
 				inComment = true;
-logger.log("\tfirstChar: "+firstChar+" so now inComment!")
+// logger.log("\tfirstChar: "+firstChar+" so now inComment!")
 			}
 			var lastChar = word[j].charAt(word[j].length-1);
 			if((firstChar == "{")&&(lastChar == "}")) {
-logger.log("Special word! "+ theline)
+// logger.log("Special word! "+ theline)
 				if(inComment) {
 					outline.push(theline);	// Tabwords like "{^}"
 					inComment = false;
@@ -544,12 +544,12 @@ logger.log("Special word! "+ theline)
 			}
 			else if(lastChar == "}") {
 				inComment = false;
-logger.log("\tlastChar: "+lastChar+" so now NOT inComment!")
+// logger.log("\tlastChar: "+lastChar+" so now NOT inComment!")
 				outword.push(word[j]);	
 				continue;	
 			}		
 			if(inComment) {
-logger.log("\tIn Comment, so skipping word "+word[j]);
+// logger.log("\tIn Comment, so skipping word "+word[j]);
 				outword.push(word[j]);	
 				continue;
 			}
@@ -572,12 +572,12 @@ logger.log("\tIn Comment, so skipping word "+word[j]);
 		}
 		var theline = outword.join(" ");
 		outword.length=0;
-logger.log("\tNew line: "+theline);
+// logger.log("\tNew line: "+theline);
 		outline.push(theline);
-logger.log("Input line "+ i +": outline: "+outline.length)
+// logger.log("Input line "+ i +": outline: "+outline.length)
 		theline.length = 0;
 	}
-logger.log(outline)
+// logger.log(outline)
 	document.getElementById("code").value = outline.join("\n");
 	refresh();
 }

@@ -559,54 +559,112 @@ function tidy_rhythms() {
 }
 
 function augment_rhythms() {
-// 	alert("Double the duration of all rss.\nNot yet Implemented!");
 	var newTC="";
+	var inComment = false;
 	var currTC=document.getElementById("code").value;
 	var lines = currTC.split("\n");
-	var currRS="";
+	var outword = [];
+		var outline = [];
 	for(var i=0;i<lines.length;i++) {
-		var firstChar = lines[i].charAt(0);
-		if(firstChar=="") continue; //blank line
-		if((firstChar == "B")||(firstChar == "F")) { // already at max value so bail out!
-			alert("Cannot augment all rhythm signs!!");
-			return false;
-		}
-		else {
-			var rsloc = rhythmFlags.indexOf(firstChar);
-			if(rsloc != -1) { 
-				var rest=lines[i].substring(1);
-				lines[i]=rhythmFlags[rsloc+1] + rest;
+		var theline = lines[i]; // Use this if the line is unaffected
+		word = lines[i].split(" ");
+		for(var j=0;j<word.length;j++) {
+			var firstChar = word[j].charAt(0);
+			if(firstChar == "{") {
+				inComment = true;
 			}
+			var lastChar = word[j].charAt(word[j].length-1);
+			if((firstChar == "{")&&(lastChar == "}")) {
+				if(inComment) {
+					outline.push(theline);	// Tabwords like "{^}"
+					inComment = false;
+					break;
+				}
+			}
+			else if(lastChar == "}") {
+				inComment = false;
+				outword.push(word[j]);	
+				continue;	
+			}		
+			if(inComment) {
+				outword.push(word[j]);	
+				continue;
+			}
+			var rsloc = rhythmFlags.indexOf(firstChar);
+			if((rsloc == rhythmFlags.length-3)) { // already at max value so bail out!
+			// the -3 is because we have both "B" and "F" in the list ("F" is not really an rs!)
+				alert("Cannot augment all rhythm signs!!");
+				return false;
+			}
+			if(rsloc != -1) { // it's a rhythm sign
+				if(rhythmFlags[rsloc] == word[j].charAt(0)) {
+					var rest=word[j].substring(1);
+					word[j] = rhythmFlags[rsloc+1] + rest;
+				}
+			}
+			outword.push(word[j]);
 		}
+		var theline = outword.join(" ");
+		outword.length=0;
+		outline.push(theline);
+		theline.length = 0;
 	}
-	document.getElementById("code").value = lines.join("\n");
+	document.getElementById("code").value = outline.join("\n");
 	refresh();
 }
 
 function diminish_rhythms() {
-// 	alert("Halve the duration of all rss.\nNot yet Implemented!");
 	var newTC="";
+	var inComment = false;
 	var currTC=document.getElementById("code").value;
 	var lines = currTC.split("\n");
-	var currRS="";
+	var outword = [];
+		var outline = [];
 	for(var i=0;i<lines.length;i++) {
-		var firstChar = lines[i].charAt(0);
-		if(firstChar=="") continue; //blank line
-		if((firstChar == "Z")) { // already at min value so bail out!
-			alert("Cannot diminish all rhythm signs!!");
-			return false;
-		}
-		else {
-			var rsloc = rhythmFlags.indexOf(firstChar);
-			if(rsloc != -1) { 
-				var rest=lines[i].substring(1);
-				lines[i]=rhythmFlags[rsloc-1] + rest;
+		var theline = lines[i]; // Use this if the line is unaffected
+		word = lines[i].split(" ");
+		for(var j=0;j<word.length;j++) {
+			var firstChar = word[j].charAt(0);
+			if(firstChar == "{") {
+				inComment = true;
 			}
+			var lastChar = word[j].charAt(word[j].length-1);
+			if((firstChar == "{")&&(lastChar == "}")) {
+				if(inComment) {
+					outline.push(theline);	// Tabwords like "{^}"
+					inComment = false;
+					break;
+				}
+			}
+			else if(lastChar == "}") {
+				inComment = false;
+				outword.push(word[j]);	
+				continue;	
+			}		
+			if(inComment) {
+				outword.push(word[j]);	
+				continue;
+			}
+			var rsloc = rhythmFlags.indexOf(firstChar);
+ 			if((firstChar == "Z")) { // already at min value so bail out!
+				alert("Cannot diminish all rhythm signs!!");
+				return false;
+			}
+			if(rsloc != -1) { // it's a rhythm sign
+				if(rhythmFlags[rsloc] == word[j].charAt(0)) {
+					var rest=word[j].substring(1);
+					word[j] = rhythmFlags[rsloc-1] + rest;
+				}
+			}
+			outword.push(word[j]);
 		}
+		var theline = outword.join(" ");
+		outword.length=0;
+		outline.push(theline);
+		theline.length = 0;
 	}
-	document.getElementById("code").value = lines.join("\n");
+	document.getElementById("code").value = outline.join("\n");
 	refresh();
-	
 }
 
 function tcShow() {

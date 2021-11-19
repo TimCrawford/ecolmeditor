@@ -493,30 +493,92 @@ function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
 
 function tidy_rhythms() {
 //	alert("Remove all rss, after the first in each bar, which are the same as the preceding one.");
+// 	var newTC="";
+// 	var currTC=document.getElementById("code").value;
+// 	var lines = currTC.split("\n");
+// 	var currRS="";
+// 	for(var i=0;i<lines.length;i++) {
+// 		var dotted = false;
+// 		var firstChar = lines[i].charAt(0);
+// 		if(lines[i].charAt(1)==".") dotted = true;
+// 		var rsloc = rhythmFlags.indexOf(firstChar);
+// 		if(rsloc != -1) { // it's a rhythm sign
+// 			if(rhythmFlags[rsloc] == currRS.charAt(0)) {
+// 				if(dotted && (currRS.charAt(1)==".")) {
+// 					lines[i] = lines[i].substring(2);
+// 				}
+// 				else if(!dotted && (currRS.charAt(1)!=".")){
+// 					lines[i] = lines[i].substring(1);
+// 				}
+// 			}
+// 			currRS = rhythmFlags[rsloc];
+// 			if(dotted) currRS += "."
+// 		}
+// 		if (lines[i].charAt(0) == "|") currRS = "";
+
 	var newTC="";
+	var inComment = false;
 	var currTC=document.getElementById("code").value;
 	var lines = currTC.split("\n");
 	var currRS="";
+	var outword = [];
+		var outline = [];
 	for(var i=0;i<lines.length;i++) {
-		var dotted = false;
-		var firstChar = lines[i].charAt(0);
-		if(lines[i].charAt(1)==".") dotted = true;
-		var rsloc = rhythmFlags.indexOf(firstChar);
-		if(rsloc != -1) { // it's a rhythm sign
-			if(rhythmFlags[rsloc] == currRS.charAt(0)) {
-				if(dotted && (currRS.charAt(1)==".")) {
-					lines[i] = lines[i].substring(2);
-				}
-				else if(!dotted && (currRS.charAt(1)!=".")){
-					lines[i] = lines[i].substring(1);
+		var theline = lines[i]; // Use this if the line is unaffected
+		word = lines[i].split(" ");
+		for(var j=0;j<word.length;j++) {
+			var dotted = false;
+			var firstChar = word[j].charAt(0);
+			if(firstChar == "{") {
+				inComment = true;
+logger.log("\tfirstChar: "+firstChar+" so now inComment!")
+			}
+			var lastChar = word[j].charAt(word[j].length-1);
+			if((firstChar == "{")&&(lastChar == "}")) {
+logger.log("Special word! "+ theline)
+				if(inComment) {
+					outline.push(theline);	// Tabwords like "{^}"
+					inComment = false;
+					break;
 				}
 			}
-			currRS = rhythmFlags[rsloc];
-			if(dotted) currRS += "."
+			else if(lastChar == "}") {
+				inComment = false;
+logger.log("\tlastChar: "+lastChar+" so now NOT inComment!")
+				outword.push(word[j]);	
+				continue;	
+			}		
+			if(inComment) {
+logger.log("\tIn Comment, so skipping word "+word[j]);
+				outword.push(word[j]);	
+				continue;
+			}
+			if(word[j].charAt(1)==".") dotted = true;
+			var rsloc = rhythmFlags.indexOf(firstChar);
+			if(rsloc != -1) { // it's a rhythm sign
+				if(rhythmFlags[rsloc] == currRS.charAt(0)) {
+					if(dotted && (currRS.charAt(1)==".")) {
+						word[j] = word[j].substring(2);
+					}
+					else if(!dotted && (currRS.charAt(1)!=".")){
+						word[j] = word[j].substring(1);
+					}
+				}
+				currRS = rhythmFlags[rsloc];
+				if(dotted) currRS += "."
+			}
+			if (word[j].charAt(0) == "|") currRS = "";
+			outword.push(word[j]);
 		}
-		if (lines[i].charAt(0) == "|") currRS = "";
+		var theline = outword.join(" ");
+		outword.length=0;
+logger.log("\tNew line: "+theline);
+		outline.push(theline);
+logger.log("Input line "+ i +": outline: "+outline.length)
+		theline.length = 0;
 	}
-	document.getElementById("code").value = lines.join("\n");
+logger.log(outline)
+	document.getElementById("code").value = outline.join("\n");
 	refresh();
 }
 

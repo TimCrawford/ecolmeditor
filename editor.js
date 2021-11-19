@@ -492,30 +492,6 @@ function rhythmFlagSelector(x, y, chord, noBeams, noDelete) {
 }
 
 function tidy_rhythms() {
-//	alert("Remove all rss, after the first in each bar, which are the same as the preceding one.");
-// 	var newTC="";
-// 	var currTC=document.getElementById("code").value;
-// 	var lines = currTC.split("\n");
-// 	var currRS="";
-// 	for(var i=0;i<lines.length;i++) {
-// 		var dotted = false;
-// 		var firstChar = lines[i].charAt(0);
-// 		if(lines[i].charAt(1)==".") dotted = true;
-// 		var rsloc = rhythmFlags.indexOf(firstChar);
-// 		if(rsloc != -1) { // it's a rhythm sign
-// 			if(rhythmFlags[rsloc] == currRS.charAt(0)) {
-// 				if(dotted && (currRS.charAt(1)==".")) {
-// 					lines[i] = lines[i].substring(2);
-// 				}
-// 				else if(!dotted && (currRS.charAt(1)!=".")){
-// 					lines[i] = lines[i].substring(1);
-// 				}
-// 			}
-// 			currRS = rhythmFlags[rsloc];
-// 			if(dotted) currRS += "."
-// 		}
-// 		if (lines[i].charAt(0) == "|") currRS = "";
-
 	var newTC="";
 	var inComment = false;
 	var currTC=document.getElementById("code").value;

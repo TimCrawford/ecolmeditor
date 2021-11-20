@@ -505,6 +505,10 @@ function tidy_rhythms() {
 		for(var j=0;j<word.length;j++) {
 			var dotted = false;
 			var firstChar = word[j].charAt(0);
+			if(firstChar == "[") { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
+			}
 			if(firstChar == "{") {
 				inComment = true;
 // logger.log("\tfirstChar: "+firstChar+" so now inComment!")
@@ -570,6 +574,10 @@ function augment_rhythms() {
 		word = lines[i].split(" ");
 		for(var j=0;j<word.length;j++) {
 			var firstChar = word[j].charAt(0);
+			if(firstChar == "[") { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
+			}
 			if(firstChar == "{") {
 				inComment = true;
 			}
@@ -625,6 +633,10 @@ function diminish_rhythms() {
 		word = lines[i].split(" ");
 		for(var j=0;j<word.length;j++) {
 			var firstChar = word[j].charAt(0);
+			if(firstChar == "[") { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
+			}
 			if(firstChar == "{") {
 				inComment = true;
 			}

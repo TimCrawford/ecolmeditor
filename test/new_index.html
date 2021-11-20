@@ -326,7 +326,7 @@ function export_SVG_as_SVG() {
 					 if(name.substring(name.length-3,name.length)==".tc") {
 						 var reader = new FileReader();
 						 reader.onload = function (evt) {
-						   logger.log(evt);
+// 						   logger.log(evt);
 						   document.getElementById("code").value = evt.target.result;
 						 };
 						 reader.onerror = function (evt) {

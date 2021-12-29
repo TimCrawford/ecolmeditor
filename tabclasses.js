@@ -343,7 +343,8 @@ function Triplet(){
     var y = this.members[1].ypos+ld;
     var obj;
     if(this.members[1].flag || this.members[1].beamed){
-      y -= 2.5*ld;
+//       y -= 2.5*ld;
+      y -= 3*ld;
     }
     obj = svgText(TabCodeDocument.SVG, x, y, "triplet", false, false, this.editorial ? "[3]": "3");
     $(obj).data("group", this);
@@ -403,13 +404,15 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
     var group = svgGroup(this.DOMObj, "beamelement"+(this.selections.length ? " selected" : ""),
                          false);
     var x = this.xpos+(ld/3);
-    var y = this.ypos-(ld*6/5);
-    // var y = this.ypos-(ld*4/5);
-    var beamGap = ld/3.5;
+    // var y = this.ypos-(ld*6/5);
+    var y = this.ypos-(ld*8/5);
+//     var beamGap = ld/3.5;
+    var beamGap = ld/2.8;
     var lgroup=svgGroup(group, "leftbeams", false);
     var rgroup=svgGroup(group, "rightbeams", false);
     // Vertical stem first
-    svgLine(group, x, y, x, this.ypos+(ld*2/5), "beamstem", false);
+//     svgLine(group, x, y, x, this.ypos+(ld*2/5), "beamstem", false);
+    svgLine(group, x, y, x, this.ypos+(ld*2/6), "beamstem", false);
     // Then beams: left, then right
     for(var i=0; i<lbeams; i++){
       if(this.prev){
@@ -424,8 +427,8 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
       }
       y += beamGap;
     }
-    y = this.ypos-(ld*6/5);
-    // y = this.ypos-(ld*4/5);
+    // y = this.ypos-(ld*6/5);
+    y = this.ypos-(ld*8/5);
     for(i=0; i<rbeams; i++){
       svgLine(rgroup, Math.max(x+(ld*3/5)+1/2, this.rpos) , y, x-1/2, y, "rbeamelement", false);
       y += beamGap;
@@ -433,7 +436,8 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
     $(group).data("word", this);
   };
   this.drawFlag = function(){
-    var obj = svgText(this.DOMObj, (ld/4)+this.xpos, flagy(),
+//     var obj = svgText(this.DOMObj, (ld/4)+this.xpos, flagy(),
+    var obj = svgText(this.DOMObj, (ld/4)+this.xpos, flagy()-(ld/4.8),
       "rhythm flag "+(/[FB]/.test(this.flag) ? "Varietie" : curFontName)
       +(!this.editable || (this.reading && this.reading.readOnly()) ? " readonly" : " editable")
       +(this.selections.length ? " selected" : ""),
@@ -533,6 +537,15 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
     this.drawMainCourses();
     this.drawBassCourses();
     this.drawRhythm();
+    if(document.getElementById('mainbeat_check').checked)	{
+	    if((this.startTime % 512)==0) this.DOMObj.classList.add('mainbeat');
+    }
+    if(document.getElementById('secondarybeat_check').checked) {
+	    if((this.startTime % 256)==0) this.DOMObj.classList.add('secondarybeat');
+    } 
+    if(document.getElementById('tertiarybeat_check').checked) {
+	    if((this.startTime % 384)==0) this.DOMObj.classList.add('tertiarybeat');
+    }
     curx = this.rpos ? Math.max(this.rpos + (ld/5), this.xpos + (5/4*ld)) : this.xpos + (4*ld/3);
     if(this.selections.length) {
       $(this.DOMObj).data("word", this);
@@ -586,6 +599,7 @@ function Chord(flag, dotted, mainCourses, bassCourses, start, finish, lbeams, rb
       } else {
         curDur = FlagDur(this.flag)*ticksPerCrotchet;
       }
+      if(DoubleDurs) curDur *= 2;
       this.dur = curDur;
     } else if(this.beamed){
 	    if(this.dotted){
@@ -675,7 +689,12 @@ function TabNote(fret, extras, starts, course){
 	};
   this.draw = function(svgEl, extraClasses){
     this.xpos = curx;
-    this.ypos = cury;
+    if(document.getElementById('on_line_check').checked) {
+	    this.ypos = cury;
+    }
+    else {
+	    this.ypos = cury - ld/2.4;
+    }
     this.course = course;
     var fc = this.fretChar();
     var cl = "tabnote "+curTabType+" "+curFontName+(fc===" " ? " space" : "")+extraClasses;
@@ -925,7 +944,8 @@ function Meter(TC, starts, finishes){
       for(var j=0; j<this.components[i].length; j++){
         newx = Math.max(curx + drawTSC(group, this, i, j).getBoundingClientRect().width, newx, curx+2*ld);
       }
-      curx = newx;
+//       curx = newx;
+      curx = newx + (ld*1.5);
     }
     if(editable) drawMetricalInsertBox(this.components.length-1, "after", this, TabCodeDocument.SVG);
   };

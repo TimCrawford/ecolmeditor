@@ -9,10 +9,12 @@ var ren_A = [69, 64, 59, 55, 50, 45, 43, 42, 40, 38, 37, 35, 33];
 var bar_d = [65, 62, 57, 53, 50, 45, 43, 41, 40, 38, 36, 34, 33];
 var bar_d_415 = [64, 61, 56, 52, 49, 44, 42, 40, 39, 37, 35, 33, 31];
 var ren_guit = [67, 62, 58, 65, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var bandora = [57, 52, 48, 43, 36, 34, 29, 27, 0, 0, 0, 0, 0];
 var tunings = [["Renaissance (G)", ren_G],
   ["Renaissance abzug (G)", ren_G_abzug],
   ["Renaissance guitar", ren_guit],
-  ["Baroque D minor", bar_d]];
+  ["Baroque D minor", bar_d],
+  ["Bandora", bandora]];
 var ticksPerCrotchet = 128;
 var rhythmFlags = "ZYTSEQHWBF";
 var buttonRhythmFlags = "ZYTSEQHF";
@@ -93,7 +95,8 @@ function FlagDur(rhythm) {
 	if (pos>7){
 		pos--;
 	}
-	return Math.pow(2, (pos - 5));
+	
+	return Math.pow(2, (pos - (DoubleDurs? 6 : 5)));
 }
 
 function letterPitch(fretChar){

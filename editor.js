@@ -262,7 +262,7 @@ function keyDownhandler(event) {
 		  logger.log("Keystroke not implemented!")
  	  }
  	  else {
- 		  logger.log(event.code +" [Delete]");
+//  		  logger.log(event.code +" [Delete]");
 		  target_button = $(".textbutton").filter(function() {
 			  return $(this).text("Delete");
 			  });

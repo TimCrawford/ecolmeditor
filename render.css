@@ -131,6 +131,18 @@ div.buttons {
 .chord.playing .bassnote, .chord.playing .tabnote, .chord.playing .flag {
   fill: #F60;
 }
+
+/*experimental display of main and secondary beats*/
+.chord.mainbeat {
+  fill: green;
+}
+.chord.secondarybeat {
+  fill: blue;
+}
+.chord.tertiarybeat {
+  fill: orange;
+}
+
 .matched {
 	font: bold;
 	fill: red;
@@ -150,7 +162,7 @@ div.buttons {
 .beamdotrow td.dotted span:after {
   padding-left: 0.5ex;
   content: "•";
-  font-family: varietie3;
+  font-family: Varietie3;
 /* 
   font-family: varietie3FretsAndOrns;
  */
@@ -166,8 +178,15 @@ line, path, .staffline, .beamelement {
   stroke-linecap: butt;
 }
 
+.beamstem{
+  stroke-width: 1.8;
+}
+
 .lbeamelement, .rbeamelement {
+/* 
   stroke-width: 3;
+ */
+  stroke-width: 2.2;
 }
 
 .rhythmdot{
@@ -187,7 +206,8 @@ line, path, .staffline, .beamelement {
 }
 
 .flag {
-  font-family: varietie3;
+  font-family: Varietie3;
+  font-size: 125%;
 /* 
   font-family: varietie3Rhythms;
  */
@@ -198,16 +218,16 @@ line, path, .staffline, .beamelement {
 }
 .French, .symbol, .mordent,  .bebungii, .rhythmdot{
 /*   font-family: varietie3FretsAndOrns; */
-  font-family: varietie3;
+  font-family: Varietie3;
   white-space: pre;
 }
 .mordent {
-  font-family: varietie3;
+  font-family: Varietie3;
   white-space: pre;
   font-size: 140%;
 }
 .martellement {
-  font-family: varietie3;
+  font-family: Varietie3;
 /* 
   font-family: varietie3FretsAndOrns;
  */

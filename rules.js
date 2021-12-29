@@ -3,6 +3,7 @@ var fontsize = 15;
 var fonts = ["normal "+fontsize+"px Varietie3", 
   "normal "+fontsize+"px TabRegular", "normal "+fontsize+"px Helvetica"];
 var notationp = /<notation>[^<]*<\/notation>/;
+var crotchetflagp = /<crotchet[-_]flag>[^>]*<\/crotchet[-\_]flag>/;
 var tuningp = /<tuning(-named|_named)*>[^>]*<\/tuning(-named|_named)*>/;
 var tuninglistedp = /<tuning>[^>]*<\/tuning>/;
 var tuningnamedp = /<tuning[-_]named>[^>]*<\/tuning[-\_]named>/;
@@ -71,6 +72,13 @@ function Ruleset(code, prevSet) {
   } else {
     this.notation = "French";
   }
+  
+//   Very crude implementation of crotchet-flag rule for now! (Only works for Q=|\\) 
+  if(thisRule = this.getRule("crotchet[-_]flag")) {
+	  DoubleDurs = (thisRule && /[Ee]/.test(thisRule));
+	  document.getElementById("q_flag").src= "flag_E.jpg";
+  }
+  
   this.getTuning = function() {
     // Now tuning -- this is a bit more complicated
     // Have to combine various bits of rules for named or listed

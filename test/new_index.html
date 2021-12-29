@@ -2,7 +2,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<title>Electronic Corpus of Lute Music -- editors page</title>
-<!-- <link type="text/css" rel="stylesheet" href="webeditor.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" href="../webeditor.css" /> -->
 	<link type="text/css" rel="stylesheet" href="../newlook.css" />
 	<link type="text/css" rel="stylesheet" href="../render.css" />
 	<link type="text/css" rel="stylesheet" href="../print.css" media="print" />
@@ -108,39 +108,28 @@
 <script src="https://unpkg.com/deepmerge@3.3.0/dist/umd.js"></script>
 <!-- svg-exportJS plugin -->
 <script src="https://sharonchoong.github.io/svg-exportJS/svg-export.min.js"></script>
+<!-- <script src="svg-export.js"></script> -->
 
 <script>
 // Function to export SVG to PDF using the two JS libraries above from: https://morioh.com/p/287697cc17da
 function export_SVG_as_PDF() {
 	var filename = prompt("Export filename:", "tablature");
 	if (filename != null) {
-//   	downloadPDF(document.getElementById("notation"),filename)
-		
-//	TC attempt to introduce a <defs> element into the SVG as recommended somewhere on the web - failed so far! 30 Jun 2021
- //  var thisSVG = document.getElementById("notation");
-//   var defs = document.createElementNS(SVGNS, 'defs');
-//   var newdefs = thisSVG.appendChild(defs);
-//   var font = document.createElementNS('@import url("../varietie4-webfont.eot")','style');
-//   newdefs.appendChild(font);
-//    font = document.createElementNS('@import url("../varietie4-webfont.ttf")','style');
-//   newdefs.appendChild(font);
-//    font = document.createElementNS('@import url("../varietie-frets-orns-webfont.ttf")','style');
-//   newdefs.appendChild(font);
-//    font = document.createElementNS('@import url("../varietie-ts-webfont.eot")','style');
-//   newdefs.appendChild(font);
-		
+
 		svgExport.downloadPdf(document.getElementById("notation"),filename, { 
-                pdfOptions: {
+               pdfOptions: {
                     customFonts: [
-                     { url: "../tabfont-webfont.ttf", fontName: "TabRegular" },
-                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3Rhythms" },
-                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3" },
-//                      { url: "../varietie-frets-orns-webfont.ttf", fontName: "Varietie3FretsAndOrns" },
-                     { url: "../varietie4-webfont.ttf", fontName: "Varietie3FretsAndOrns" },
-//                      { url: "../varietie-ts-webfont.eot", fontName: "Varietie3-ts" }
-                     { url: "../varietie4-webfont.ttf ", fontName: "Varietie3-ts" }
+//                      { url: "../pdf_fonts/tabfontwebfont.ttf", fontName: "TabRegular" },
+//                      { url: "../pdf_fonts/varietie4webfont.ttf", fontName: "Varietie3Rhythms" },
+//                      { fontName: "Varietie3", url: "../pdf_fonts/varietiefretsornswebfont.ttf"},
+                     { url: "../pdf_fonts/varietie4webfont.ttf", fontName: "Varietie3" },
+//                      { url: "../pdf_fonts/varietie4webfont.ttf", fontName: "Varietie3FretsAndOrns" },
+//                      { url: "../pdf_fonts/varietie4webfont.ttf ", fontName: "Varietie3-ts" }
+
+// FIXME Still need to rename TabFont/Weiss for baroque tab
+
                     ]
-                },
+               },
                 useCSS: true
 		} 
      )
@@ -234,37 +223,60 @@ function export_SVG_as_SVG() {
 	</div>
 	<div id="settingsbar" class="clear">
 		<div class="left">
-			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Type: Italian</button> <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
+			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Tab: Italian</button> <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
 		</div>
 <!-- 		<span class="right" id="barnum_highlight" class="clear"> -->
 		<span  id="barnum_highlight" class="clear">
-			<span class="barNumChoiceLabel">Bar number display:</span> 
+			<span class="barNumChoiceLabel"><small>Bar number display:</small></span> 
 			<select id="BarnumberDisplay"  onchange="SetBarNumDisplay(this.value);">
 				<option value="none" selected>None</option>
 				<option value="systems">Every system</option>
 				<option value="five_bars">Every five bars</option>
 				<option value="all_bars">Every bar</option>
 			</select>
-
-			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
+		<span id="print_controls" class="clear">
+			<small>Export as: </small><button  onclick="export_SVG_as_PDF()"><small>PDF</small></button>
+			&nbsp;&nbsp;&nbsp;
+			<label  for="on_line_check"><small>Letters on lines</small></label>
+			<input type="checkbox" id="on_line_check" onchange="refresh()">
+		</span>
+		<br>
+		<span style="border:1px solid black;padding:2px">
 			<label  for="upbeat"><small>Upbeat?</small></label>
+			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
+		</span>
+		<span style="border:1px solid black;padding:2px">
+			<label  for="upbeat"><small>Crotchet: <img id="q_flag" src="flag_Q.jpg" height="14px"></small></label>
+			<input   type="checkbox" id="reduction_checkbox" name="upbeat" onchange="toggleDoubleDurs()">
+		</span>
+<script>
+	var DoubleDurs = false;
+	function toggleDoubleDurs() {
+		if(DoubleDurs) DoubleDurs=false;
+		else DoubleDurs = true;
+		document.getElementById("q_flag").src= (DoubleDurs)? "flag_E.jpg" : "flag_Q.jpg";
+		refresh();
+		logger.log("DoubleDurs "+DoubleDurs+ " src: "+document.getElementById("q_flag").src)
+	}
+</script>
+			<span style="border:1px solid black;padding:2px">
+				<small>Colour at:</small>
+				<label  for="mainbeat_check"><span style="background-color:green; color:white"><small>512:</small></span></label>
+				<input   type="checkbox" id="mainbeat_check" name="mainbeat" onchange="refresh()">
+				<label  for="secondarybeat_check"><span style="background-color:blue; color:white"><small>256:</small></span></label>
+				<input   type="checkbox" id="secondarybeat_check" name="mainbeat" onchange="refresh()" >
+				<label  for="tertiarybeat_check"><span style="background-color:orange; color:white"><small>384:</small></span></label>
+				<input   type="checkbox" id="tertiarybeat_check" name="mainbeat" onchange="refresh()" >
+			</span>
 
-			<button disabled id="justify_button" onclick="JustifySystems()">
+	<!-- 
+		<button disabled id="justify_button" onclick="JustifySystems()">
 				Justify
 			</button>
 		</span>
 		<span width="24px" class="spacer">&nbsp;&nbsp;&nbsp;</span>
-		
-		<span id="print_controls" class="clear">
-			Export as: <button disabled onclick="export_SVG_as_PDF()">PDF</button>
-<!-- 
-		// These two don't seem to work:	
-			<button onclick="export_SVG_as_JPG()">JPEG</button>
-			<button onclick="export_SVG_as_PNG()">PNG</button>
-		// This works, but ...
-			<button onclick="export_SVG_as_SVG()">SVG</button> // Generates huge files full of redundant data!!
- -->
-		</span>
+ -->		
+
 <!-- 
 		<span id="chord_hlite_controls">
 			<label for="chord">Highlight chords:</label> 

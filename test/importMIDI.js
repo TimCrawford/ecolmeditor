@@ -337,7 +337,7 @@ function notesToTabcode(allnotes, fname) {
 	var chordcount = 0;
 	var chordDur = 0;
 	var badChordDur=false;
-	var beatsInBar = timeSigNum*(4/timeSigDenom);
+	var beatsInBar = timeSigNum*(2/timeSigDenom);
 	var needSystemBreak = false;
 
 	// Clear old tabcode from everywhere:
@@ -429,7 +429,7 @@ function notesToTabcode(allnotes, fname) {
 // 	tabcodestring += "\n\n" + tabcode.join("\n");
 	tabcodestring = tabcode.join("\n");
 
-	logger.log(tabcodestring)
+//	logger.log(tabcodestring)
 	return tabcodestring;
 }
 

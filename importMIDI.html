@@ -2,8 +2,12 @@
 <html>
 <head>
 <title>Read MIDI File</title>
-<script src="https://unpkg.com/@tonejs/midi">
-</script>
+<script 	src="https://unpkg.com/@tonejs/midi" ></script>
+<!-- 
+<script 	src="Midi.js" ></script>
+ -->
+	
+
 
 <script>
 /*This script reads a MIDI file of a lute piece transcribed in Sibelius and outputs TabCode.
@@ -12,6 +16,7 @@
 */
 
 // global variables
+	var orig_filename = "";
 	var allnotes = [];
 	var totalDur = 0;
 	var PPQ = 480;
@@ -20,6 +25,8 @@
 	var lastNoteEnd = 0;
 	var timeSigNum = 4;
 	var timeSigDenom = 4;
+	var timeSig = "";
+// 	var key = "";
 	var barcount = 1;
 	
 	var MAXCHORDSPERSYSTEM = 30;	
@@ -268,16 +275,14 @@ var		allnotes = [];
 			initialiseTabStuff(PPQ, "renaissance");
 			timeSigNum = midi.header.timeSignatures[0].timeSignature[0];
 			timeSigDenom = midi.header.timeSignatures[0].timeSignature[1];
-//			keySig = [midi.header.timeSignatures[0].key,midi.header.timeSignatures[0].scale];
+			timeSig = timeSigNum+"/"+timeSigDenom;
 			key = midi.header.keySignatures[0].key;
 
-console.log(midi)
-console.log("key = "+key)
+	console.log(midi)
+	console.log("key = "+key)
+	console.log("Time Sig: "+timeSig)
 
-			AdjustKey(midi.header.keySignatures[0].scale == "major"? majorKeys[midi.header.keySignatures[0].key] : minorKeys[midi.header.keySignatures[0].key], "renaissance")
-		// FIXME!! Need to adjust tuning to key-signature here before using!
-			
-	console.log("Time Sig: "+timeSigNum+"/"+timeSigDenom)
+			AdjustKey(midi.header.keySignatures[0].scale == "major"? majorKeys[midi.header.keySignatures[0].key] : minorKeys[midi.header.keySignatures[0].key], "renaissance");
 
 			totalDur = ((midi.duration ))
 		
@@ -289,7 +294,7 @@ console.log("key = "+key)
 					allnotes.push([note.ticks,note.midi]);
 				})
 			})
-console.log("allnotes has "+allnotes.length+" notes")
+document.getElementById("msg").innerHTML = "&nbsp;&nbsp;<small>(" + allnotes.length + " notes)</small>"
 			// For TabCode we need *all* sounding notes grouped in their chords in a single time-sequence.
 			//notes from different tracks will not be in time-order!! So:
 			allnotes.sort(function (a,b) {
@@ -299,12 +304,23 @@ console.log("allnotes has "+allnotes.length+" notes")
 				if(a[1]>b[1]) return -1;
 				return 0;
 			});
+if(document.getElementById(key))		document.getElementById(key).selected = true;
+console.log("key = "+key)
+if(document.getElementById(timeSig))		document.getElementById(timeSig).selected = true;
+console.log("Time Sig: "+timeSig)
 		});
 		document.getElementById("showButton").hidden = false;
+		document.getElementById("controls").hidden = false;
+		
+if(document.getElementById(key))		document.getElementById(key).selected = true;
+console.log("key = "+key)
+if(document.getElementById(timeSig))		document.getElementById(timeSig).selected = true;
+console.log("Time Sig: "+timeSig)
 		
 	}
-	function tempPath(name) {
-		var path = URL.createObjectURL(name);
+	function tempPath(file_obj) {
+		orig_filename = file_obj.name;
+		var path = URL.createObjectURL(file_obj);
 		return path;
 	}
 	function printNotes() {
@@ -391,34 +407,68 @@ console.log("allnotes has "+allnotes.length+" notes")
 		}
 		tabcode.push("");
 		
-		// Insert initial time-signature. NB FIXME - doesn't handle changes!!
+		// Insert initial time-signature. NB FIXME - doesn't handle changes during a piece!!
 		tabcode.unshift("");
-		tabcode.unshift("M("+timeSigNum+":"+timeSigDenom+")")
-//		tabcode.unshift("");						
+		var timesig_code = (timeSig != "")? timeSig : timeSigNum+":"+timeSigDenom;
+		tabcode.unshift("M("+timesig_code+")")
+
 		tabcode.unshift(rules); //Need to be absolutely first!
-
-		
 		tabcodestring += "\n\n" + tabcode.join("\n");
-
-		
-// 		console.log(tabcodestring);
+	
 		document.getElementById("display").innerHTML=tabcodestring;
 		document.getElementById("display").hidden=false;
-		
-		// Next line puts tabcodestring on the system clipboard ready for pasting! Cool! But only use for testing!!:
-//		navigator.clipboard.writeText(tabcodestring);
-				
-	}
+		document.getElementById("display").select();
+		document.getElementById("display").focus();
 
+		// Next line puts tabcodestring on the system clipboard ready for pasting! Cool! But only use for testing!!:
+//		navigator.clipboard.writeText(tabcodestring);				
+	}
+function getSelectedTimeSig() {
+	timeSig = document.getElementById("timesig_choice").value;
+	console.log("Time sig changed to "+timeSig)
+}
+function getSelectedKey() {
+	console.log(document.getElementById("key_choice").value+" selected")	
+	key = document.getElementById("key_choice").value.split("/")[0];
+	console.log("Key changed to "+key)
+	AdjustKey(majorKeys[key])
+}
 </script>
 </head>
 
 <body>
 	<h2>Read MIDI from file:</h2>
 	<p><input type=file id="file" size=80 onchange='getMIDI(tempPath(this.files[0]));'>
-<!-- 
-	<button id="showButton" hidden onclick="document.getElementById('display').innerHTML='';notesToTabcode();">Import</button></p>
- -->
+
+	<span id="msg"></span>
+	<div id="controls" hidden>
+		Choose time-signature:<select id="timesig_choice" onchange="getSelectedTimeSig()">
+			<option id="C">C</option>
+			<option id="C/">C/</option>
+			<option id="4/4">4/4</option>
+			<option id="3/4">3/4</option>
+			<option id="2/4">2/4</option>
+			<option id="2/2">2/2</option>
+			<option id="3/2">3/2</option>
+			<option id="4/2">4/2</option>
+			<option id="6/8">6/8</option>
+			<option id="12/8">12/8</option>
+		</select>
+		Choose key:<select id="key_choice" onchange="getSelectedKey()">
+			<option id="C">C/a</option>
+			<option id="F">F/d</option>
+			<option id="Bb">Bb/g</option>
+			<option id="Eb">Eb/c</option>
+			<option id="G">G/e</option>
+			<option id="D">D/b</option>
+			<option id="A">A/f#</option>
+			<option id="E">E/c#</option>
+			<option id="Ab">Ab/f</option>
+			<option id="Db">Db/bb</option>
+			<option id="B">B/g#</option>
+			<option id="Gb">Gb/eb</option>
+		</select>
+	</div>
 	<button id="showButton" hidden onclick="notesToTabcode();">Import</button></p>
 	<textarea id="display" hidden rows="30" overflow-y="scroll"></textarea>
 </body>

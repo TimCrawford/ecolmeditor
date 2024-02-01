@@ -120,7 +120,7 @@ font-size: 95%;
 .clear {
   clear: both;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .left {
@@ -145,10 +145,20 @@ font-size: 95%;
   float: right;
 }
 
-#menubar, #settingsbar {
+#menubar {
   background-color: #EEE;
   width: 90%;
-  height: 42px;
+/*   height: 28px; */
+  padding: 3px;
+  margin: 6px;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #AAB;
+}
+
+#settingsbar {
+  background-color: #EEE;
+  width: 90%;
+  height: 46px;
   padding: 3px;
   margin: 6px;
   border-radius: 8px 8px 0px 0px;
@@ -385,7 +395,7 @@ embed{
 
 body {
 /*   height: 100%; */
-  y-overflow: hidden;
+  overflow: hidden;
 }
 .resultAnchor {
   text-decoration: none;

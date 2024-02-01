@@ -503,15 +503,15 @@ function tidy_rhythms() {
 		var theline = lines[i]; // Use this if the line is unaffected
 		word = lines[i].split(" ");
 		for(var j=0;j<word.length;j++) {
-			var dotted = false;
 			var firstChar = word[j].charAt(0);
-			if(firstChar == "[") { 
-				alert("Cannot (yet) handle beams!!");
-				return false;
-			}
+			var dotted = false;
 			if(firstChar == "{") {
 				inComment = true;
 // logger.log("\tfirstChar: "+firstChar+" so now inComment!")
+			}
+			if((firstChar == "[")&&(!inComment)) { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
 			}
 			var lastChar = word[j].charAt(word[j].length-1);
 			if((firstChar == "{")&&(lastChar == "}")) {
@@ -574,12 +574,12 @@ function augment_rhythms() {
 		word = lines[i].split(" ");
 		for(var j=0;j<word.length;j++) {
 			var firstChar = word[j].charAt(0);
-			if(firstChar == "[") { 
-				alert("Cannot (yet) handle beams!!");
-				return false;
-			}
 			if(firstChar == "{") {
 				inComment = true;
+			}
+			if((firstChar == "[")&&(!inComment)) { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
 			}
 			var lastChar = word[j].charAt(word[j].length-1);
 			if((firstChar == "{")&&(lastChar == "}")) {
@@ -633,12 +633,12 @@ function diminish_rhythms() {
 		word = lines[i].split(" ");
 		for(var j=0;j<word.length;j++) {
 			var firstChar = word[j].charAt(0);
-			if(firstChar == "[") { 
-				alert("Cannot (yet) handle beams!!");
-				return false;
-			}
 			if(firstChar == "{") {
 				inComment = true;
+			}
+			if((firstChar == "[")&&(!inComment)) { 
+				alert("Cannot (yet) handle beams!!");
+				return false;
 			}
 			var lastChar = word[j].charAt(word[j].length-1);
 			if((firstChar == "{")&&(lastChar == "}")) {

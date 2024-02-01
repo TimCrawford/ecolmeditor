@@ -8,67 +8,39 @@
 	<link type="text/css" rel="stylesheet" href="../print.css" media="print" />
 	<link type="text/css" rel="stylesheet" href="../features.css" />
 	<link type="text/css" rel="stylesheet" href="three_pane.css" />
-	<script src="../jquery-1.4.4.js" type="text/javascript">
-	</script>
-	<script src="../jquery.scrollTo-1.4.2-min.js" type="text/javascript">
-	</script>
-	<script type="text/javascript" src="../soundfont-player.js">
-	</script>
-	<script type="text/javascript" src="../dom.js">
-	</script>
-	<script type="text/javascript" src="../formatdate.js">
-	</script>
-	<script type="text/javascript" src="../user.js">
-	</script>
-	<script type="text/javascript" src="../php.js">
-	</script>
-	<script type="text/javascript" src="../diff.js">
-	</script>
-	<script type="text/javascript" src="../corebuttons.js">
-	</script>
-	<script type="text/javascript" src="../buttons.js">
-	</script>
-	<script type="text/javascript" src="../base.js">
-	</script>
-	<script type="text/javascript" src="../basic-drawing.js">
-	</script>
-	<script type="text/javascript" src="../tabclasses.js">
-	</script>
-	<script type="text/javascript" src="../parser.js">
-	</script>
-	<script type="text/javascript" src="../ornaments.js">
-	</script>
-	<script type="text/javascript" src="../ornament-buttons.js">
-	</script>
-	<script type="text/javascript" src="../rules.js">
-	</script>
-	<script type="text/javascript" src="../midi_mod_TC.js">
-	</script>
-	<script type="text/javascript" src="../editor.js">
-	</script>
-	<script src="../siamese/siamese.js">
-	</script>
-	<script type="text/javascript" src="test.js">
-	</script>
-	<script type="text/javascript" src="user.js">
-	</script>
-	<script type="text/javascript" src="distance.js">
-	</script>
-	<script type="text/javascript" src="../pianoroll-ajax.js">
-	</script>
-	<script type="text/javascript" src="../pianoroll.js">
-	</script>
-	<script type="text/javascript" src="../imgpreview.js">
-	</script>
+	<script src="../jquery-1.4.4.js" type="text/javascript"></script>
+	
+	<script src="../jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../soundfont-player.js"></script>
+	<script type="text/javascript" src="../dom.js"></script>
+	<script type="text/javascript" src="../formatdate.js"></script>
+	<script type="text/javascript" src="../user.js"></script>
+	<script type="text/javascript" src="../php.js"></script>
+	<script type="text/javascript" src="../diff.js"></script>
+	<script type="text/javascript" src="../corebuttons.js"></script>
+	<script type="text/javascript" src="../buttons.js"></script>
+	<script type="text/javascript" src="../base.js"></script>
+	<script type="text/javascript" src="../basic-drawing.js"></script>
+	<script type="text/javascript" src="../tabclasses.js"></script>
+	<script type="text/javascript" src="../parser.js"></script>
+	<script type="text/javascript" src="../ornaments.js"></script>
+	<script type="text/javascript" src="../ornament-buttons.js"></script>
+	<script type="text/javascript" src="../rules.js"></script>
+	<script type="text/javascript" src="../midi_mod_TC.js"></script>
+	<script type="text/javascript" src="../editor.js"></script>
+	<script src="../siamese/siamese.js"></script>
+	<script type="text/javascript" src="test.js"></script>
+	<script type="text/javascript" src="encode.js"></script>
+	<script type="text/javascript" src="user.js"></script>
+	<script type="text/javascript" src="distance.js"></script>
+	<script type="text/javascript" src="../pianoroll-ajax.js"></script>
+	<script type="text/javascript" src="../pianoroll.js"></script>
+	<script type="text/javascript" src="../imgpreview.js"></script>
 
-	<script type="text/javascript" src="importMIDI.js">
-	</script>
-	<script src="https://unpkg.com/@tonejs/midi">
-	</script>
+	<script type="text/javascript" src="importMIDI.js"></script>
 
 <!-- slider stuff from http://loopj.com/jquery-simple-slider/ -->
-	<script src="simple-slider.js">
-	</script>
+	<script src="simple-slider.js"></script>
 <!-- 
     <link href="simple-slider.css" rel="stylesheet" type="text/css" />         
     <link href="simple-slider-volume.css" rel="stylesheet" type="text/css" />  
@@ -77,8 +49,7 @@
 	<script type="text/javascript" src="test.js">
  -->
 	</script>
-	<script type="text/javascript" src="../features.js">
-	</script>
+<!-- 	<script type="text/javascript" src="../features.js"></script> -->
 	<script>
 		function getEditorScroll() {
 		  var elmnt = document.getElementById("editor_container");
@@ -177,11 +148,10 @@ function export_SVG_as_SVG() {
 	  
 	  
 </head>
-<body onload="javascript:initialiseTestPage(true); tcShow()">
+<body onload="javascript:initialiseTestPage(urlParams); refresh2(); tcHide();">
 <!-- 
 <body onload="javascript:initialiseTestPage(true);">
  -->
-
 <div id="top_fixed_container">
 	<div id="banner">
 		<div class="logo_centre">
@@ -221,34 +191,39 @@ function export_SVG_as_SVG() {
  -->
 		</div>
 	</div>
-	<div id="settingsbar" class="clear">
+	<div id="settingsbar" class="clear" style="height: 48px">
 		<div class="left">
-			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Tab: Italian</button> <button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> <button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
+			<button class="reditbutton" id="switchTabType" onclick="toggleTabType(this)">Tab: Italian</button> 
+			<button class="reditbutton" id="switchTabFont" onclick="toggleFont(this)">Font: Italian</button> 
+			<button class="editbutton" id="switchTuning" onclick="rotateTuning(this)">Renaissance G</button> 
 		</div>
 <!-- 		<span class="right" id="barnum_highlight" class="clear"> -->
-		<span  id="barnum_highlight" class="clear">
-			<span class="barNumChoiceLabel"><small>Bar number display:</small></span> 
-			<select id="BarnumberDisplay"  onchange="SetBarNumDisplay(this.value);">
-				<option value="none" selected>None</option>
-				<option value="systems">Every system</option>
-				<option value="five_bars">Every five bars</option>
-				<option value="all_bars">Every bar</option>
-			</select>
-		<span id="print_controls" class="clear">
-			<small>Export as: </small><button  onclick="export_SVG_as_PDF()"><small>PDF</small></button>
-			&nbsp;&nbsp;&nbsp;
-			<label  for="on_line_check"><small>Letters on lines</small></label>
-			<input type="checkbox" id="on_line_check" onchange="refresh()">
-		</span>
+		<div style="height: 12px; ">
+			<span  id="barnum_highlight" class="clear">
+				<span class="barNumChoiceLabel"><small>Bar number display:</small></span> 
+				<select id="BarnumberDisplay"  onchange="SetBarNumDisplay(this.value);">
+					<option value="none" selected>None</option>
+					<option value="systems">Every system</option>
+					<option value="five_bars">Every five bars</option>
+					<option value="all_bars">Every bar</option>
+				</select>
+			<span id="print_controls" class="clear">
+				<small>Export as: </small><button  onclick="export_SVG_as_PDF()"><small>PDF</small></button>
+				&nbsp;&nbsp;&nbsp;
+				<label  for="on_line_check"><small>Letters on lines</small></label>
+				<input type="checkbox" id="on_line_check" onchange="refresh()">
+			</span>
+		</div>
 		<br>
-		<span style="border:1px solid black;padding:2px">
-			<label  for="upbeat"><small>Upbeat?</small></label>
-			<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay(this.value);">
-		</span>
-		<span style="border:1px solid black;padding:2px">
-			<label  for="upbeat"><small>Crotchet: <img id="q_flag" src="flag_Q.jpg" height="14px"></small></label>
-			<input   type="checkbox" id="reduction_checkbox" name="upbeat" onchange="toggleDoubleDurs()">
-		</span>
+		<span id="rhythm-sign_controls" overflow: hidden;>
+			<span style="border:1px solid black;padding:2px">
+				<label  for="upbeat"><small>Upbeat?</small></label>
+				<input   type="checkbox" id="upbeat_checkbox" name="upbeat" onchange="SetBarNumDisplay();SetgStartTime();">
+			</span>
+			<span style="border:1px solid black;padding:2px">
+				<label  for="upbeat"><small>Crotchet: <img id="q_flag" src="flag_Q.jpg" height="14px"></small></label>
+				<input   type="checkbox" id="reduction_checkbox" name="upbeat" onchange="toggleDoubleDurs()">
+			</span>
 <script>
 	var DoubleDurs = false;
 	function toggleDoubleDurs() {
@@ -259,15 +234,29 @@ function export_SVG_as_SVG() {
 		logger.log("DoubleDurs "+DoubleDurs+ " src: "+document.getElementById("q_flag").src)
 	}
 </script>
+
 			<span style="border:1px solid black;padding:2px">
-				<small>Colour at:</small>
-				<label  for="mainbeat_check"><span style="background-color:green; color:white"><small>512:</small></span></label>
-				<input   type="checkbox" id="mainbeat_check" name="mainbeat" onchange="refresh()">
-				<label  for="secondarybeat_check"><span style="background-color:blue; color:white"><small>256:</small></span></label>
-				<input   type="checkbox" id="secondarybeat_check" name="mainbeat" onchange="refresh()" >
-				<label  for="tertiarybeat_check"><span style="background-color:orange; color:white"><small>384:</small></span></label>
-				<input   type="checkbox" id="tertiarybeat_check" name="mainbeat" onchange="refresh()" >
+				<small>Colour beats every:</small>
+				<label  for="doublebeat_check"><span class="doublebeat"><small>1024</small></span></label>
+				<input   type="checkbox" id="doublebeat_check" name="mainbeat" onchange="refresh()">&nbsp;&nbsp;
+				<label  for="mainbeat_check"><span class="mainbeat"><small>512</small></span></label>
+				<input   type="checkbox" id="mainbeat_check" name="mainbeat" onchange="refresh()">&nbsp;&nbsp;
+				<label  for="secondarybeat_check"><span class="secondarybeat" ><small>256</small></span></label>
+				<input   type="checkbox" id="secondarybeat_check" name="mainbeat" onchange="refresh()" >&nbsp;&nbsp;
+				<label  for="tertiarybeat_check"><span class="tertiarybeat"><small>128</small></span></label>
+				<input   type="checkbox" id="tertiarybeat_check" name="tertiarybeat" onchange="refresh()" >&nbsp;&nbsp;
+				<label  for="quaternarybeat_check"><span class="quaternarybeat"><small>64</small></span></label>
+				<input   type="checkbox" id="quaternarybeat_check" name="quaternarybeat" onchange="refresh()" >&nbsp;&nbsp;
+				<label  for="mainbeat_dot_check"><span class="mainbeat_dot"><small>768</small></span></label>
+				<input   type="checkbox" id="mainbeat_dot_check" name="mainbeat_dot" onchange="refresh()" >&nbsp;&nbsp;
+				<label  for="secondarybeat_dot_check"><span class="secondarybeat_dot"><small>384</small></span></label>						
+				<input   type="checkbox" id="secondarybeat_dot_check" name="secondarybeat_dot" onchange="refresh()">&nbsp;&nbsp;
+				<label  for="tertiarybeat_dot_check"><span class="tertiarybeat_dot"><small>192</small></span></label>
+				<input   type="checkbox" id="tertiarybeat_dot_check" name="tertiarybeat_dot" onchange="refresh()" >&nbsp;&nbsp;
+				<label  for="quaternarybeat_dot_check"><span class="quaternarybeat_dot"><small>96</small></span></label>
+				<input   type="checkbox" id="quaternarybeat_dot_check" name="quaternarybeat_dot" onchange="refresh()" >
 			</span>
+			</span> <!-- End of span "rhythm-sign_controls" -->
 
 	<!-- 
 		<button disabled id="justify_button" onclick="JustifySystems()">
@@ -301,44 +290,110 @@ function export_SVG_as_SVG() {
 </div>
 <div id="resultTab" class="hasControls">
 </div>
-<!-- 
-<div id="code_container" style="float: right;width: 40%; position: fixed; top: 30;
-    right: 0;">
- -->
-<!-- 
-<div id="code_container" style="width: calc(100vw - 1050px); position: fixed; top: 30px; left: 1000px;">
- -->
-<div id="code_container" style="width: 30%; position: fixed; top: 30px; left: 75%">
+<div id="code_container" style="width: 30%; position: fixed; top: 18px; left: 75%">
 	<div id="codediv" >
 		<button id="choose_tcfile" onclick="displayTabCodeFromTCFile()">Import TabCode</button>
 		<span id="tcchooser" hidden>
-<!-- 
-			<br>
- -->
 			<input type="file" id="TCfiletoRead" class="tc-file-input" />
 		</span>
 		<br>
 		<button id="choose_midifile" onclick="displayTabCodeFromMIDIFile()">Import MIDI</button>
 		<span id="midichooser" hidden>
-<!-- 
-			<br>
- -->
 			<input type="file" id="MIDIfiletoRead" class="midi-file-input" /> 
 		</span>
 		<script>
+		
+		// Some time soon, switch to using the following for read/save of local (CLIENT) files!!!
+// 		// 		from https://web.dev/browser-fs-access/
+// 		// The imported methods will use the File
+// 		// System Access API or a fallback implementation.
+// 		import {
+// 		  fileOpen,
+// 		  directoryOpen,
+// 		  fileSave,
+// 		} from 'https://unpkg.com/browser-fs-access';
+
+readSyncDataURL = function(file) {
+//    var url = URL.createObjectURL(file); //Create Object URL
+    var url =file;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, false); //Synchronous XMLHttpRequest on Object URL
+    xhr.overrideMimeType("text/plain; charset=x-user-defined"); //Override MIME Type to prevent UTF-8 related errors
+    xhr.send();
+    URL.revokeObjectURL(url);
+    var returnText = "";
+    for (var i = 0; i < xhr.responseText.length; i++) {
+      returnText += String.fromCharCode(xhr.responseText.charCodeAt(i) & 0xff);
+    }; //remove higher byte
+//    return "data:" + file.type + ";base64," + btoa(returnText); //Generate data URL
+    if(xhr.status == 200) return returnText;
+    }
+
+
+
+			async function getTabCode(url) {
+// 			  const request = await $.get(url)  
+// 			  return request;
+			result = await readSyncDataURL(url);
+// 			  logger.log(result)
+			return result;
+			}
+
+		async  function displayTabCodeFromURL() {
+				  var tcfile = urlParams.get("tc_path");
+				  var name = tcfile.substr(tcfile.lastIndexOf("/")+1);
+				  if (tcfile) {
+					 if(name.substring(name.length-3,name.length)==".tc") {
+						await $.get(tcfile,function(data) {
+							if (data.length) {
+								 $(document.getElementById('tcshow')).show();
+								 logger.log(data)
+								 $('#code_container').css('display', 'initial');
+								 document.getElementById("code").value = data;
+								 gJustify=0;
+								 logger.log(document.getElementById("code").value)
+								 refreshFromTabCode();
+							} 
+							else {
+								alert("Nothing in file "+tcfile+" !!");
+							}
+						});
+
+/*
+					    getTabCode(tcfile)
+						.then ((data) => {
+							console.log(data)
+							if (data.length) {
+								 $(document.getElementById('tcshow')).show();
+								 $('#code_container').css('display', 'initial');
+								 document.getElementById("code").value = data;
+								 gJustify=0;
+								 refreshFromTabCode();
+								 $(document.getElementById('tcshow')).show();
+							} 
+							else {
+								alert("Nothing in file "+tcfile+" !!");
+							}})
+*/
+							
+					}
+					else alert("Not a TabCode file! Please try again!")
+				    }
+// 				},false);
+			}
+			
 		  function displayTabCodeFromTCFile() {
 			document.getElementById('choose_tcfile').hidden=true;
 			document.getElementById('tcchooser').hidden=false;
 			document.getElementById('midichooser').hidden=true;
 			document.getElementById('choose_midifile').hidden=false;
-		document.getElementById("TCfiletoRead").addEventListener("change",function(){
+			document.getElementById("TCfiletoRead").addEventListener("change",function(){
 				  var tcfile = this.files[0];
 				  var name = tcfile.name;
 				  if (tcfile) {
 					 if(name.substring(name.length-3,name.length)==".tc") {
 						 var reader = new FileReader();
 						 reader.onload = function (evt) {
-// 						   logger.log(evt);
 						   document.getElementById("code").value = evt.target.result;
 						 };
 						 reader.onerror = function (evt) {
@@ -352,8 +407,8 @@ function export_SVG_as_SVG() {
 					else alert("Not a TabCode file! Please try again!")
 				    }
 				},false);
-
 			}
+			
 		  function displayTabCodeFromMIDIFile() {
 			document.getElementById('choose_midifile').hidden=true;
 			document.getElementById('midichooser').hidden=false;	
@@ -433,6 +488,63 @@ function export_SVG_as_SVG() {
 </div>
 <div id="debug_mess">
 </div>
+ 
+ <script>
+ 	
+ 	beat_boxes = [
+ 		{check:"doublebeat_check",value:1024},
+		{check:"mainbeat_check",value:512},
+		{check:"secondarybeat_check",value:256},
+		{check:"tertiarybeat_check",value:128},
+		{check:"quaternarybeat_check",value:64},
+		{check:"mainbeat_dot_check",value:768},
+		{check:"secondarybeat_dot_check",value:384},
+		{check:"tertiarybeat_dot_check",value:192},
+		{check:"quaternarybeat_dot_check",value:96}
+	];
+	function getBeatBox(val) {
+		for(i=0;i<beat_boxes.length;i++) {
+			if(beat_boxes[i].value == val) return beat_boxes[i].check;
+		}
+		return false;
+	}
+ 	
+ 	const urlParams = new URLSearchParams(window.location.search);
+ 	var hide_systembreaks = false; // we will hide them for TabCode display version
+
+// check if this is just the TabCode display version:
+ 	if(urlParams.has("tc_path")) {
+//  		logger.log(urlParams.get("tc_path"));
+
+ 		// Add new CSS to hide non-essential bits:
+ 		$(document).ready(function () {$('#banner').css('display', 'none');});
+ 		$(document).ready(function () {$('#editbuttons').css('display', 'none');});
+//  		$(document).ready(function () {$('#rhythm-sign_controls').css('display', 'none');});
+  		$(document).ready(function () {$('#choose_tcfile').css('display', 'none');});
+  		$(document).ready(function () {$('#tcchooser').css('display', 'none');});
+  		$(document).ready(function () {$('#midichooser').css('display', 'none');});
+  		$(document).ready(function () {$('#choose_midifile').css('display', 'none');});
+  		$(document).ready(function () {$('#switchTabType').css('display', 'none');});
+  		$(document).ready(function () {$('#switchTabFont').css('display', 'none');});
+  		$(document).ready(function () {$('#switchTuning').css('display', 'none');});
+		hide_systembreaks = true;
+		
+ 		// Load contents of tc.path into code text-box
+ 		displayTabCodeFromURL();
+
+		// Highlight beats for search-window
+		if(urlParams.has("window")) {
+			document.getElementById(getBeatBox(urlParams.get("window"))).click();
+		}		
+
+		// Hide TabCode
+// 		document.getElementById("tchide").click();
+		tcHide();
+ 	}
+ 
+	
+ </script>
+
+
 </body>
 </html>
-<!-- onkeyup="if(!TabCodeDocument || TabCodeDocument.code != this.value) parseTCDoc(this.value);"> -->

@@ -322,7 +322,7 @@ function Tablature(TC, SVG, parameters, doc, win){
         case "SystemBreak":
 
           this.systemnumber++;
-		drawSystemBreak(this,i);
+		if(!hide_systembreaks) drawSystemBreak(this,i); //Draws an editable symbol
           
           if(breaks == "stop"){
             this.drawStaffLines();
@@ -348,7 +348,7 @@ function Tablature(TC, SVG, parameters, doc, win){
 			}
 		}
 // 	logger.log("Reached a "+b.tType);
-		var this_bar = (b.barnumber+1);
+		var this_bar = (b.barnumber+1-barNumStart);
 //		var barnum_xoffset = 10;
 		var barnum_xoffset = 24;
 		if(b.tType !== "Chord") {

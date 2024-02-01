@@ -329,10 +329,13 @@ function dotFingering(count, position) {
     }
   };
 	this.draw = function(xpos, ypos, svgel, note) {
-    this.tType = curTabType;
-    var el = svgText(svgel, xpos + this.dx(), ypos+this.dy(), "extra fingering fdots", 
-        false, false, this.textString());
-    $(el).data("word", note);
+	    if(!document.getElementById('on_line_check').checked) {
+		    ypos += ld/2.4; // has no effect ??
+		}
+	    this.tType = curTabType;
+	    var el = svgText(svgel, xpos + this.dx(), ypos+this.dy(), "extra fingering fdots", 
+		   false, false, this.textString());
+	    $(el).data("word", note);
 	};
 }
 

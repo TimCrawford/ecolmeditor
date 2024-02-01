@@ -133,19 +133,79 @@ div.buttons {
 }
 
 /*experimental display of main and secondary beats*/
-.chord.mainbeat {
-  fill: green;
+.chord.doublebeat{
+  fill: darkkhaki;
 }
-.chord.secondarybeat {
+.chord.mainbeat{
+  fill: seagreen;
+}
+.chord.secondarybeat{
+  fill: orange;
+}
+.chord.tertiarybeat{
+  fill: crimson;
+}
+.chord.quaternarybeat{
+  fill: hotpink;
+}
+.chord.mainbeat_dot{
+  fill: purple;
+}
+.chord.secondarybeat_dot{
   fill: blue;
 }
-.chord.tertiarybeat {
-  fill: orange;
+.chord.tertiarybeat_dot{
+  fill: teal
+}
+.chord.quaternarybeat_dot{
+  fill: turquoise;
+}
+.chord.resultMatch{
+  fill:purple;
+  -webkit-text-stroke-width: 3px;
+  stroke-width: 3px;
+ font-weight: bold;
+/*   font-size: larger; */
+  font-size: 120%;
+
+/* 
+  outline: solid 2px blue;
+  outline-offset: 4px;
+ */
+
+}
+/* display of labels */
+ .doublebeat{
+  color: maroon;
+}
+ .mainbeat{
+  color: seagreen;
+}
+ .secondarybeat{
+  color: orange;
+}
+ .tertiarybeat{
+  color: crimson;
+}
+ .quaternarybeat{
+  color: hotpink;
+}
+ .mainbeat_dot{
+  color: purple;
+}
+ .secondarybeat_dot{
+  color: blue;
+}
+ .tertiarybeat_dot{
+  color: teal
+}
+ .quaternarybeat_dot{
+  color: turquoise;
 }
 
 .matched {
-	font: bold;
-	fill: red;
+	font-weight: bold;
+	color: red;
 }
 .beam:hover{
     background-color: #DD7777;

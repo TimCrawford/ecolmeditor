@@ -143,7 +143,7 @@ Soundfont.noteToMidi = function(note) {
  */
 Soundfont.nameToUrl = function(name) {
   // return 'https://cdn.rawgit.com/gleitz/midi-js-Soundfonts/master/FluidR3_GM/' + name + '-ogg.js';
-  return '../sft/' + name + '-wav.js';
+  return '../sft/' + name + '-mp3.js';
 }
 
 /*

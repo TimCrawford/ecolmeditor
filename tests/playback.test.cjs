@@ -81,7 +81,7 @@ test('loader accepts generated WAV maps without losing the final note',()=>{
   const Soundfont=box.window.Soundfont;
   const result=Soundfont.dataToJson('MIDI.Soundfont.acoustic_grand_piano = {"C4":"one","D4":"two"};');
   assert.equal(JSON.stringify(result),JSON.stringify({C4:'one',D4:'two'}));
-  assert.equal(Soundfont.nameToUrl('G_lute/acoustic_grand_piano'),'../sft/G_lute/acoustic_grand_piano-wav.js');
+  assert.equal(Soundfont.nameToUrl('G_lute/acoustic_grand_piano'),'../sft/G_lute/acoustic_grand_piano-mp3.js');
 });
 
 function scrollFixture(){

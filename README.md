@@ -2,19 +2,10 @@
 
 ## Upgraded lute soundfonts
 
-With Python, NumPy, SciPy, and FFmpeg installed, run from the repository root:
-
-```sh
-python tools/process_audio.py
-python tools/build_upgraded_soundfonts.py --install
-```
-
-The first command decodes and aligns the archived samples. The second writes
-standalone WAVs to `build/upgraded-soundfonts/` and installs the generated
-JavaScript banks at the paths the editor already loads. Serve the repository
-over HTTP and open `test/new_index.html` to select and play each bank. Omit
-`--install` to export WAV files only. The original Ogg files and aligned WAV
-files are preserved. Generated audio is ignored by Git.
+Serve the repository over HTTP and open `test/new_index.html` to play scores
+with the upgraded MP3 banks. Open `web/index.html` to preview individual notes.
+The three banks are under `sft/` and include individual MP3 samples and the
+JavaScript bundles used by the editor.
 
 The E and G lute banks use 12-tone equal temperament anchored to the original
 sample labelled A4 in each bank (377.37 Hz and 448.84 Hz, respectively).

@@ -10,11 +10,12 @@ python tools/build_upgraded_soundfonts.py --install
 ```
 
 The first command decodes and aligns the archived samples. The second writes
-standalone WAVs to `build/upgraded-soundfonts/` and installs the generated
-JavaScript banks at the paths the editor already loads. Serve the repository
+WAV masters and MP3 samples to `build/upgraded-soundfonts/` and installs the
+upgraded MP3 JavaScript banks in `sft/` for the editor. Serve the repository
 over HTTP and open `test/new_index.html` to select and play each bank. Omit
-`--install` to export WAV files only. The original Ogg files and aligned WAV
-files are preserved. Generated audio is ignored by Git.
+`--install` to export individual samples only. FFmpeg needs the `libmp3lame`
+encoder. The original recordings and aligned WAV files are preserved.
+Generated audio is ignored by Git.
 
 The E and G lute banks use 12-tone equal temperament anchored to the original
 sample labelled A4 in each bank (377.37 Hz and 448.84 Hz, respectively).

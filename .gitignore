@@ -4,3 +4,4 @@ web/audio/
 web/analysis.json
 build/
 sft/*/*-wav.js
+sft/*/*-upgraded-mp3.js

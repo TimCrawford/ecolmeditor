@@ -1,10 +1,11 @@
-"""Build the auditioned WAV banks from the aligned recordings."""
+"""Build the upgraded MP3 soundfonts from the aligned recordings."""
 import argparse
 import base64
 from fractions import Fraction
 import json
 from pathlib import Path
 import shutil
+import subprocess
 import wave
 
 import numpy as np
@@ -57,6 +58,14 @@ def transform(source, destination, rate, gain_passes):
         writer.writeframes(signal.astype('<i2').tobytes())
 
 
+def encode_mp3(wav, mp3):
+    # A seekable output lets LAME store encoder delay and end padding.
+    subprocess.run([
+        'ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', str(wav),
+        '-c:a', 'libmp3lame', '-q:a', '2', '-write_xing', '1', str(mp3),
+    ], check=True)
+
+
 def build(output, install):
     tuning = json.loads(Path(__file__).with_name('lute_tuning.json').read_text())
     for bank in BANKS:
@@ -81,15 +90,17 @@ def build(output, install):
 
             wav = destination / sample.name
             transform(aligned / (donor + '.wav'), wav, rate, gain_passes)
+            mp3 = wav.with_suffix('.mp3')
+            encode_mp3(wav, mp3)
             if install:
-                values[key] = 'data:audio/wav;base64,' + base64.b64encode(wav.read_bytes()).decode()
+                values[key] = 'data:audio/mpeg;base64,' + base64.b64encode(mp3.read_bytes()).decode()
 
         if install:
-            target = ROOT / 'sft' / bank / 'acoustic_grand_piano-wav.js'
+            target = ROOT / 'sft' / bank / 'acoustic_grand_piano-upgraded-mp3.js'
             temporary = target.with_suffix('.tmp')
             temporary.write_text('MIDI.Soundfont.acoustic_grand_piano = ' + json.dumps(values) + ';\n')
             temporary.replace(target)
-        print(f'{bank}: {len(inputs)} WAV files in {destination}')
+        print(f'{bank}: {len(inputs)} WAV masters and MP3 samples in {destination}')
 
 
 if __name__ == '__main__':

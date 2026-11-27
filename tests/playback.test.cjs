@@ -75,13 +75,13 @@ test('first score-follow timer includes the audio scheduling lead',()=>{
   assert.ok(Math.abs(s.timers[0].ms-1100)<1e-6);
 });
 
-test('loader accepts generated WAV maps without losing the final note',()=>{
+test('loader accepts generated MP3 maps without losing the final note',()=>{
   const box={window:{}};
   vm.runInNewContext(fs.readFileSync(path.join(root,'soundfont-player.js'),'utf8'),box);
   const Soundfont=box.window.Soundfont;
   const result=Soundfont.dataToJson('MIDI.Soundfont.acoustic_grand_piano = {"C4":"one","D4":"two"};');
   assert.equal(JSON.stringify(result),JSON.stringify({C4:'one',D4:'two'}));
-  assert.equal(Soundfont.nameToUrl('G_lute/acoustic_grand_piano'),'../sft/G_lute/acoustic_grand_piano-wav.js');
+  assert.equal(Soundfont.nameToUrl('G_lute/acoustic_grand_piano'),'../sft/G_lute/acoustic_grand_piano-upgraded-mp3.js');
 });
 
 function scrollFixture(){
